@@ -943,7 +943,7 @@ var init_install_fetch = __esm({
         factory(exports);
       })(commonjsGlobal, function(exports2) {
         const SymbolPolyfill = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? Symbol : (description) => `Symbol(${description})`;
-        function noop3() {
+        function noop4() {
           return void 0;
         }
         function getGlobals() {
@@ -960,7 +960,7 @@ var init_install_fetch = __esm({
         function typeIsObject(x2) {
           return typeof x2 === "object" && x2 !== null || typeof x2 === "function";
         }
-        const rethrowAssertionErrorRejection = noop3;
+        const rethrowAssertionErrorRejection = noop4;
         const originalPromise = Promise;
         const originalPromiseThen = Promise.prototype.then;
         const originalPromiseResolve = Promise.resolve.bind(originalPromise);
@@ -1634,10 +1634,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry4 = this._queue.shift();
-              this._queueTotalSize -= entry4.byteLength;
+              const entry5 = this._queue.shift();
+              this._queueTotalSize -= entry5.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry4.buffer, entry4.byteOffset, entry4.byteLength);
+              const view = new Uint8Array(entry5.buffer, entry5.byteOffset, entry5.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -3169,7 +3169,7 @@ var init_install_fetch = __esm({
                 return newPromise((resolveRead, rejectRead) => {
                   ReadableStreamDefaultReaderRead(reader, {
                     _chunkSteps: (chunk) => {
-                      currentWrite = PerformPromiseThen(WritableStreamDefaultWriterWrite(writer, chunk), void 0, noop3);
+                      currentWrite = PerformPromiseThen(WritableStreamDefaultWriterWrite(writer, chunk), void 0, noop4);
                       resolveRead(false);
                     },
                     _closeSteps: () => resolveRead(true),
@@ -4064,7 +4064,7 @@ var init_install_fetch = __esm({
             reader._readIntoRequests = new SimpleQueue();
           }
           const sourceCancelPromise = stream._readableStreamController[CancelSteps](reason);
-          return transformPromiseWith(sourceCancelPromise, noop3);
+          return transformPromiseWith(sourceCancelPromise, noop4);
         }
         function ReadableStreamClose(stream) {
           stream._state = "closed";
@@ -5415,7 +5415,9 @@ var init_install_fetch = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-2dc61825.js
+// .svelte-kit/output/server/chunks/index-a9a6e648.js
+function noop2() {
+}
 function run(fn) {
   return fn();
 }
@@ -5424,6 +5426,13 @@ function blank_object() {
 }
 function run_all(fns) {
   fns.forEach(run);
+}
+function subscribe(store, ...callbacks) {
+  if (store == null) {
+    return noop2;
+  }
+  const unsub = store.subscribe(...callbacks);
+  return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
 }
 function set_current_component(component) {
   current_component = component;
@@ -5436,8 +5445,18 @@ function get_current_component() {
 function setContext(key, context) {
   get_current_component().$$.context.set(key, context);
 }
+function getContext(key) {
+  return get_current_component().$$.context.get(key);
+}
 function escape(html) {
   return String(html).replace(/["'&<>]/g, (match) => escaped[match]);
+}
+function each(items, fn) {
+  let str = "";
+  for (let i2 = 0; i2 < items.length; i2 += 1) {
+    str += fn(items[i2], i2);
+  }
+  return str;
 }
 function validate_component(component, name) {
   if (!component || !component.$$render) {
@@ -5472,7 +5491,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css5) => css5.code).join("\n"),
+          code: Array.from(result.css).map((css7) => css7.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5481,9 +5500,14 @@ function create_ssr_component(fn) {
     $$render
   };
 }
+function add_attribute(name, value, boolean) {
+  if (value == null || boolean && !value)
+    return "";
+  return ` ${name}${value === true ? "" : `=${typeof value === "string" ? JSON.stringify(escape(value)) : `"${value}"`}`}`;
+}
 var current_component, escaped, missing_component, on_destroy;
-var init_index_2dc61825 = __esm({
-  ".svelte-kit/output/server/chunks/index-2dc61825.js"() {
+var init_index_a9a6e648 = __esm({
+  ".svelte-kit/output/server/chunks/index-a9a6e648.js"() {
     Promise.resolve();
     escaped = {
       '"': "&quot;",
@@ -5506,7 +5530,7 @@ __export(layout_svelte_exports, {
 var Layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/layout.svelte.js"() {
-    init_index_2dc61825();
+    init_index_a9a6e648();
     Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${slots.default ? slots.default({}) : ``}`;
     });
@@ -5525,8 +5549,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "layout.svelte-8957ef27.js";
-    js = ["layout.svelte-8957ef27.js", "chunks/vendor-a7db36b2.js"];
+    entry = "layout.svelte-04575238.js";
+    js = ["layout.svelte-04575238.js", "chunks/vendor-d72d44f7.js"];
     css2 = [];
   }
 });
@@ -5543,7 +5567,7 @@ function load({ error: error2, status }) {
 var Error2;
 var init_error_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/error.svelte.js"() {
-    init_index_2dc61825();
+    init_index_a9a6e648();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -5575,9 +5599,74 @@ var entry2, js2, css3;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-b12765c0.js";
-    js2 = ["error.svelte-b12765c0.js", "chunks/vendor-a7db36b2.js"];
+    entry2 = "error.svelte-4ba8341c.js";
+    js2 = ["error.svelte-4ba8341c.js", "chunks/vendor-d72d44f7.js"];
     css3 = [];
+  }
+});
+
+// .svelte-kit/output/server/chunks/stores-fec2fa46.js
+var getStores, page;
+var init_stores_fec2fa46 = __esm({
+  ".svelte-kit/output/server/chunks/stores-fec2fa46.js"() {
+    init_index_a9a6e648();
+    getStores = () => {
+      const stores = getContext("__svelte__");
+      return {
+        page: {
+          subscribe: stores.page.subscribe
+        },
+        navigating: {
+          subscribe: stores.navigating.subscribe
+        },
+        get preloading() {
+          console.error("stores.preloading is deprecated; use stores.navigating instead");
+          return {
+            subscribe: stores.navigating.subscribe
+          };
+        },
+        session: stores.session
+      };
+    };
+    page = {
+      subscribe(fn) {
+        const store = getStores().page;
+        return store.subscribe(fn);
+      }
+    };
+  }
+});
+
+// .svelte-kit/output/server/entries/endpoints/fb-utils.js
+var fb_utils_exports = {};
+__export(fb_utils_exports, {
+  teams: () => teams
+});
+var teams;
+var init_fb_utils = __esm({
+  ".svelte-kit/output/server/entries/endpoints/fb-utils.js"() {
+    teams = [
+      { id: "tottenham", name: "Tottenham" },
+      { id: "liverpool", name: "Liverpool" },
+      { id: "man-city", name: "Manchester City" },
+      { id: "newcastle", name: "Newcastle" },
+      { id: "chelsea", name: "Chelsea" },
+      { id: "west-ham", name: "West Ham" },
+      { id: "arsenal", name: "Arsenal" },
+      { id: "burnley", name: "Burnley" },
+      { id: "watford", name: "Watford" },
+      { id: "leeds", name: "Leeds United" },
+      { id: "everton", name: "Everton" },
+      { id: "brentford", name: "Brentford" },
+      { id: "southampton", name: "Southampton" },
+      { id: "aston-villa", name: "Aston Villa" },
+      { id: "crystal-palace", name: "Crystal Palace" },
+      { id: "brighton", name: "Brighton" },
+      { id: "leicester", name: "Leicester" },
+      { id: "wolves", name: "Wolves" },
+      { id: "man-utd", name: "Manchester Utd" },
+      { id: "norwich", name: "Norwich" }
+    ];
   }
 });
 
@@ -5589,9 +5678,17 @@ __export(index_svelte_exports, {
 var Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
-    init_index_2dc61825();
+    init_index_a9a6e648();
+    init_stores_fec2fa46();
+    init_fb_utils();
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>Welcome to SvelteKit</h1>
+      let $page, $$unsubscribe_page;
+      $$unsubscribe_page = subscribe(page, (value) => $page = value);
+      $$unsubscribe_page();
+      return `<div class="${"grid-container"}">${each(teams, ({ id, name }, i2) => `<div class="${["team-div", $page.url.pathname === "/" + id ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch${add_attribute("href", "/team/" + id, 0)}>${escape(name)}</a></div>`)}</div>
+
+<h1>Welcome to SvelteKit</h1>
+
 <p>Visit <a href="${"https://kit.svelte.dev"}">kit.svelte.dev</a> to read the documentation</p>`;
     });
   }
@@ -5609,9 +5706,502 @@ var entry3, js3, css4;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-3df513c2.js";
-    js3 = ["pages/index.svelte-3df513c2.js", "chunks/vendor-a7db36b2.js"];
+    entry3 = "pages/index.svelte-a5f26ea3.js";
+    js3 = ["pages/index.svelte-a5f26ea3.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-27109c40.js"];
     css4 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/endpoints/team/tweets.json.js
+var tweets_json_exports = {};
+__export(tweets_json_exports, {
+  Chelsea: () => Chelsea,
+  Liverpool: () => Liverpool,
+  Tottenham: () => Tottenham,
+  default: () => tweets
+});
+var Tottenham, Liverpool, Chelsea, tweets;
+var init_tweets_json = __esm({
+  ".svelte-kit/output/server/entries/endpoints/team/tweets.json.js"() {
+    Tottenham = {
+      data: [
+        {
+          text: "It was a dominant display by Tottenham, who completed 78 passes to Brighton's one. The Hammers successfuly completed 8 passes, while Brandon Sanderson completed 1 passes.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:45.000Z",
+          id: "1478479790948687881",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "It was a dominant display by Brentford, who completed 84 passes to Brighton's 95.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:45.000Z",
+          id: "1478479789333876741",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "It was a dominant display by Brighton, who completed 84 passes to Norwich's 95. They also had fewer passes, completing only 88 passes out of 78.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:44.000Z",
+          id: "1478479787412930564",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham attempted to make three challenges in the defensive third, while Tottenham made one challenges.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:44.000Z",
+          id: "1478479785689030664",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham attempted 17 challenges, resulting in 12 successful tackles. Tottenham made nine challenges and two successful passes.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:44.000Z",
+          id: "1478479784158056451",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham attempted 17 challenges, resulting in 12 successful tackles. Tottenham also made nine challenges and nine successful challenges.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:43.000Z",
+          id: "1478479782333620227",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Wattingford were patient, given an xA of 4.35 touches for each opponent press resulting in 264 yards towards the opponents goal..",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:43.000Z",
+          id: "1478479780823580676",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham were given a lot of time on the ball, taking an average of 8.7 touches each time the opponent pressed - Watford took an Average of 2.64 touches per press.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:42.000Z",
+          id: "1478479778932051968",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham took 32 passes into the final third, compared with 10 from Watford.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:42.000Z",
+          id: "1478479777392640005",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        },
+        {
+          text: "Tottenham attempted five challenges in the defensive third, while Tottenham made one tackles in this defensive Third. Tottenham also attempted one challenges during the offensive third.",
+          author_id: "1468968670860759049",
+          created_at: "2022-01-04T21:33:42.000Z",
+          id: "1478479775698149382",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478479764155478019"
+        }
+      ],
+      meta: {
+        newest_id: "1478479790948687881",
+        oldest_id: "1478479775698149382",
+        result_count: 10,
+        next_token: "b26v89c19zqg8o3fpe18pjfal669b58mci9vyf6co4mf1"
+      }
+    };
+    Liverpool = {
+      data: [
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          text: "Liverpool had less of the ball, taking 46.47 touches to Liverpool's 36, while Liverpool completed 17 passes into the final third.",
+          conversation_id: "1478483777995300866",
+          created_at: "2022-01-04T21:49:39.000Z",
+          author_id: "1468968670860759049",
+          id: "1478483790481793026"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          text: "Pablo Fornals successfuly completed 446 passes, while Vladim&lt;unk&gt; r Coufal successfuliously completed 515 passes.",
+          conversation_id: "1478483777995300866",
+          created_at: "2022-01-04T21:49:38.000Z",
+          author_id: "1468968670860759049",
+          id: "1478483788690771968"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          text: "Liverpool took three shots on target, while Leicester City only pressed 17 times, compared with 39 times against Leicester city (17 times).",
+          conversation_id: "1478483777995300866",
+          created_at: "2022-01-04T21:49:38.000Z",
+          author_id: "1468968670860759049",
+          id: "1478483787000561674"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          text: "Liverpool created less than Leicester City, finding chances worth 2.5 expected goals to Leicester's 0.6. Liverpool also created more than Liverpool, creating 1.5 expected goalposts, while concedeing 1.5 xG and fewer chances of the game.",
+          conversation_id: "1478483777995300866",
+          created_at: "2022-01-04T21:49:37.000Z",
+          author_id: "1468968670860759049",
+          id: "1478483784693686277"
+        }
+      ],
+      meta: {
+        newest_id: "1478483790481793026",
+        oldest_id: "1478483784693686277",
+        result_count: 4
+      }
+    };
+    Chelsea = {
+      data: [
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503772024414208",
+          author_id: "1468968670860759049",
+          text: "Chelsea won 18 aerial duels to Brighton's 15. Chelsea also won 11 aerial Duels, while Brighton won 15 aerial deels.",
+          created_at: "2022-01-04T23:09:03.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503769709195269",
+          author_id: "1468968670860759049",
+          text: "Chelsea attempted 10 challenges in the defensive third, while Brighton attempted 10. Chelsea attempt seven challenges, making only 10 tackles in this defensive Third.",
+          created_at: "2022-01-04T23:09:02.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503768035663878",
+          author_id: "1468968670860759049",
+          text: "Chelsea attempted 20 challenges, resulting in 11 successful tackles. Chelsea made 17 challenges and 1045 successful passes.",
+          created_at: "2022-01-04T23:09:02.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503766462799875",
+          author_id: "1468968670860759049",
+          text: "Chelsea attempted 20 challenges, resulting in 11 successful tackles. Chelsea made 17 challenges and 1045 successful passes.",
+          created_at: "2022-01-04T23:09:01.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503764508168198",
+          author_id: "1468968670860759049",
+          text: "Brighton were also given a lot of time on the ball, taking an xA of 32.0 touches for each opponent press resulting in fewer touches than Brighton's 2..",
+          created_at: "2022-01-04T23:09:01.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503762662678529",
+          author_id: "1468968670860759049",
+          text: "Chelsea were given an average of 3.36 touches each time the opponent pressed - Brighton took an Average of 2.88 touches per press.",
+          created_at: "2022-01-04T23:09:00.000Z"
+        },
+        {
+          conversation_id: "1478503754433544193",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478503761035288583",
+          author_id: "1468968670860759049",
+          text: "Chelsea completed 35 passes into the final third, while Brighton completed 16 passes in the the Final third.",
+          created_at: "2022-01-04T23:09:00.000Z"
+        }
+      ],
+      meta: {
+        newest_id: "1478503772024414208",
+        oldest_id: "1478503761035288583",
+        result_count: 7
+      }
+    };
+    tweets = {
+      Tottenham,
+      Liverpool,
+      "West Ham": {
+        data: [
+          {
+            text: "West Ham attempted 24 challenges resulting in 24 delays, while Crystal Palace attempted 18 challenges. Westham attempted 22 challenges, making 16 successful tackles, compared with 18 from Crystal palace.",
+            author_id: "1468968670860759049",
+            created_at: "2022-01-04T22:05:45.000Z",
+            id: "1478487842078793730",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478487830359941125"
+          },
+          {
+            text: "West Ham gave their opponent an average of 4.23 touches each time they pressed. Crystal Palace allowed the Hammers 3.64 touches per press, considerably more than the 3.0 touches permitted by West Hampshire in West Manchester's last game.",
+            author_id: "1468968670860759049",
+            created_at: "2022-01-04T22:05:44.000Z",
+            id: "1478487840392728583",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478487830359941125"
+          },
+          {
+            text: "West Ham took 26 shots on target, more than any other player on the pitch (27), followed by Westham, who completed 26 passes into the final third.",
+            author_id: "1468968670860759049",
+            created_at: "2022-01-04T22:05:44.000Z",
+            id: "1478487838610145281",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478487830359941125"
+          },
+          {
+            text: "West Ham attempted five challenges in the defensive third, while Crystal Palace attempted six challenges.",
+            author_id: "1468968670860759049",
+            created_at: "2022-01-04T22:05:43.000Z",
+            id: "1478487836919840768",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478487830359941125"
+          }
+        ],
+        meta: {
+          newest_id: "1478487842078793730",
+          oldest_id: "1478487836919840768",
+          result_count: 4
+        }
+      },
+      "Manchester City": {
+        data: [
+          {
+            created_at: "2022-01-04T22:36:58.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Raheem Sterling attempted to make three challenges, resulting in three successful tackles. Rodri attempted three challenge, winning three tackle tackled tackle.",
+            author_id: "1468968670860759049",
+            id: "1478495700866449415"
+          },
+          {
+            created_at: "2022-01-04T22:36:58.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Rodri pressed the opponent 13 times, winning possession on four occassions. Sterling also pushed 12 times and won 12 occurrences, more than any other player on the pitch.",
+            author_id: "1468968670860759049",
+            id: "1478495699247448064"
+          },
+          {
+            created_at: "2022-01-04T22:36:58.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Rodri pressed the opponent 13 times, while Raheem Sterling pushed 12 times.",
+            author_id: "1468968670860759049",
+            id: "1478495697678786562"
+          },
+          {
+            created_at: "2022-01-04T22:36:57.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Raheem Sterling successfuly recieved nine progressive passes and completed two successful dribbles.",
+            author_id: "1468968670860759049",
+            id: "1478495696131141636"
+          },
+          {
+            created_at: "2022-01-04T22:36:57.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Rodri found a teammate with 69 of his 11 successful long balls, while Aymeric Laporte completed 14. AYmeric laport\xE9 successfuly completed 14 long ball, whilst Rodric completed 11 long passes.",
+            author_id: "1468968670860759049",
+            id: "1478495694243647493"
+          },
+          {
+            created_at: "2022-01-04T22:36:56.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Rodri found a teammate with 93% of his attempted passes (93%).",
+            author_id: "1468968670860759049",
+            id: "1478495692687564805"
+          },
+          {
+            created_at: "2022-01-04T22:36:56.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Raheem Sterling, our man of the match, created some of his best chances of 1.0 (the game) resulting in zero assist.",
+            author_id: "1468968670860759049",
+            id: "1478495690993147904"
+          },
+          {
+            created_at: "2022-01-04T22:36:56.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Manchester City won an impressive 68% or the game's aerial duels. Manchester city won 55% and won 63%.",
+            author_id: "1468968670860759049",
+            id: "1478495689269297154"
+          },
+          {
+            created_at: "2022-01-04T22:36:55.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Manchester City won 21 aerial duels to Arsenal's 10. Manchester city also won 1286 aerial Duels, while Arsenal won 10 aerial deels.",
+            author_id: "1468968670860759049",
+            id: "1478495687599968260"
+          },
+          {
+            created_at: "2022-01-04T22:36:55.000Z",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478491893050793996",
+            text: "Manchester City won 21 aerial duels to Arsenal's 10. Manchester city also won 1286 aerial Duels, while Arsenal won 10 aerial deels.",
+            author_id: "1468968670860759049",
+            id: "1478495685930586118"
+          }
+        ],
+        meta: {
+          newest_id: "1478495700866449415",
+          oldest_id: "1478495685930586118",
+          result_count: 10,
+          next_token: "b26v89c19zqg8o3fpe18pjfvzy7y4kicq247dm0ptiwzh"
+        }
+      },
+      "Newcastle Utd": {
+        data: [
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:12.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499783086153733",
+            text: "Joelinton successfuly completed 76% of his attempted passes (76%). Jonjo Shelvey, with 33 successful passes out of 79%, was next most accurate passer in a Manchester United shirt."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:11.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499780544372745",
+            text: "Harry Winks successfuly completed one passes, while Brandon Sanderson completed 26 passes."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:10.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499776052310021",
+            text: "Harry Winks successfuly completed one passes, while Brandon Sanderson completed 26 passes."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:10.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499774387134464",
+            text: "Allan Saintimin took four shots on target, while Allans Saint-Maximine carried the ball into the opponent's box one times."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:09.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499772709363712",
+            text: "Joelinton, our man of the match, created some of his best chances of 0.2. He also played four key passes."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:09.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499770889035792",
+            text: "Newcastle Utd attempted 11 challenges in the defensive third, while Manchester United attempted six challenges."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:08.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499769228087300",
+            text: "Newcastle Utd attempted to make 21 challenges, resulting in 10 successful tackles. Newcastle Unitedtt attempted 18 challenges and five successful passes."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:08.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499767529443328",
+            text: "Newcastle Utd attempted to make 21 challenges, resulting in 10 successful tackles. Newcastle Unitedtt attempted 18 challenges and five successful passes."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:08.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499765730136067",
+            text: "Newcastle Utd gave their opponent an average of 4.82 touches each time they pressed. Manchester UTC allowed Ufford 299 yards towards the opponent's goal, while Newcastle United allowed 3.51 touches per press."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-04T22:53:07.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478499754585821192",
+            id: "1478499763909799938",
+            text: "Newcastle Utd attempted to make four challenges in the defensive third, while Manchester United attempted one challenges. Unitedtford attempted 1 challenges during the offensive third."
+          }
+        ],
+        meta: {
+          newest_id: "1478499783086153733",
+          oldest_id: "1478499763909799938",
+          result_count: 10,
+          next_token: "b26v89c19zqg8o3fpe18pjfw60x7tpu67y937qp1118xp"
+        }
+      },
+      Chelsea
+    };
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js
+var teamName_svelte_exports = {};
+__export(teamName_svelte_exports, {
+  default: () => U5BteamNameu5D
+});
+var css5, U5BteamNameu5D;
+var init_teamName_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
+    init_index_a9a6e648();
+    init_stores_fec2fa46();
+    init_fb_utils();
+    init_tweets_json();
+    css5 = {
+      code: "a.tweets.svelte-17vfid9{color:var(--heading-color)}a.svelte-17vfid9:hover{background-color:yellow}",
+      map: null
+    };
+    U5BteamNameu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let teamName;
+      let tweets$1;
+      let $page, $$unsubscribe_page;
+      $$unsubscribe_page = subscribe(page, (value) => $page = value);
+      console.log("someJSON", tweets);
+      $$result.css.add(css5);
+      teamName = $page.params.teamName;
+      teamName = teams.find((d) => d.id == teamName).name;
+      tweets$1 = tweets[teamName]["data"];
+      {
+        console.log("TWEETS", tweets$1);
+      }
+      $$unsubscribe_page();
+      return `<div style="${"width: 640px; margin:0 auto;"}"><div><div style="${"width: 640px; margin: 50px auto;"}"><h1>Latest ${escape(teamName)} match report</h1></div></div></div>
+<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}">${each(tweets$1.reverse(), ({ id, text }, i2) => `<div><a class="${"tweets svelte-17vfid9"}"${add_attribute("href", "https://twitter.com/_Numbers_Game/status/" + id, 0)} target="${"_blank"}">${escape(text)}</a></div>
+        <br>`)}</div>
+
+`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  css: () => css6,
+  entry: () => entry4,
+  js: () => js4,
+  module: () => teamName_svelte_exports
+});
+var entry4, js4, css6;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
+    init_teamName_svelte();
+    entry4 = "pages/team/_teamName_.svelte-c17afd8e.js";
+    js4 = ["pages/team/_teamName_.svelte-c17afd8e.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-27109c40.js"];
+    css6 = ["assets/pages/team/_teamName_.svelte-14cf65f9.css"];
   }
 });
 
@@ -5662,7 +6252,7 @@ function getRawBody(req) {
 }
 
 // .svelte-kit/output/server/app.js
-init_index_2dc61825();
+init_index_a9a6e648();
 var __accessCheck2 = (obj, member, msg) => {
   if (!member.has(obj))
     throw TypeError("Cannot " + msg);
@@ -5816,12 +6406,12 @@ function devalue(value) {
   }
   walk(value);
   var names = new Map();
-  Array.from(counts).filter(function(entry4) {
-    return entry4[1] > 1;
+  Array.from(counts).filter(function(entry5) {
+    return entry5[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry4, i2) {
-    names.set(entry4[0], getName(i2));
+  }).forEach(function(entry5, i2) {
+    names.set(entry5[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -5977,14 +6567,14 @@ function stringifyString(str) {
   result += '"';
   return result;
 }
-function noop2() {
+function noop3() {
 }
 function safe_not_equal(a, b) {
   return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
 }
 Promise.resolve();
 var subscriber_queue = [];
-function writable(value, start = noop2) {
+function writable(value, start = noop3) {
   let stop;
   const subscribers = new Set();
   function set(new_value) {
@@ -6008,11 +6598,11 @@ function writable(value, start = noop2) {
   function update(fn) {
     set(fn(value));
   }
-  function subscribe(run2, invalidate = noop2) {
+  function subscribe2(run2, invalidate = noop3) {
     const subscriber = [run2, invalidate];
     subscribers.add(subscriber);
     if (subscribers.size === 1) {
-      stop = start(set) || noop2;
+      stop = start(set) || noop3;
     }
     run2(value);
     return () => {
@@ -6023,7 +6613,7 @@ function writable(value, start = noop2) {
       }
     };
   }
-  return { set, update, subscribe };
+  return { set, update, subscribe: subscribe2 };
 }
 function coalesce_to_error(err) {
   return err instanceof Error || err && err.name && err.message ? err : new Error(JSON.stringify(err));
@@ -6098,7 +6688,7 @@ async function render_response({
   params
 }) {
   const css22 = new Set(options.manifest._.entry.css);
-  const js4 = new Set(options.manifest._.entry.js);
+  const js5 = new Set(options.manifest._.entry.js);
   const styles = new Set();
   const serialized_data = [];
   let rendered;
@@ -6112,7 +6702,7 @@ async function render_response({
       if (node.css)
         node.css.forEach((url2) => css22.add(url2));
       if (node.js)
-        node.js.forEach((url2) => js4.add(url2));
+        node.js.forEach((url2) => js5.add(url2));
       if (node.styles)
         node.styles.forEach((content) => styles.add(content));
       if (fetched && page_config.hydrate)
@@ -6160,10 +6750,10 @@ async function render_response({
   }
   const include_js = page_config.router || page_config.hydrate;
   if (!include_js)
-    js4.clear();
+    js5.clear();
   const links = options.amp ? styles.size > 0 || rendered.css.code.length > 0 ? `<style amp-custom>${Array.from(styles).concat(rendered.css.code).join("\n")}</style>` : "" : [
     ...Array.from(css22).map((dep) => `<link rel="stylesheet" href="${options.prefix}${dep}">`),
-    ...Array.from(js4).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
+    ...Array.from(js5).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
   ].join("\n		");
   let init = "";
   if (options.amp) {
@@ -6993,7 +7583,7 @@ var css = {
 };
 var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { stores } = $$props;
-  let { page } = $$props;
+  let { page: page2 } = $$props;
   let { components } = $$props;
   let { props_0 = null } = $$props;
   let { props_1 = null } = $$props;
@@ -7002,8 +7592,8 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   afterUpdate(stores.page.notify);
   if ($$props.stores === void 0 && $$bindings.stores && stores !== void 0)
     $$bindings.stores(stores);
-  if ($$props.page === void 0 && $$bindings.page && page !== void 0)
-    $$bindings.page(page);
+  if ($$props.page === void 0 && $$bindings.page && page2 !== void 0)
+    $$bindings.page(page2);
   if ($$props.components === void 0 && $$bindings.components && components !== void 0)
     $$bindings.components(components);
   if ($$props.props_0 === void 0 && $$bindings.props_0 && props_0 !== void 0)
@@ -7014,7 +7604,7 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_2(props_2);
   $$result.css.add(css);
   {
-    stores.page.set(page);
+    stores.page.set(page2);
   }
   return `
 
@@ -7093,11 +7683,12 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-5941e080.js", "js": ["start-5941e080.js", "chunks/vendor-a7db36b2.js"], "css": ["assets/start-61d1577b.css"] },
+    entry: { "file": "start-fde16c57.js", "js": ["start-fde16c57.js", "chunks/vendor-d72d44f7.js"], "css": ["assets/start-61d1577b.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
-      () => Promise.resolve().then(() => (init__3(), __exports3))
+      () => Promise.resolve().then(() => (init__3(), __exports3)),
+      () => Promise.resolve().then(() => (init__4(), __exports4))
     ],
     routes: [
       {
@@ -7106,6 +7697,26 @@ var manifest = {
         params: null,
         path: "/",
         a: [0, 2],
+        b: [1]
+      },
+      {
+        type: "endpoint",
+        pattern: /^\/fb-utils\/?$/,
+        params: null,
+        load: () => Promise.resolve().then(() => (init_fb_utils(), fb_utils_exports))
+      },
+      {
+        type: "endpoint",
+        pattern: /^\/team\/tweets\/?$/,
+        params: null,
+        load: () => Promise.resolve().then(() => (init_tweets_json(), tweets_json_exports))
+      },
+      {
+        type: "page",
+        pattern: /^\/team\/([^/]+?)\/?$/,
+        params: (m2) => ({ teamName: m2[1] }),
+        path: null,
+        a: [0, 3],
         b: [1]
       }
     ]

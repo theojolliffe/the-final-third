@@ -1,48 +1,69 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-5941e080.js",
+    "file": "start-fde16c57.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-a7db36b2.js"
+      "_vendor-d72d44f7.js"
     ],
     "dynamicImports": [
       ".svelte-kit/build/components/layout.svelte",
       ".svelte-kit/build/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/index.svelte",
+      "src/routes/team/[teamName].svelte"
     ],
     "css": [
       "assets/start-61d1577b.css"
     ]
   },
   ".svelte-kit/build/components/layout.svelte": {
-    "file": "layout.svelte-8957ef27.js",
+    "file": "layout.svelte-04575238.js",
     "src": ".svelte-kit/build/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a7db36b2.js"
+      "_vendor-d72d44f7.js"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-b12765c0.js",
+    "file": "error.svelte-4ba8341c.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a7db36b2.js"
+      "_vendor-d72d44f7.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-3df513c2.js",
+    "file": "pages/index.svelte-a5f26ea3.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a7db36b2.js"
+      "_vendor-d72d44f7.js",
+      "_fb-utils-27109c40.js"
     ]
   },
-  "_vendor-a7db36b2.js": {
-    "file": "chunks/vendor-a7db36b2.js"
+  "src/routes/team/[teamName].svelte": {
+    "file": "pages/team/_teamName_.svelte-c17afd8e.js",
+    "src": "src/routes/team/[teamName].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-d72d44f7.js",
+      "_fb-utils-27109c40.js"
+    ],
+    "css": [
+      "assets/pages/team/_teamName_.svelte-14cf65f9.css"
+    ]
+  },
+  "_vendor-d72d44f7.js": {
+    "file": "chunks/vendor-d72d44f7.js"
+  },
+  "_fb-utils-27109c40.js": {
+    "file": "chunks/fb-utils-27109c40.js",
+    "imports": [
+      "_vendor-d72d44f7.js"
+    ]
   }
 }
