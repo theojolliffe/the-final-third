@@ -5491,7 +5491,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css7) => css7.code).join("\n"),
+          code: Array.from(result.css).map((css8) => css8.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5649,7 +5649,7 @@ var init_fb_utils = __esm({
       { id: "tottenham", name: "Tottenham" },
       { id: "liverpool", name: "Liverpool" },
       { id: "man-city", name: "Manchester City" },
-      { id: "newcastle", name: "Newcastle" },
+      { id: "newcastle", name: "Newcastle Utd" },
       { id: "chelsea", name: "Chelsea" },
       { id: "west-ham", name: "West Ham" },
       { id: "arsenal", name: "Arsenal" },
@@ -5675,21 +5675,43 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var Routes;
+var css4, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_a9a6e648();
     init_stores_fec2fa46();
     init_fb_utils();
+    css4 = {
+      code: ".body2.svelte-189rhwe{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em}.headline.svelte-189rhwe{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-189rhwe{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-189rhwe{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-189rhwe{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-189rhwe{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-189rhwe{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-189rhwe{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-189rhwe{background-color:#ffc2fd}.source.svelte-189rhwe{text-decoration:underline}h2.svelte-189rhwe{font-family:system-ui;font-size:12vw;margin:auto;line-height:0.85}a.svelte-189rhwe{text-decoration:auto;color:black}.row.svelte-189rhwe{border-bottom:1px solid #000;font-size:medium;padding-top:4px;padding-bottom:4px}.number.svelte-189rhwe{font-size:xx-large;line-height:1}.name.svelte-189rhwe{font-weight:800}.text.svelte-189rhwe{display:flex;justify-content:flex-start}.col1.svelte-189rhwe{overflow:hidden;width:40%}.last.svelte-189rhwe{border-bottom:none}.grid-container.svelte-189rhwe{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px;padding:10px}.team-div.svelte-189rhwe{background-color:rgba(255, 255, 255, 0.8);text-align:left;padding:20px 0;font-family:system-ui;font-size:1.4rem;width:100%}",
+      map: null
+    };
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
+      $$result.css.add(css4);
       $$unsubscribe_page();
-      return `<div class="${"grid-container"}">${each(teams, ({ id, name }, i2) => `<div class="${["team-div", $page.url.pathname === "/" + id ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch${add_attribute("href", "/team/" + id, 0)}>${escape(name)}</a></div>`)}</div>
+      return `<body class="${"body2 svelte-189rhwe"}"><div id="${"top"}" class="${"headline svelte-189rhwe"}"><div class="${"top-50 svelte-189rhwe"}"><div class="${"text-semi svelte-189rhwe"}">The Final Third
+            </div>
+            <div class="${"div-block-107 svelte-189rhwe"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-189rhwe"}">Twitter</a>
+                    <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-189rhwe"}">Email</a></div></div></div>
+        <div class="${"flex"}"><div class="${"text-regular svelte-189rhwe"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using T5 - a Text-to-Text transformer model released by Google research. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-189rhwe"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
+                <br></div></div></div>
 
-<h1>Welcome to SvelteKit</h1>
 
-<p>Visit <a href="${"https://kit.svelte.dev"}">kit.svelte.dev</a> to read the documentation</p>`;
+    <h2 class="${"svelte-189rhwe"}">Premier League<br>Statistics
+    </h2>
+    <div class="${"grid-container svelte-189rhwe"}">${each(teams, ({ id, name }, i2) => `<a sveltekit:prefetch${add_attribute("href", "/team/" + id, 0)} class="${"svelte-189rhwe"}"><div class="${["team-div svelte-189rhwe", $page.url.pathname === "/" + id ? "active" : ""].join(" ").trim()}"><div class="${"row number svelte-189rhwe"}">013
+                    </div>
+                    <div class="${"row name svelte-189rhwe"}">${escape(name)}</div>
+                    <div class="${"row text svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Opponent</div>
+                        <div>Arsenal</div></div>
+                    <div class="${"row text svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Result</div>
+                        <div>3-1</div></div>
+                    <div class="${"row text last svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Date</div>
+                        <div>12/03/2022</div>
+                    </div></div>
+            </a>`)}</div>
+</body>`;
     });
   }
 });
@@ -5697,30 +5719,38 @@ var init_index_svelte = __esm({
 // .svelte-kit/output/server/nodes/2.js
 var __exports3 = {};
 __export(__exports3, {
-  css: () => css4,
+  css: () => css5,
   entry: () => entry3,
   js: () => js3,
   module: () => index_svelte_exports
 });
-var entry3, js3, css4;
+var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-a5f26ea3.js";
-    js3 = ["pages/index.svelte-a5f26ea3.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-27109c40.js"];
-    css4 = [];
+    entry3 = "pages/index.svelte-08fece3d.js";
+    js3 = ["pages/index.svelte-08fece3d.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-91ff877b.js"];
+    css5 = ["assets/pages/index.svelte-acb55591.css"];
   }
 });
 
 // .svelte-kit/output/server/entries/endpoints/team/tweets.json.js
 var tweets_json_exports = {};
 __export(tweets_json_exports, {
+  Arsenal: () => Arsenal,
+  Brentford: () => Brentford,
+  Brighton: () => Brighton,
+  Burnley: () => Burnley,
   Chelsea: () => Chelsea,
+  Everton: () => Everton,
   Liverpool: () => Liverpool,
+  Southampton: () => Southampton,
   Tottenham: () => Tottenham,
+  Watford: () => Watford,
+  Wolves: () => Wolves,
   default: () => tweets
 });
-var Tottenham, Liverpool, Chelsea, tweets;
+var Tottenham, Liverpool, Chelsea, Arsenal, Wolves, Brighton, Southampton, Brentford, Everton, Watford, Burnley, tweets;
 var init_tweets_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/team/tweets.json.js"() {
     Tottenham = {
@@ -5917,6 +5947,658 @@ var init_tweets_json = __esm({
         newest_id: "1478503772024414208",
         oldest_id: "1478503761035288583",
         result_count: 7
+      }
+    };
+    Arsenal = {
+      data: [
+        {
+          created_at: "2022-01-04T23:25:15.000Z",
+          id: "1478507852125945856",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Thomas Partey, our man of the match, created some of his best chances of 0.1. He also played one key passes."
+        },
+        {
+          created_at: "2022-01-04T23:25:15.000Z",
+          id: "1478507850435600384",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Arsenal attempted 12 challenges in the defensive third, while Manchester City attempted three challenges. Arsenal attempt nine challenges, making only three successful tackles in this game."
+        },
+        {
+          created_at: "2022-01-04T23:25:15.000Z",
+          id: "1478507848824983558",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Arsenal attempted 23 challenges resulting in 13 successful tackles, while Manchester City made 10 challenges, winning nine tackle tackled passes."
+        },
+        {
+          created_at: "2022-01-04T23:25:14.000Z",
+          id: "1478507847306645513",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "TEAMmate of the ball, taking 81 touches to T-Aston Villa's 91."
+        },
+        {
+          created_at: "2022-01-04T23:25:14.000Z",
+          id: "1478507845490462721",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Arsenal attempted 23 challenges resulting in 13 successful tackles, while Manchester City made 10 challenges and nine successful passes. Arsenal also made 17 challenges, completing nine unsuccessful tackled tackle."
+        },
+        {
+          created_at: "2022-01-04T23:25:13.000Z",
+          id: "1478507843829575680",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Arsenal were patient off the ball, allowing Manchester City an average of 9.16 touches each time they pressed. Manchester city allowed the Gunners 2.17 touches per press, considerably more than the 4.76 touches permitted by Arsenal in Arsenal's last game."
+        },
+        {
+          created_at: "2022-01-04T23:25:13.000Z",
+          id: "1478507842210521094",
+          author_id: "1468968670860759049",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478507835197698060",
+          text: "Arsenal attempted to make three challenges in the defensive third, while Arsenal attempt one challenges within the the offensive third."
+        }
+      ],
+      meta: {
+        newest_id: "1478507852125945856",
+        oldest_id: "1478507842210521094",
+        result_count: 7
+      }
+    };
+    Wolves = {
+      data: [
+        {
+          created_at: "2022-01-05T00:28:56.000Z",
+          text: "Wolves attempted 17 challenges in the defensive third, while Chelsea attempted seven challenges. Wowolves attempted 13 challenges, making seven successful tackles in this game, similar to the seven made by Chelsea.",
+          id: "1478523876736970756",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        },
+        {
+          created_at: "2022-01-05T00:28:56.000Z",
+          text: "Wolves attempted 21 challenges resulting in 13 successful tackles, while Chelsea made 22 challenges and 12 successful passes. Wowolves attempted 19 challenges, completing 12 unsuccessful tackled passes, winning 12 tackle tackle.",
+          id: "1478523874975354886",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        },
+        {
+          created_at: "2022-01-05T00:28:55.000Z",
+          text: "Wolves attempted 21 challenges resulting in 13 successful tackles, while Chelsea made 22 challenges and 12 successful passes. Wowolves attempted 19 challenges, completing 12 unsuccessful tackled passes, winning 13 tackle.",
+          id: "1478523873264115715",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        },
+        {
+          created_at: "2022-01-05T00:28:55.000Z",
+          text: "Wolves gave Chelsea an average of 7.7 touches each time they pressed. Chelsea allowed Wove 2.83 touches per press, considerably more than the 4.0 touches permitted by Wolters in Woulston County's last game.",
+          id: "1478523871020130315",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        },
+        {
+          created_at: "2022-01-05T00:28:54.000Z",
+          text: "Wolves completed 61% of the passes they played long, compared with 67% from Chelsea.",
+          id: "1478523869304692737",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        },
+        {
+          created_at: "2022-01-05T00:28:54.000Z",
+          text: "Wolves played 16 successful long balls, while Wowolves completed 48 long ball. Wove also played 62 successful passes into the final third, compared with 14 from Wolters.",
+          id: "1478523867660537860",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478523860941250561"
+        }
+      ],
+      meta: {
+        newest_id: "1478523876736970756",
+        oldest_id: "1478523867660537860",
+        result_count: 6
+      }
+    };
+    Brighton = {
+      data: [
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535847167381505",
+          text: "Neal Maupay pressed the opponent 32 times, winning possession on 12 occassions. Yves Bisouma also pushed 31 times and won 31 xA (more than anyone else in a Brighton shirt).",
+          created_at: "2022-01-05T01:16:30.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535845573443586",
+          text: "Neal Maupay pressed the opponent 32 times, while Yves Bissouma pushed 31 times.",
+          created_at: "2022-01-05T01:16:30.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535844009029632",
+          text: "Yves Bissouma successfully dribbled past an opponent on two occasions out of two attempts.",
+          created_at: "2022-01-05T01:16:29.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535842431918081",
+          text: "Marc Cucurella played two assists, while Yves Bissouma carried the ball into the opponent's box four times, resulting in two assist.",
+          created_at: "2022-01-05T01:16:29.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535840846520322",
+          text: "Marc Cucurella played two assists, while Yves Bissouma got two assist.",
+          created_at: "2022-01-05T01:16:28.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535839152054277",
+          text: "Neal Maupay successfuly recieved 11 progressive passes and reevated one progressive pass.",
+          created_at: "2022-01-05T01:16:28.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535837444943874",
+          text: "Yves Bissouma was Tottenham's third busiest passer, completing 46 passes with an accuracy of 87%. He also played 5 passes into the final third, more than any other play on the pitch.",
+          created_at: "2022-01-05T01:16:28.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535834693476354",
+          text: "Neal Maupay scored zero goals to Neals Maugard's zero, while creating 0.1 expected goals. NeAL Mau pay carried the ball into the box zero times, played zero passes and finished with zero assists.",
+          created_at: "2022-01-05T01:16:27.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535833087102976",
+          text: "Yves Bissouma, our man of the match, played three key passes.",
+          created_at: "2022-01-05T01:16:27.000Z"
+        },
+        {
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478532036856102913",
+          author_id: "1468968670860759049",
+          id: "1478535831178653700",
+          text: "Brighton attempted 10 challenges in the defensive third, while Brighton made three challenges, in this defensive Third. Brighton attempt to make 9.5 challenges during the offensive third.",
+          created_at: "2022-01-05T01:16:26.000Z"
+        }
+      ],
+      meta: {
+        newest_id: "1478535847167381505",
+        oldest_id: "1478535831178653700",
+        result_count: 10,
+        next_token: "b26v89c19zqg8o3fpe18pliteqcsbjnxaiqyoqhzhu7wd"
+      }
+    };
+    Southampton = {
+      data: [
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547980550610944",
+          author_id: "1468968670860759049",
+          text: "Pablo Fornals successfuly completed 1 passes, while Vladim&lt;unk&gt; r Kovac completed 28 passes.",
+          created_at: "2022-01-05T02:04:43.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547978432524304",
+          author_id: "1468968670860759049",
+          text: "Pablo Fornals successfuly completed 1 passes, while Vladim&lt;unk&gt; r Kovac completed 29 passes. The Toffees successfuliffuly complete 28 passes (more than any other player on the pitch), while Brandon Sanderson completed 2 passes in the final third.",
+          created_at: "2022-01-05T02:04:42.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547976842842114",
+          author_id: "1468968670860759049",
+          text: "Ibrahima Diallo created better chances while falling to defeat at the hands of 0.1. Dialo also played three key passes resulting in three shot creating actions.",
+          created_at: "2022-01-05T02:04:42.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547975295090689",
+          author_id: "1468968670860759049",
+          text: "James Ward-Prowse, our man of the match, took two shots on target, while James Reid completed one shots per target.",
+          created_at: "2022-01-05T02:04:42.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547973701316608",
+          author_id: "1468968670860759049",
+          text: "Southampton won 46% or the game's aerial duels. Southampton also won 51% and 45% of their passes they won.",
+          created_at: "2022-01-05T02:04:41.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547972078116865",
+          author_id: "1468968670860759049",
+          text: "Southampton won 24 aerial duels to Southampton's 24. Southampton also won 25 aerial Duels, while Southampton 19.95.",
+          created_at: "2022-01-05T02:04:41.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547970526269442",
+          author_id: "1468968670860759049",
+          text: "Southampton won 24 aerial duels to Southampton's 24. Southampton also won 25 aerial Duels, while Southampton 19.95.",
+          created_at: "2022-01-05T02:04:40.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547968815169537",
+          author_id: "1468968670860759049",
+          text: "Southampton attempted to make five challenges in the defensive third, while Tottenham attempted one challenges.",
+          created_at: "2022-01-05T02:04:40.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547966231203843",
+          author_id: "1468968670860759049",
+          text: "Southampton attempted 14 challenges resulting in six successful tackles, while Tottenham made nine challenges and two successful passes.",
+          created_at: "2022-01-05T02:04:39.000Z"
+        },
+        {
+          conversation_id: "1478547953937793025",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478547964360548353",
+          author_id: "1468968670860759049",
+          text: "Southampton attempted 14 challenges resulting in six successful tackles, while Tottenham made nine challenges and two successful passes.",
+          created_at: "2022-01-05T02:04:39.000Z"
+        }
+      ],
+      meta: {
+        newest_id: "1478547980550610944",
+        oldest_id: "1478547964360548353",
+        result_count: 10,
+        next_token: "b26v89c19zqg8o3fpe18plj4a76vkmwn1pwb5yheerwjh"
+      }
+    };
+    Brentford = {
+      data: [
+        {
+          created_at: "2022-01-05T02:20:38.000Z",
+          text: "Ivan Toney successfuly recieved two progressive passes, failed to register with a shot on target, successfully dribbled past an opponent on one occasions out of one attempts.",
+          id: "1478551988027670528",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:38.000Z",
+          text: "Ivan Toney played zero assists, while Frank Onyeka carried the ball into the opponent's box one times.",
+          id: "1478551986467487751",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:38.000Z",
+          text: "Ivan Toney, our man of the match, scored one goal to Ivon Tony, who finished with zero goals.",
+          id: "1478551984886239238",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:37.000Z",
+          text: "Brentford won 49% or the game's aerial duels. Brentfor also won 19 aerial Duels, fewer than any other player on the pitch (six), resulting in 46% winning passes.",
+          id: "1478551983191732227",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:37.000Z",
+          text: "Brentford attempted nine challenges in the defensive third, while Manchester City attempted one challenges.",
+          id: "1478551981476225028",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:36.000Z",
+          text: "Brentford attempted 16 challenges resulting in six successful tackles, while Manchester City made seven challenges and three successful passes.",
+          id: "1478551979253276672",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:36.000Z",
+          text: "Brentford attempted 16 challenges resulting in six successful tackles, while Manchester City made seven challenges and three successful passes.",
+          id: "1478551977625800708",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:35.000Z",
+          text: "Brentford were patient off the ball, allowing Manchester City an average of 11.76 touches each time they pressed. Manchester city allowed the Bees 2.18 touches per press, more than any other player on the pitch, while Brentfor allowed 3.65 touches for each opponent press.",
+          id: "1478551975935553540",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        },
+        {
+          created_at: "2022-01-05T02:20:35.000Z",
+          text: "Brentford attempted to make three challenges, while Manchester City attempted two challenges.",
+          id: "1478551974278799360",
+          in_reply_to_user_id: "1468968670860759049",
+          author_id: "1468968670860759049",
+          conversation_id: "1478551967697981442"
+        }
+      ],
+      meta: {
+        newest_id: "1478551988027670528",
+        oldest_id: "1478551974278799360",
+        result_count: 9
+      }
+    };
+    Everton = {
+      data: [
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:44.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556040165826567",
+          text: "Anthony Gordon played one key passes resulting in one shot, while Anthony Grant carried the ball into the box once. Gordon also played two key pass and one shots on target during the game.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:44.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556038295138310",
+          text: "Anthony Gordon, our man of the match, created some of his best chances of 1.0 (the second highest of anyone on the pitch) resulting in 0.4 expected goals.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:44.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556036659400714",
+          text: "Everton won 44% or the game's aerial duels. Evermonton also won 36% and 45% of their passes they won.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:43.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556035015229441",
+          text: "Everton won 18 aerial duels to Evertons's 20. Evernton also won 1718 aerial Duels and 20 aerial deels.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:43.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556033475923970",
+          text: "Everton won 18 aerial duels to Evertons's 20. Evernton also won 1718 aerial Duels and 20 aerial deels.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:42.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556031965970441",
+          text: "Everton attempted to make seven challenges in the defensive third, while Chelsea attempted four challenges.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:42.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556030296547331",
+          text: "Everton attempted 18 challenges resulting in 14 successful tackles, winning 11 tacklers. Chelsea attempted 14 challenges, completing 11 successful passes.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:42.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556028237238273",
+          text: "Everton attempted to make 18 challenges, resulting in 14 successful tackles. Chelsea attempted 14 challenges and 11 successfultacklings, while Chelsea made 14 challenge.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:41.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556026588778500",
+          text: "Everton gave their opponent an average of 7.91 touches each time they pressed. Chelsea allowed the Toffees 5.52 touches per press, considerably more than the 3.17 touches permitted by Evertons in Evermonton's last game.",
+          author_id: "1468968670860759049"
+        },
+        {
+          conversation_id: "1478556018493767680",
+          created_at: "2022-01-05T02:36:41.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          id: "1478556025007525897",
+          text: "Everton completed 34% of the passes they played long, compared with 44% from Evertons.",
+          author_id: "1468968670860759049"
+        }
+      ],
+      meta: {
+        newest_id: "1478556040165826567",
+        oldest_id: "1478556025007525897",
+        result_count: 10
+      }
+    };
+    Watford = {
+      data: [
+        {
+          created_at: "2022-01-05T03:24:10.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "TEAMmate of the ball, taking 81 touches to T-Aston Villa's 91.",
+          author_id: "1468968670860759049",
+          id: "1478567973849812992"
+        },
+        {
+          created_at: "2022-01-05T03:24:09.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Juraj Kucka attempted to make five challenges, resulting in three successful tackles. Imran Louza attempted five challenge, winning three tackled tackle.",
+          author_id: "1468968670860759049",
+          id: "1478567972201504770"
+        },
+        {
+          created_at: "2022-01-05T03:24:09.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Juraj Kucka attempted to make five challenges, resulting in three successful tackles. Imran Louza attempted five challenge, winning three tackled tackle.",
+          author_id: "1468968670860759049",
+          id: "1478567969886244866"
+        },
+        {
+          created_at: "2022-01-05T03:24:08.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "King won possession on six of those occasions, winning possession from one of the best chances of any player on the pitch. He also won five occassions (more than anyone else in a Watford shirt), winning the ball back on one ossuasion.",
+          author_id: "1468968670860759049",
+          id: "1478567968237920260"
+        },
+        {
+          created_at: "2022-01-05T03:24:08.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Juraj Kucka carried the ball into the opponent's box 114 times, while Ju Raj Kwina played one assist.",
+          author_id: "1468968670860759049",
+          id: "1478567966669164550"
+        },
+        {
+          created_at: "2022-01-05T03:24:07.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Joshua King successfuly recieved four progressive passes, carried the ball into the opponent's box one times and completed 1 successful adn't been patient.",
+          author_id: "1468968670860759049",
+          id: "1478567965050167298"
+        },
+        {
+          created_at: "2022-01-05T03:24:07.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Juraj Kucka played one assist, resulting in one assists.",
+          author_id: "1468968670860759049",
+          id: "1478567963494129665"
+        },
+        {
+          created_at: "2022-01-05T03:24:07.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Pablo Fornals successfuly completed 10 passes, while Pavel Wan-Bissaka completed 26 passes. The Toffees successfulY completed 13 passes and total of 26 pass completions.",
+          author_id: "1468968670860759049",
+          id: "1478567961925505026"
+        },
+        {
+          created_at: "2022-01-05T03:24:06.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Imran Louza made two interceptions, while Joshua King completed one passes into the final third.",
+          author_id: "1468968670860759049",
+          id: "1478567960230998017"
+        },
+        {
+          created_at: "2022-01-05T03:24:06.000Z",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478564163584733187",
+          text: "Joshua King found a teammate with 77% of his attempted passes (77%). Imran Louza, with 22% of her attempted pass (72%), was next most accurate passer in saa Manchester United shirt.",
+          author_id: "1468968670860759049",
+          id: "1478567958620348421"
+        }
+      ],
+      meta: {
+        newest_id: "1478567973849812992",
+        oldest_id: "1478567958620348421",
+        result_count: 10,
+        next_token: "b26v89c19zqg8o3fpe18pljpv1xu44bdx7rt75ymiya2l"
+      }
+    };
+    Burnley = {
+      data: [
+        {
+          author_id: "1468968670860759049",
+          id: "1478572053158674432",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Chris Wood carried the ball into the opponent's box one times, while Aaron Lennon carried two times.",
+          created_at: "2022-01-05T03:40:22.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572051531288577",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Chris Wood created one shots on target, while Aaron Lennon took two shots to target.",
+          created_at: "2022-01-05T03:40:22.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572049949990914",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Chris Wood played zero assists, while Aaron Lennon played two assists.",
+          created_at: "2022-01-05T03:40:21.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572048352006145",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Chris Wood scored zero goals to Chris wood's two, while only concedeing zero.",
+          created_at: "2022-01-05T03:40:21.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572046804267009",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Ashley Westwood, our man of the match, created some of his best chances of 0.3. He also played two key passes.",
+          created_at: "2022-01-05T03:40:21.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572045227241476",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Burnley attempted to make six challenges in the defensive third, while Manchester United attempted three challenges.",
+          created_at: "2022-01-05T03:40:20.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572043608145924",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Burnley attempted 17 challenges resulting in seven successful tackles, while Manchester United made eight challenges and four successful passes.",
+          created_at: "2022-01-05T03:40:20.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572041951494145",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Burnley attempted 17 challenges resulting in six challenges, while Manchester United attempted eight challenges. Manchester Utford attempted three challenges in the defensive third, more than any other player on the pitch.",
+          created_at: "2022-01-05T03:40:19.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572040294653955",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Burnley were patient off the ball, allowing Manchester Utd an average of 7.51 touches each time they pressed. Manchester United allowed the Clarets 3.41 touches per press, considerably more than the 3.6 touches permitted by Burnsley in Burnlet's last game.",
+          created_at: "2022-01-05T03:40:19.000Z"
+        },
+        {
+          author_id: "1468968670860759049",
+          id: "1478572038654681088",
+          in_reply_to_user_id: "1468968670860759049",
+          conversation_id: "1478572028538073089",
+          text: "Burnley played 66 successful long balls, while Burnsley completed 51 long ball. Burnbridge completed 59% of the passes they played long, compared with 49% from Burnford.",
+          created_at: "2022-01-05T03:40:19.000Z"
+        }
+      ],
+      meta: {
+        newest_id: "1478572053158674432",
+        oldest_id: "1478572038654681088",
+        result_count: 10,
+        next_token: "b26v89c19zqg8o3fpe18plk0fua2u8vqscwg2kh220vb1"
       }
     };
     tweets = {
@@ -6143,7 +6825,480 @@ var init_tweets_json = __esm({
           next_token: "b26v89c19zqg8o3fpe18pjfw60x7tpu67y937qp1118xp"
         }
       },
-      Chelsea
+      Chelsea,
+      Arsenal,
+      "Norwich City": {
+        data: [
+          {
+            author_id: "1468968670860759049",
+            id: "1478515770300768258",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Billy Gilmour carried the ball a combined 100 yards towards the opponent's goal, while getting two assists.",
+            created_at: "2022-01-04T23:56:43.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515768644050944",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Adam Idah successfuly recieved 10 progressive passes and reevated one progressive pass.",
+            created_at: "2022-01-04T23:56:43.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515766819713025",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Billy Gilmour played 13 successful long balls, while Billy Gilbert completed one. Billy Mcmou played one successful Long balls and received 385 assists.",
+            created_at: "2022-01-04T23:56:42.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515764562903043",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Billy Gilmour made six successful passes into the final third, while Billy Gillmund completed one passes in the the Final third.",
+            created_at: "2022-01-04T23:56:42.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515762683789317",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Harry Winks successfuly completed one passes, while Brandon Leek completed 57.",
+            created_at: "2022-01-04T23:56:41.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515760817491973",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Adam Idah played zero assists, while Christos Tzolis played two assists.",
+            created_at: "2022-01-04T23:56:41.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515759101923329",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Adam Idah scored zero goals to Christos Tzolis's two, while Christon Ostzoligi completed zero passes.",
+            created_at: "2022-01-04T23:56:41.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515757579440129",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Norwich City won 16 aerial duels to Norwich's 1568.",
+            created_at: "2022-01-04T23:56:40.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515755884978180",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Norwich City attempted to make four challenges in the defensive third, resulting in seven successful tackles. Norwich city attempted seven challenges, making seven unsuccessful tackled passes, while Norwich United made four tackle press.",
+            created_at: "2022-01-04T23:56:40.000Z"
+          },
+          {
+            author_id: "1468968670860759049",
+            id: "1478515754207170563",
+            in_reply_to_user_id: "1468968670860759049",
+            conversation_id: "1478511959150575623",
+            text: "Norwich city were also given a lot of time on the ball, taking an impressive 3.85 touches for each opponent press resulting in 3.9 touches to Crystal palace's 3..",
+            created_at: "2022-01-04T23:56:39.000Z"
+          }
+        ],
+        meta: {
+          newest_id: "1478515770300768258",
+          oldest_id: "1478515754207170563",
+          result_count: 10,
+          next_token: "b26v89c19zqg8o3fpe18pli7tve6d1xjnt70lx7ulxu2l"
+        }
+      },
+      "Manchester Utd": {
+        data: [
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:54.000Z",
+            text: "Pablo Fornals successfuly completed 44 passes, while Brandon Lee completed 55.",
+            conversation_id: "1478519820979159044",
+            id: "1478519840646307842"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:53.000Z",
+            text: "Luke Shaw played one assist, resulting in one assists, while Luke Scott completed 55 passes.",
+            conversation_id: "1478519820979159044",
+            id: "1478519839060807680"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:53.000Z",
+            text: "Luke Shaw created better chances while falling to defeat at the hands of Cristiano Ronaldo. The Gunners also had a good game, playing three key passes.",
+            conversation_id: "1478519820979159044",
+            id: "1478519837378949121"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:53.000Z",
+            text: "Manchester Utd won 24 aerial duels to Manchester United's 19. U also won 19 aerial Duels, while Manchester City completed zero aerial deels.",
+            conversation_id: "1478519820979159044",
+            id: "1478519835797733377"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:52.000Z",
+            text: "Manchester Utd were given a lot of time on the ball, taking an average of 7.51 touches each time the opponent pressed - Burnley took an Average of 3.41 touches per press.",
+            conversation_id: "1478519820979159044",
+            id: "1478519834140975104"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:52.000Z",
+            text: "Manchester United saw less of the ball, taking 623 touches to Burnley's 55. Manchester Utford also had less than Manchester City (642.0 touches per 90 minute), compared with Burnsley' 505.",
+            conversation_id: "1478519820979159044",
+            id: "1478519832479948803"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:51.000Z",
+            text: "Manchester Utd took six shots on target, while Burnley took three shots. UTC also took four67 shots to target and took 3 shots off target.",
+            conversation_id: "1478519820979159044",
+            id: "1478519830856806406"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:51.000Z",
+            text: "Manchester United found a teammate with 77% of Manchester Utford's 74%. Manchester University also had fewer chances of passing through the play, compared with only 79% from Burnley.",
+            conversation_id: "1478519820979159044",
+            id: "1478519829120311298"
+          },
+          {
+            author_id: "1468968670860759049",
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:12:51.000Z",
+            text: "Pablo Fornals successfuly completed 287 passes, while Brandon Wan-Bissaka completed 400 passes.",
+            conversation_id: "1478519820979159044",
+            id: "1478519827555921931"
+          }
+        ],
+        meta: {
+          newest_id: "1478519840646307842",
+          oldest_id: "1478519827555921931",
+          result_count: 9
+        }
+      },
+      Wolves,
+      "Leicester City": {
+        data: [
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:45:06.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478527930934435842",
+            id: "1478527945106984962",
+            text: "Leicester City attempted to make 17 challenges, while Liverpool attempted 17 challenge."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:45:06.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478527930934435842",
+            id: "1478527943374778376",
+            text: "Leicester were patient off the ball, allowing Leicester an average of 5.55 touches each time they pressed. Liverpool allowed Liverpool 3.31 touches per press, considerably more than any other player on the pitch (33 touches allowed by Leicester City)."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:45:05.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478527930934435842",
+            id: "1478527941180989440",
+            text: "Leicester City saw less of the ball, taking 537 touches to Leicester's 410."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:45:05.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478527930934435842",
+            id: "1478527939373416450",
+            text: "Leicester played 38 successful long balls, while Leicester completed 24 long ball. Leicester also completed 52% of the passes they played long, compared with 54% from Leicester."
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            created_at: "2022-01-05T00:45:04.000Z",
+            author_id: "1468968670860759049",
+            conversation_id: "1478527930934435842",
+            id: "1478527937704038400",
+            text: "Leicester played 38 successful long balls, while Leicester managed 24."
+          }
+        ],
+        meta: {
+          newest_id: "1478527945106984962",
+          oldest_id: "1478527937704038400",
+          result_count: 5
+        }
+      },
+      Brighton,
+      "Crystal Palace": {
+        data: [
+          {
+            id: "1478539909006864384",
+            text: "Jordan Ayew pressured the opponent 25 times, winning possession on nine of those occasions. He also won three tackles, resulting in zero wins.",
+            created_at: "2022-01-05T01:32:38.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539907253653506",
+            text: "Jordan Ayew successfully dribbled past an opponent on one occasions out of six attempts.",
+            created_at: "2022-01-05T01:32:38.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539905693364226",
+            text: "Jordan Ayew (30%) of his passes, carried the ball into the opponent's box seven times, and finished with an xA of 270 yards.",
+            created_at: "2022-01-05T01:32:38.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539903919169539",
+            text: "Jordan Ayew (30%) of his passes were played short, while Joachim Andersen carried the ball 270 yards towards the opponent's goal.",
+            created_at: "2022-01-05T01:32:37.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539902182739970",
+            text: "Christian Benteke successfuly completed 18 passes, while Christian Bteken completed 17 passes. Christian Benjamintek E successfuliated 11% of his attempted passes - 94%.",
+            created_at: "2022-01-05T01:32:37.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539900630749191",
+            text: "Jordan Ayew played three key passes, carried the ball into the opponent's box one times, while Christian Benteke carried it two times.",
+            created_at: "2022-01-05T01:32:36.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539898831446018",
+            text: "Jordan Ayew, our man of the match, created some of his best chances of 1.0 (the second highest of anyone on the pitch) resulting in 0.7 expected goals.",
+            created_at: "2022-01-05T01:32:36.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539897157869569",
+            text: "Christian Benteke took zero shots on target, while Christian Benedicte tallied zero assists. Christian Beeteka also took two shots to target and one assist in this game.",
+            created_at: "2022-01-05T01:32:36.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539895551442950",
+            text: "Crystal Palace played 92 successful long balls, while West Ham completed 42 long ball. Crystal palace also played 55 successful Long balls and only completed 73% of the passes they played long.",
+            created_at: "2022-01-05T01:32:35.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          },
+          {
+            id: "1478539893865426948",
+            text: "Crystal Palace had considerably more of the ball, taking 24.45 touches to Crystal City's 22. Crystal palace completed more passes into the final third (27 compared with 27) but made more successful passes onto the pitch (47 versus 47).",
+            created_at: "2022-01-05T01:32:35.000Z",
+            conversation_id: "1478539869479649285",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049"
+          }
+        ],
+        meta: {
+          newest_id: "1478539909006864384",
+          oldest_id: "1478539893865426948",
+          result_count: 10,
+          next_token: "b26v89c19zqg8o3fpe18plitksum5fqt00a5k91b5xbb1"
+        }
+      },
+      "Aston Villa": {
+        data: [
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543937782566914",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:39.000Z",
+            text: "Ollie Watkins successfuly recieved 11 progressive passes and reevated one progressive pass.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543936109092864",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:39.000Z",
+            text: "Jacob Ramsey made four successful passes into the final third, while Jacob Rama completed one passes in the the Final third.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543934104260616",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:38.000Z",
+            text: "Jacob Ramsey successfuly completed 47 passes, while Jacob Maher completed 1 passes. Jacob Ramis also had a great game, completing 94% of his passes with 02% of their passes in Serie A.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543932397166596",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:38.000Z",
+            text: "Harry Winks successfuly completed one passes, while Harry Kane completed 47.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543930564263953",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:37.000Z",
+            text: "Ollie Watkins failed to register one shot on target, registering only one shots on the ball into the opponent's box one times. Matty Cash carried the Ball into his box once, carrying the puck into a box of one once and one attempts later.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543928752316419",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:37.000Z",
+            text: "Ollie Watkins played no assists, while Ollies Wattingkins assisted one goal.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543926927704065",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:36.000Z",
+            text: "Ollie Watkins scored zero goals to Ollies Wattingkins' one, while scoring zero points.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543925027737605",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:36.000Z",
+            text: "Aston Villa attempted 12 challenges in the defensive third, while Chelsea attempted seven challenges. Aster Villa also attempted eight challenges during the offensive third.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543923391967233",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:36.000Z",
+            text: "Aston Villa made 11 successful tackles, winning eight tacklers. Chelsea also made eleven successful passes, resulting in 11 unsuccessful tackle.",
+            author_id: "1468968670860759049"
+          },
+          {
+            in_reply_to_user_id: "1468968670860759049",
+            id: "1478543921718378497",
+            conversation_id: "1478543907503886338",
+            created_at: "2022-01-05T01:48:35.000Z",
+            text: "Aston Villa made 11 successful tackles, winning eight tacklers. Chelsea also made eleven successful passes, resulting in 11 unsuccessful tackle.",
+            author_id: "1468968670860759049"
+          }
+        ],
+        meta: {
+          newest_id: "1478543937782566914",
+          oldest_id: "1478543921718378497",
+          result_count: 10,
+          next_token: "b26v89c19zqg8o3fpe18plj444p3wdfbht1699g6e0g3h"
+        }
+      },
+      Southampton,
+      Brentford,
+      Everton,
+      "Leeds United": {
+        data: [
+          {
+            created_at: "2022-01-05T02:52:46.000Z",
+            text: "Leeds United attempted 19 challenges resulting in seven successful tackles. Arsenal attempted 18 challenges, completing 10 successfultacklings, while Arsenal made 19 challenge.",
+            id: "1478560074369019909",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:46.000Z",
+            text: "Arsenal gave their opponent an average of 3.23 touches each time they pressed. Leeds United gave the ball an impressive 3.64 touches per press, more than any other player on the pitch (a combined 3.6 touches for each opponent press).",
+            id: "1478560072708022275",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:45.000Z",
+            text: "Leeds United saw less of the ball, taking 555 touches to Leeds's 444. Leeds U occupied the game for 442 touches.",
+            id: "1478560071152025601",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:45.000Z",
+            text: "Leeds United made more successful passes into the final third than any other Arsenal player (23), followed by Arsenal, who completed 20 passes onto the ball.",
+            id: "1478560069528793092",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:45.000Z",
+            text: "Leeds United pressed the opponent 35 times, while Leeds U pushed 34 times. Leeds also influenced four times and four attempts.",
+            id: "1478560067989422081",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:44.000Z",
+            text: "Leeds found a teammate with 77% of Leeds United's 79%. Leeds completed 56% of the passes they played long, compared with 57% from Leeds.",
+            id: "1478560066320191496",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          },
+          {
+            created_at: "2022-01-05T02:52:44.000Z",
+            text: "It was a dominant display by Tottenham, who completed 344 passes to Brighton's 285.",
+            id: "1478560064701087748",
+            in_reply_to_user_id: "1468968670860759049",
+            author_id: "1468968670860759049",
+            conversation_id: "1478560058061561860"
+          }
+        ],
+        meta: {
+          newest_id: "1478560074369019909",
+          oldest_id: "1478560064701087748",
+          result_count: 7
+        }
+      },
+      Watford,
+      Burnley
     };
   }
 });
@@ -6153,14 +7308,14 @@ var teamName_svelte_exports = {};
 __export(teamName_svelte_exports, {
   default: () => U5BteamNameu5D
 });
-var css5, U5BteamNameu5D;
+var css6, U5BteamNameu5D;
 var init_teamName_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
     init_index_a9a6e648();
     init_stores_fec2fa46();
     init_fb_utils();
     init_tweets_json();
-    css5 = {
+    css6 = {
       code: "a.tweets.svelte-17vfid9{color:var(--heading-color)}a.svelte-17vfid9:hover{background-color:yellow}",
       map: null
     };
@@ -6170,7 +7325,7 @@ var init_teamName_svelte = __esm({
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
       console.log("someJSON", tweets);
-      $$result.css.add(css5);
+      $$result.css.add(css6);
       teamName = $page.params.teamName;
       teamName = teams.find((d) => d.id == teamName).name;
       tweets$1 = tweets[teamName]["data"];
@@ -6190,18 +7345,18 @@ var init_teamName_svelte = __esm({
 // .svelte-kit/output/server/nodes/3.js
 var __exports4 = {};
 __export(__exports4, {
-  css: () => css6,
+  css: () => css7,
   entry: () => entry4,
   js: () => js4,
   module: () => teamName_svelte_exports
 });
-var entry4, js4, css6;
+var entry4, js4, css7;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-c17afd8e.js";
-    js4 = ["pages/team/_teamName_.svelte-c17afd8e.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-27109c40.js"];
-    css6 = ["assets/pages/team/_teamName_.svelte-14cf65f9.css"];
+    entry4 = "pages/team/_teamName_.svelte-5d413f43.js";
+    js4 = ["pages/team/_teamName_.svelte-5d413f43.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-91ff877b.js"];
+    css7 = ["assets/pages/team/_teamName_.svelte-14cf65f9.css"];
   }
 });
 
@@ -7683,7 +8838,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-fde16c57.js", "js": ["start-fde16c57.js", "chunks/vendor-d72d44f7.js"], "css": ["assets/start-61d1577b.css"] },
+    entry: { "file": "start-494a3196.js", "js": ["start-494a3196.js", "chunks/vendor-d72d44f7.js"], "css": ["assets/start-61d1577b.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
