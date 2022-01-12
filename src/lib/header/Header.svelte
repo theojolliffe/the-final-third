@@ -1,86 +1,29 @@
-<script>
-	import Header from '$lib/header/Header.svelte';
-    import {page} from '$app/stores'
-	import { teams } from '../fb-utils'
+<div id="top" class="headline">
+    <div class="top-50">
+        <a sveltekit:prefetch href="/">
+            <div class="text-semi">
+                The Numbers Game
+            </div>
+        </a>
+        <div class="div-block-107">
+            <div class="div-block-109">
+                <a href="https://twitter.com/_Numbers_Game" target="_blank" class="text-regular bold info-link bluehighlight">Twitter</a>
+                <a href="mailto:seeablenews@gmail.com" target="_blank" class="text-regular bold info-link pinkhighlight">Email</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="text-regular">
+            This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="source" href="https://fbref.com/en/">FBREF</a>, the original data source, before sharing content.
+            <br>
+        </div>
+    </div>
+</div>
 
-    import * as someJSON from '../tweets.json';
 
-    console.log('someJSON', someJSON)
-
-    let data = someJSON.default
-    data = Object.keys(data).map(e => {
-        // let objt = {};
-        // objt[e] = data[e];
-        return data[e]
-    })
-
-
-    $: teamName = $page.params.teamName
-    $: teamName = teams.find(d => d.id==teamName).name
-    $: console.log("teamName", teamName)
-
-    $: tweets = data.find(e => e.misc.team == teamName).data
-
-	$: tweets = tweets.sort(function(a, b){
-        return parseInt(a['id']) - parseInt(b['id'])
-    });
-	$: console.log("TWEETS", tweets)
-
-</script>
-
-<body class="body2">
-	<Header />
-	<div style="height: 50px;"></div>
-	<h2>
-        Latest {teamName} <br> match report
-    </h2>
-	<div style="height: 50px;"></div>
-	<div id="tweet-cont" style="width: 640px; margin:0 auto;">
-		{#each tweets as { id, text }, i}
-			<div>
-				<a class="tweets" href={"https://twitter.com/_Numbers_Game/status/"+id} target="_blank">{text}</a>
-			</div>
-			<br>
-		{/each}
-	</div>
-</body>
-
-<!-- <div>
-	{#if loaded&teamLoad&topicsLoad}
-		<div id="sf">
-			<div style="width: 640px; margin:0 auto;">
-				<div>
-					<div style="width: 640px; margin: 50px auto;">
-						<h1>Latest {teamName} match report</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<main>
-			{@html results(data, topics)}
-			<hr style="width: 40%; margin: 60px auto 30px auto;"/>
-		</main>
-	{/if}
-</div> -->
 
 <style>
-    a.tweets {
-        color: var(--heading-color);
-		line-height: initial;
-		font-size: large;
-    }
-    /* a:-webkit-any-link {
-        color: var(--accent-color);
-        cursor: pointer;
-        text-decoration: underline;
-    } */
-    a:hover {
-        background-color: yellow;
-    }
-
-
-
-	.body2 {
+    .body2 {
         font-family: system-ui;
         color: #000;
         font-size: 16px;
@@ -144,7 +87,7 @@
     }
     h2 {
         font-family: system-ui;
-        font-size: 8vw;
+        font-size: 12vw;
         margin: auto;
         line-height: 0.85;
     }

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-494a3196.js",
+    "file": "start-22a162d6.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -35,38 +35,41 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-08fece3d.js",
+    "file": "pages/index.svelte-0553014e.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-d72d44f7.js",
-      "_fb-utils-91ff877b.js"
+      "_tweets-74065d1e.js"
     ],
     "css": [
-      "assets/pages/index.svelte-acb55591.css"
+      "assets/pages/index.svelte-4de5c469.css"
     ]
   },
   "src/routes/team/[teamName].svelte": {
-    "file": "pages/team/_teamName_.svelte-5d413f43.js",
+    "file": "pages/team/_teamName_.svelte-b42c51c7.js",
     "src": "src/routes/team/[teamName].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-d72d44f7.js",
-      "_fb-utils-91ff877b.js"
+      "_tweets-74065d1e.js"
     ],
     "css": [
-      "assets/pages/team/_teamName_.svelte-14cf65f9.css"
+      "assets/pages/team/_teamName_.svelte-384a8127.css"
     ]
   },
   "_vendor-d72d44f7.js": {
     "file": "chunks/vendor-d72d44f7.js"
   },
-  "_fb-utils-91ff877b.js": {
-    "file": "chunks/fb-utils-91ff877b.js",
+  "_tweets-74065d1e.js": {
+    "file": "chunks/tweets-74065d1e.js",
     "imports": [
       "_vendor-d72d44f7.js"
+    ],
+    "css": [
+      "assets/tweets-8c07d15f.css"
     ]
   }
 }

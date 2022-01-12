@@ -5491,7 +5491,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css8) => css8.code).join("\n"),
+          code: Array.from(result.css).map((css9) => css9.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5605,11 +5605,25 @@ var init__2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/stores-fec2fa46.js
-var getStores, page;
-var init_stores_fec2fa46 = __esm({
-  ".svelte-kit/output/server/chunks/stores-fec2fa46.js"() {
+// .svelte-kit/output/server/chunks/stores-d75da388.js
+var css4, Header, getStores, page;
+var init_stores_d75da388 = __esm({
+  ".svelte-kit/output/server/chunks/stores-d75da388.js"() {
     init_index_a9a6e648();
+    css4 = {
+      code: ".headline.svelte-epo8os{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-epo8os{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-epo8os{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-epo8os{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-epo8os{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-epo8os{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-epo8os{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-epo8os{background-color:#ffc2fd}.source.svelte-epo8os{text-decoration:underline}a.svelte-epo8os{text-decoration:auto;color:black}",
+      map: null
+    };
+    Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css4);
+      return `<div id="${"top"}" class="${"headline svelte-epo8os"}"><div class="${"top-50 svelte-epo8os"}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-epo8os"}"><div class="${"text-semi svelte-epo8os"}">The Numbers Game
+            </div></a>
+        <div class="${"div-block-107 svelte-epo8os"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-epo8os"}">Twitter</a>
+                <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-epo8os"}">Email</a></div></div></div>
+    <div class="${"flex"}"><div class="${"text-regular svelte-epo8os"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-epo8os"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
+            <br></div></div>
+</div>`;
+    });
     getStores = () => {
       const stores = getContext("__svelte__");
       return {
@@ -5662,11 +5676,7992 @@ var init_fb_utils = __esm({
       { id: "aston-villa", name: "Aston Villa" },
       { id: "crystal-palace", name: "Crystal Palace" },
       { id: "brighton", name: "Brighton" },
-      { id: "leicester", name: "Leicester" },
+      { id: "leicester", name: "Leicester City" },
       { id: "wolves", name: "Wolves" },
       { id: "man-utd", name: "Manchester Utd" },
-      { id: "norwich", name: "Norwich" }
+      { id: "norwich", name: "Norwich City" }
     ];
+  }
+});
+
+// .svelte-kit/output/server/chunks/tweets-222e5605.js
+var tweets, someJSON;
+var init_tweets_222e5605 = __esm({
+  ".svelte-kit/output/server/chunks/tweets-222e5605.js"() {
+    tweets = {
+      "1": {
+        data: [
+          {
+            text: "Tottenham created far more than Watford, finding chances worth 2.1 expected goals to Watford's 0.3.",
+            id: "1481017750197874694"
+          },
+          {
+            text: "It was a dominant display by Tottenham, who completed an impressive 672 passes to Watford's 182. This season Tottenham have averaged 427.0 completed passes per 90 minute.",
+            id: "1481017751577706498"
+          },
+          {
+            text: "Tottenham took nine shots on target, considerably more than their average per 90 minutes this season (4.6).",
+            id: "1481017753121267712"
+          },
+          {
+            text: "Tottenham applied more pressure high up the pitch, pressing 45 times in the final third while Watford pressed 13 times in the final third. In their last game (against Southampton) Spurs pressed 45 times in the final third.",
+            id: "1481017754580926470"
+          },
+          {
+            text: "Tottenham were aggressive out of possession, making five tackles in the final third compared with one in their last game (against Southampton). This season Spurs have averaged 2.5 tackles in the final third per 90 minutes.",
+            id: "1481017756157947917"
+          },
+          {
+            text: "Tottenham succesffuly played an impressive 66 passes into the final third, compared with 10 from Watford. This season Spurs have averaged 32.0 completed passes into the final per 90 minutes.",
+            id: "1481017757722460164"
+          },
+          {
+            text: "Tottenham were given a lot of time on the ball, taking an average of 8.7 touches each time the opponent pressed - Watford took an average of 2.6 touches per press. This season, Tottenham have averaged (4.3 touches for each opponent press.",
+            id: "1481017759270162436"
+          },
+          {
+            text: "Tottenham attempted 17 challenges resulting in 12 successful tackles. In their last game (against Southampton) Tottenham attempted nine challenges.",
+            id: "1481017760830439427"
+          },
+          {
+            text: "Tottenham attempted three challenges in the defensive third. In their last game (against Southampton) Spurs made one challenges in the defensive third, while throughout the season they've made three challenges in the defensive third.",
+            id: "1481017762457788418"
+          },
+          {
+            text: "Eric Dier successfuly completed 88 passes - more than any other player on the pitch.",
+            id: "1481017764038983683"
+          },
+          {
+            text: "Ben Davies completed 93% of his passes - the second highest rate of any player on the pitch. Eric Dier completed 93% of his attempted passes - the second highest rate of any player on the pitch.",
+            id: "1481017765540638723"
+          },
+          {
+            text: "Eric Dier passed the ball a combined 847 yards towards the opponents goal - more than any other player on the pitch. Eric Dier also played 13 passes into the final third.",
+            id: "1481017767201488905"
+          },
+          {
+            text: "Eric Dier played more successful long balls than any other player on the pitch (22), followed by Davinson Sanchez, who completed 12.",
+            id: "1481021543991980034"
+          },
+          {
+            text: "Ben Davies carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 476 yards), while Eric Dier carried the ball a combined 441 yards towards the opponent's goal.",
+            id: "1481021545497694210"
+          },
+          {
+            text: "Ben Davies carried the ball into the final third eight times (more than any other player on the pitch), while Davinson Sanchez made four carries into the final third.",
+            id: "1481021547292901378"
+          },
+          {
+            text: "Ben Davies pressed the opponent 15 times - more than any other player in a Tottenham shirt.",
+            id: "1481021548983201794"
+          },
+          {
+            text: "Ben Davies attempted to make three challenges, resulting in three attempted passes.",
+            id: "1481021550535094276"
+          },
+          {
+            text: "Ben Davies made more clearances (six) than any other Tottenham player, while Davinson Sanchez made five clearances.",
+            id: "1481021552162484225"
+          },
+          {
+            text: "Davinson Sanchez won seven aerial duels (more than any other player on the pitch), winning seven aerial duels (more than any other player on the pitch). Ben Davies also won six aerial duels and seven aerial duels.",
+            id: "1481021555253465091"
+          }
+        ],
+        misc: {
+          story_id: 1,
+          team: "Tottenham",
+          opponent: "Watford",
+          result: [
+            0,
+            1
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "Tottenham",
+                "Attack_xG",
+                2.1
+              ],
+              [
+                "Watford",
+                "Attack_xG",
+                0.3
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Passing_TotalSucc",
+                672
+              ],
+              [
+                "Watford",
+                "Passing_TotalSucc",
+                182
+              ],
+              [
+                "Tottenham",
+                "Passing_TotalSucc!s",
+                426.94
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Attack_SoT",
+                9
+              ],
+              [
+                "Tottenham",
+                "Attack_SoT!s",
+                4.61
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Attack_PressFinal3rd",
+                45
+              ],
+              [
+                "Watford",
+                "Attack_PressFinal3rd",
+                13
+              ],
+              [
+                "Tottenham",
+                "Attack_PressFinal3rd!p-Southampton",
+                29
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Attack_TacklesFinal3rd",
+                5
+              ],
+              [
+                "Tottenham",
+                "Attack_TacklesFinal3rd!p-Southampton",
+                1
+              ],
+              [
+                "Tottenham",
+                "Attack_TacklesFinal3rd!s",
+                2.5
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Passing_PassesFinal3rd",
+                66
+              ],
+              [
+                "Watford",
+                "Passing_PassesFinal3rd",
+                10
+              ],
+              [
+                "Tottenham",
+                "Passing_PassesFinal3rd!s",
+                32.22
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Possession_TchPPressTakenRatio",
+                8.71
+              ],
+              [
+                "Watford",
+                "Possession_TchPPressTakenRatio",
+                2.64
+              ],
+              [
+                "Tottenham",
+                "Possession_TchPPressTakenRatio!s",
+                4.35
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Defence_Tackles",
+                17
+              ],
+              [
+                "Tottenham",
+                "Defence_Tackles!p-Southampton",
+                9
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesSucc",
+                12
+              ]
+            ],
+            [
+              [
+                "Tottenham",
+                "Defence_TacklesSucc!p-Southampton",
+                2
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesDef3rd",
+                3
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesDef3rd!p-Southampton",
+                1
+              ]
+            ],
+            [
+              [
+                "Eric Dier - Tottenham",
+                "Passing_TotalSucc",
+                88
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_TotalSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Passing_TotalPerc",
+                92.9
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Passing_TotalPerc!r",
+                1
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_TotalPerc",
+                92.6
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_TotalPerc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Eric Dier - Tottenham",
+                "Passing_PassesFinal3rd",
+                13
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_PassesPrgDist",
+                847
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_PassesPrgDist!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Eric Dier - Tottenham",
+                "Passing_LongSucc",
+                22
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Passing_LongSucc!r",
+                1
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Passing_LongSucc",
+                12
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Passing_LongSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Possession_CarriesPrgDist",
+                476
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Possession_CarriesPrgDist!r",
+                1
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Possession_CarriesPrgDist",
+                441
+              ],
+              [
+                "Eric Dier - Tottenham",
+                "Possession_CarriesPrgDist!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Possession_CarriesFinal3rd",
+                8
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Possession_CarriesFinal3rd",
+                4
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Possession_CarriesFinal3rd!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Press",
+                15
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Press!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Tackles",
+                3
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Tackles!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Clearances",
+                6
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Defence_Clearances!tr",
+                1
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Defence_Clearances",
+                5
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Defence_Clearances!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Ben Davies - Tottenham",
+                "Defence_AerialSucc",
+                6
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Defence_AerialSucc",
+                7
+              ],
+              [
+                "Davinson Sanchez - Tottenham",
+                "Defence_AerialSucc!r",
+                1
+              ],
+              [
+                "Ben Davies - Tottenham",
+                "Defence_AerialSucc!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "2": {
+        data: [
+          {
+            text: "Liverpool were given a lot of time on the ball, taking an average of 74% of the passes they played short compared with 81% from Chelsea. This season the Reds have averaged 83% of their completed passes were played short compared with 83% in the last game.",
+            id: "1481022058997989380"
+          },
+          {
+            text: "Liverpool took five shots on target, up from three in their last game against Leicester.",
+            id: "1481022060734423048"
+          },
+          {
+            text: "Liverpool were given an average of 4.4 touches each time the opponent pressed - Chelsea took an average of 4.5 touches per press.",
+            id: "1481022062433116171"
+          },
+          {
+            text: "Liverpool gave their opponent an average of 4.5 touches each time they pressed. Chelsea allowed the Reds 4.4 touches per press, considerably more than the 3.3 touches permitted by Leicester in Liverpool's last game.",
+            id: "1481022064089870341"
+          },
+          {
+            text: "Liverpool made nine successful tackles in this match, similar to the 9.8 successful tackles they've averaged per 90 minutes this season.",
+            id: "1481022065843093508"
+          },
+          {
+            text: "Liverpool attempted six challenges in the defensive third. In their last game (against Leicester) the Reds attempted five challenges in the defensive third, while throughout the season they've averaged 5.2 per 90 minutes.",
+            id: "1481022067466248194"
+          },
+          {
+            text: "Liverpool won an impressive 21 aerial duels to Chelsea's nine. In their last game (against Leicester) the Reds won 18 aerial duels and have averaged 16.0 per 90 minutes this season.",
+            id: "1481025844294389764"
+          },
+          {
+            text: "Liverpool won an impressive 70% or the game's aerial duels. In their last game they won 43% and across the season they've won 53%.",
+            id: "1481025846278242317"
+          },
+          {
+            text: "Sadio Mane, our man of the match, created some of the best chances of the game - tallying an xA of 0.2 (more than any other Liverpool player) resulting in 0.2 (more than any other Liverpool player).",
+            id: "1481025847922511872"
+          },
+          {
+            text: "Sadio Mane took two shots on target, while carried the ball into the box one times.",
+            id: "1481025850124472324"
+          },
+          {
+            text: "Trent Alexander-Arnold successfuly completed 45 passes (more than any other Liverpool player), while Fabinho completed 42 passes.",
+            id: "1481025851827408898"
+          },
+          {
+            text: "Trent Alexander-Arnold passed the ball a combined 582 yards towards the opponents goal - more than any other player on the pitch. Trent Alexander-Arnold also played more successful long balls than any other Liverpool player.",
+            id: "1481025853526102021"
+          },
+          {
+            text: "Sadio Mane successfully dribbled past an opponent on two occasions out of two attempts - more than any other Liverpool player. He carried the ball into the final third 1 times.",
+            id: "1481025855799312385"
+          },
+          {
+            text: "Sadio Mane pressed the opponent 29 times (more than any other player on the pitch), winning possession on six occassions.",
+            id: "1481025857451868161"
+          },
+          {
+            text: "Trent Alexander-Arnold made five interceptions - more than any other Liverpool player.",
+            id: "1481025859058343939"
+          }
+        ],
+        misc: {
+          story_id: 2,
+          team: "Liverpool",
+          opponent: "Chelsea",
+          result: [
+            2,
+            2
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Liverpool",
+                "Passing_TotalPerc",
+                74.4
+              ],
+              [
+                "Chelsea",
+                "Passing_TotalPerc",
+                80.6
+              ],
+              [
+                "Liverpool",
+                "Passing_TotalPerc!s",
+                82.9
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Attack_SoT",
+                5
+              ],
+              [
+                "Liverpool",
+                "Attack_SoT!p-Leicester City",
+                3
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Possession_TchPPressTakenRatio",
+                4.39
+              ],
+              [
+                "Chelsea",
+                "Possession_TchPPressTakenRatio",
+                4.49
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Possession_TchPPressGivenRatio",
+                4.49
+              ],
+              [
+                "Chelsea",
+                "Possession_TchPPressGivenRatio",
+                4.39
+              ],
+              [
+                "Liverpool",
+                "Possession_TchPPressGivenRatio!p-Leicester City",
+                3.27
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Defence_TacklesSucc",
+                9
+              ],
+              [
+                "Liverpool",
+                "Defence_TacklesSucc!s",
+                9.85
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Defence_TacklesDef3rd",
+                6
+              ],
+              [
+                "Liverpool",
+                "Defence_TacklesDef3rd!p-Leicester City",
+                5
+              ],
+              [
+                "Liverpool",
+                "Defence_TacklesDef3rd!s",
+                5.2
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Defence_AerialSucc",
+                21
+              ],
+              [
+                "Chelsea",
+                "Defence_AerialSucc",
+                9
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialSucc!p-Leicester City",
+                18
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialSucc!s",
+                15.85
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Defence_AerialPerc",
+                70
+              ],
+              [
+                "Chelsea",
+                "Defence_AerialPerc",
+                30
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialPerc!p-Leicester City",
+                42.9
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialPerc!s",
+                53.1
+              ]
+            ],
+            [
+              [
+                "Sadio Mane - Liverpool",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Attack_xA!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Sadio Mane - Liverpool",
+                "Attack_KP",
+                1
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Attack_CarriesPA",
+                1
+              ]
+            ],
+            [
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_TotalSucc",
+                45
+              ],
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_TotalSucc!tr",
+                1
+              ],
+              [
+                "Fabinho - Liverpool",
+                "Passing_TotalSucc",
+                42
+              ],
+              [
+                "Fabinho - Liverpool",
+                "Passing_TotalSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_PassesPrgDist",
+                582
+              ],
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_PassesPrgDist!r",
+                1
+              ],
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_LongSucc",
+                9
+              ],
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Passing_LongSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Sadio Mane - Liverpool",
+                "Possession_CarriesFinal3rd",
+                1
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Possession_DrbSucc",
+                2
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Possession_DrbSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Sadio Mane - Liverpool",
+                "Defence_Press",
+                29
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Defence_Press!r",
+                1
+              ],
+              [
+                "Sadio Mane - Liverpool",
+                "Defence_PressSucc",
+                6
+              ]
+            ],
+            [
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Trent Alexander-Arnold - Liverpool",
+                "Defence_Int!tr",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "3": {
+        data: [
+          {
+            text: "Crystal Palace found a teammate with 83% of his attempted passes (83%). West Ham completed 74% of their passes.",
+            id: "1481026445279440904"
+          },
+          {
+            text: "West Ham were patient out of possession, making only five tackles in the final third Crystal Palace's six. This season the Hammers have averaged 2.5 tackles in the final third per 90 minutes.",
+            id: "1481026446864830470"
+          },
+          {
+            text: "West Ham succesffuly played 27 passes into the final third, considerably more than the 26 they played in their last game (against Watford). This season the Hammers have averaged 26.0 successsful passes into the final third per 90 minutes.",
+            id: "1481026448626491392"
+          },
+          {
+            text: "West Ham gave their opponent an average of 4.8 touches each time they pressed.",
+            id: "1481026450375548929"
+          },
+          {
+            text: "Crystal Palace allowed the Hammers 3.6 touches per press, considerably less than the 4.3 touches permitted by Watford in West Ham's last game. This season they've allowed the Hammers 4.3 touches per press..",
+            id: "1481030227086217222"
+          },
+          {
+            text: "West Ham attempted 24 challenges in this game, considerably more than the 18 they made during their last game (against Watford). This season they have averaged 17.0 challenges per 90 minutes.",
+            id: "1481030228780724227"
+          },
+          {
+            text: "West Ham attempted 11 challenges in the defensive third, considerably more than the seven made by Crystal Palace. In their last game (against Watford) the Hammers attempted seven challenges in the defensive third, while throughout the season they've averaged 8.4 per 90 minutes.",
+            id: "1481030230500380680"
+          },
+          {
+            text: "West Ham won 42% or the game's aerial duels. In their last game they won 42% and across the season they've won 42%.",
+            id: "1481030232215900160"
+          },
+          {
+            text: "Vladimir Coufal, our man of the match, made two successful passes into the final third and carried the ball into the box one times.",
+            id: "1481030233809735685"
+          },
+          {
+            text: "Declan Rice scored one assist to Declan Rice's one, while creating 0.2 expected goals.",
+            id: "1481030235424440324"
+          },
+          {
+            text: "Declan Rice successfuly completed 41 passes - the second most of any West Ham player.",
+            id: "1481030237890646019"
+          },
+          {
+            text: "Declan Rice had a great game, completing 91% of his passes into the final third - the highest rate of any West Ham player. He also played 8 passes into the final third, the highest pass completion rate of any West Ham player.",
+            id: "1481030239664943106"
+          },
+          {
+            text: "Vladimir Coufal made 357 yards worth of progressive passes, while Declan Rice successfully passed the ball 229 yards towards the opponent's goal.",
+            id: "1481030241829236736"
+          },
+          {
+            text: "Vladimir Coufal played more successful long balls than any other West Ham player (five), while Vladimir Coufal completed five long balls.",
+            id: "1481030243544707074"
+          },
+          {
+            text: "Declan Rice carried the ball farther towards the opponent's goal than any other player in a West Ham shirt (a combined 165 yards), while Vladimir Coufal carried the ball a combined 126 yards towards the opponent's goal.",
+            id: "1481030245113372676"
+          },
+          {
+            text: "Vladimir Coufal carried the ball into the final third four times (more than any other West Ham player), while Vladimir Coufal made four carries into the final third.",
+            id: "1481030246929420293"
+          },
+          {
+            text: "Vladimir Coufal attempted to make five challenges, resulting in two successful tackles.",
+            id: "1481030248603000836"
+          },
+          {
+            text: "Vladimir Coufal made more interceptions (five) than any other West Ham player, while Declan Rice made two.",
+            id: "1481034025380810756"
+          }
+        ],
+        misc: {
+          story_id: 3,
+          team: "West Ham",
+          opponent: "Crystal Palace",
+          result: [
+            2,
+            3
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "West Ham",
+                "Passing_TotalPerc",
+                73.6
+              ],
+              [
+                "Crystal Palace",
+                "Passing_TotalPerc",
+                82.8
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Attack_TacklesFinal3rd",
+                5
+              ],
+              [
+                "Crystal Palace",
+                "Attack_TacklesFinal3rd",
+                6
+              ],
+              [
+                "West Ham",
+                "Attack_TacklesFinal3rd!s",
+                2.45
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Passing_PassesFinal3rd",
+                27
+              ],
+              [
+                "West Ham",
+                "Passing_PassesFinal3rd!p-Watford",
+                26
+              ],
+              [
+                "West Ham",
+                "Passing_PassesFinal3rd!s",
+                26.45
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Possession_TchPPressGivenRatio",
+                4.83
+              ],
+              [
+                "Crystal Palace",
+                "Possession_TchPPressGivenRatio",
+                3.64
+              ],
+              [
+                "West Ham",
+                "Possession_TchPPressGivenRatio!p-Watford",
+                3.23
+              ],
+              [
+                "West Ham",
+                "Possession_TchPPressGivenRatio!s",
+                4.31
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Defence_Tackles",
+                24
+              ],
+              [
+                "Crystal Palace",
+                "Defence_Tackles",
+                18
+              ],
+              [
+                "West Ham",
+                "Defence_Tackles!p-Watford",
+                22
+              ],
+              [
+                "West Ham",
+                "Defence_Tackles!s",
+                16.9
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Defence_TacklesDef3rd",
+                11
+              ],
+              [
+                "Crystal Palace",
+                "Defence_TacklesDef3rd",
+                7
+              ],
+              [
+                "West Ham",
+                "Defence_TacklesDef3rd!p-Watford",
+                7
+              ],
+              [
+                "West Ham",
+                "Defence_TacklesDef3rd!s",
+                8.45
+              ]
+            ],
+            [
+              [
+                "West Ham",
+                "Defence_AerialPerc",
+                42.4
+              ],
+              [
+                "West Ham",
+                "Defence_AerialPerc!p-Watford",
+                42
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Attack_CarriesPA",
+                2
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Attack_CarriesPA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Declan Rice - West Ham",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Attack_Assist",
+                1
+              ]
+            ],
+            [
+              [
+                "Declan Rice - West Ham",
+                "Passing_TotalSucc",
+                41
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_TotalSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Declan Rice - West Ham",
+                "Passing_TotalPerc",
+                91.1
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_TotalPerc!tr",
+                1
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_PassesFinal3rd",
+                8
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_PassesFinal3rd!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Passing_PassesPrgDist",
+                357
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Passing_PassesPrgDist!tr",
+                1
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_PassesPrgDist",
+                229
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Passing_PassesPrgDist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Passing_LongSucc",
+                5
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Passing_LongSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Possession_CarriesPrgDist",
+                126
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Possession_CarriesPrgDist",
+                165
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Possession_CarriesPrgDist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Possession_CarriesFinal3rd",
+                4
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Possession_CarriesFinal3rd!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Defence_TacklesSucc",
+                2
+              ]
+            ],
+            [
+              [
+                "Vladimir Coufal - West Ham",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Defence_Int!r",
+                1
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Defence_Int",
+                2
+              ],
+              [
+                "Vladimir Coufal - West Ham",
+                "Defence_Clearances",
+                7
+              ],
+              [
+                "Declan Rice - West Ham",
+                "Defence_Int!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "4": {
+        data: [
+          {
+            text: "It was a dominant display by Manchester City, who completed 582 passes to Arsenal's 192.",
+            id: "1481034601367851012"
+          },
+          {
+            text: "Manchester City were aggressive out of possession, making six tackles in the final third compared with two in their last game (against Brentford). This season City have averaged 2.6 tackles in the final third per 90 minutes.",
+            id: "1481034602940702720"
+          },
+          {
+            text: "It was a dominant display by Manchester City, who completed an impressive 760 touches to Arsenal's 363.",
+            id: "1481034604719087619"
+          },
+          {
+            text: "Manchester City were given a lot of time on the ball, taking an average of 9.2 touches each time the opponent pressed - Arsenal took an average of 1.8 touches per press. This season, Manchester City have averaged (7.5 touches for each opponent press.",
+            id: "1481034606363222016"
+          },
+          {
+            text: "Manchester City attempted 10 challenges resulting in nine successful tackles. In their last game (against Brentford) Manchester City attempted seven challenges.",
+            id: "1481034608003235844"
+          },
+          {
+            text: "Manchester City attempted three challenges in the defensive third. In their last game (against Brentford) City made one challenges in the defensive third, while throughout the season they've averaged 8.6 per 90 minutes.",
+            id: "1481034609655795714"
+          },
+          {
+            text: "Manchester City won an impressive 21 aerial duels to Arsenal's 10. This season Manchester City have averaged 13.0 per 90 minutes.",
+            id: "1481034611417362432"
+          },
+          {
+            text: "Manchester City won an impressive 68% or the game's aerial duels. In their last game they won 54% and across the season they've won 53%.",
+            id: "1481034614059585537"
+          },
+          {
+            text: "Raheem Sterling, our man of the match, created some of the best chances of the game - tallying an xA of 0.2 (more than anyone else on the pitch) resulting in 0.2 (more than anyone else on the pitch) - more than anyone else on the pitch.",
+            id: "1481034615842394115"
+          },
+          {
+            text: "Raheem Sterling played no successful passes - the second most of any Manchester City player.",
+            id: "1481034618040201221"
+          },
+          {
+            text: "Rodri found a teammate with 93% of his attempted passes, the second highest pass completion rate of any Manchester City player.",
+            id: "1481034619717836806"
+          },
+          {
+            text: "Rodri played more successful long balls than any other player on the pitch (11), followed by Aymeric Laporte, who completed 14.",
+            id: "1481034621274009609"
+          },
+          {
+            text: "Rahee Sterling attempted to play three challenges (more than any other player on the pitch) and completed two successful dribbles.",
+            id: "1481038398118899719"
+          },
+          {
+            text: "Rodri pressed the opponent 13 times - more than any other player in a Manchester City shirt. Raheem Sterling pressed 12 times.",
+            id: "1481038399930777607"
+          },
+          {
+            text: "Raheem Sterling pressed the opponent 4 times, winning possession on four occassions.",
+            id: "1481038401541394439"
+          },
+          {
+            text: "Raheem Sterling attempted to make more challenges than any other Manchester City player (challanges), resulting in three successful tackles (more than any other player on the pitch). Rodri attempted three challenges, completing three successful tackles.",
+            id: "1481038403537879043"
+          },
+          {
+            text: "Raheem Sterling made one interceptions - the second most of any Manchester City player.",
+            id: "1481038405341528065"
+          },
+          {
+            text: "Rodri made five clearances - more than any other player on the pitch.",
+            id: "1481038407526670337"
+          }
+        ],
+        misc: {
+          story_id: 4,
+          team: "Manchester City",
+          opponent: "Arsenal",
+          result: [
+            1,
+            2
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "Manchester City",
+                "Passing_TotalSucc",
+                582
+              ],
+              [
+                "Arsenal",
+                "Passing_TotalSucc",
+                192
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Attack_TacklesFinal3rd",
+                6
+              ],
+              [
+                "Manchester City",
+                "Attack_TacklesFinal3rd!p-Brentford",
+                2
+              ],
+              [
+                "Manchester City",
+                "Attack_TacklesFinal3rd!s",
+                2.57
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Possession_Touches",
+                760
+              ],
+              [
+                "Arsenal",
+                "Possession_Touches",
+                363
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Possession_TchPPressTakenRatio",
+                9.16
+              ],
+              [
+                "Arsenal",
+                "Possession_TchPPressTakenRatio",
+                1.8
+              ],
+              [
+                "Manchester City",
+                "Possession_TchPPressTakenRatio!s",
+                7.5
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Defence_Tackles",
+                10
+              ],
+              [
+                "Manchester City",
+                "Defence_Tackles!p-Brentford",
+                7
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesSucc",
+                9
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Defence_TacklesSucc!p-Brentford",
+                3
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesSucc!s",
+                8.62
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesDef3rd",
+                3
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesDef3rd!p-Brentford",
+                1
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Defence_AerialSucc",
+                21
+              ],
+              [
+                "Arsenal",
+                "Defence_AerialSucc",
+                10
+              ],
+              [
+                "Manchester City",
+                "Defence_AerialSucc!s",
+                12.86
+              ]
+            ],
+            [
+              [
+                "Manchester City",
+                "Defence_AerialPerc",
+                67.7
+              ],
+              [
+                "Arsenal",
+                "Defence_AerialPerc",
+                32.3
+              ],
+              [
+                "Manchester City",
+                "Defence_AerialPerc!p-Brentford",
+                54.5
+              ],
+              [
+                "Manchester City",
+                "Defence_AerialPerc!s",
+                53.3
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Attack_xA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Attack_Assist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Rodri - Manchester City",
+                "Passing_TotalPerc",
+                93.2
+              ],
+              [
+                "Rodri - Manchester City",
+                "Passing_TotalPerc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Rodri - Manchester City",
+                "Passing_LongSucc",
+                11
+              ],
+              [
+                "Aymeric Laporte - Manchester City",
+                "Passing_LongSucc",
+                14
+              ],
+              [
+                "Aymeric Laporte - Manchester City",
+                "Passing_LongSucc!r",
+                1
+              ],
+              [
+                "Rodri - Manchester City",
+                "Passing_LongSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Possession_ReceiveProg",
+                9
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Possession_ReceiveProg!r",
+                1
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Possession_DrbSucc",
+                2
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Tackles",
+                3
+              ],
+              [
+                "Rodri - Manchester City",
+                "Defence_Tackles",
+                3
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Press",
+                12
+              ],
+              [
+                "Rodri - Manchester City",
+                "Defence_Press",
+                13
+              ],
+              [
+                "Rodri - Manchester City",
+                "Defence_Press!tr",
+                1
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Press!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_PressSucc",
+                4
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_PressSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Tackles!tr",
+                1
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_TacklesSucc",
+                3
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_TacklesSucc!r",
+                1
+              ],
+              [
+                "Rodri - Manchester City",
+                "Defence_TacklesSucc",
+                3
+              ]
+            ],
+            [],
+            [
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Int",
+                1
+              ],
+              [
+                "Raheem Sterling - Manchester City",
+                "Defence_Int!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Rodri - Manchester City",
+                "Defence_Clearances",
+                5
+              ],
+              [
+                "Rodri - Manchester City",
+                "Defence_Clearances!r",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "5": {
+        data: [
+          {
+            text: "Newcastle applied more pressure high up the pitch, pressing 39 times in the final third while Manchester Utd pressed 28 times in the final third.",
+            id: "1481039135460630528"
+          },
+          {
+            text: "In their last game (against Manchester City) the Magpies pressed 39 times in the final third and have pressed 25.0 times in the final third this season..",
+            id: "1481039137796988929"
+          },
+          {
+            text: "Newcastle were aggressive out of possession, making four tackles in the final third to Manchester United's one.",
+            id: "1481039139835416580"
+          },
+          {
+            text: "In their last game (against Manchester City) the Magpies attempted one challenges in the final third, while throughout the season they've averaged 2.3 tackles in the final third per 90 minutes..",
+            id: "1481039141668376577"
+          },
+          {
+            text: "Newcastle Utd gave their opponent an average of 4.8 touches each time they pressed. Manchester Utd allowed the Magpies 3.0 touches per press, considerably more than the 3.5 touches permitted by Manchester United in Newcastle's last game.",
+            id: "1481039143811665920"
+          },
+          {
+            text: "Newcastle Utd attempted 21 challenges resulting in 10 successful tackles.",
+            id: "1481039145938132998"
+          },
+          {
+            text: "In their last game (against Manchester City) the Magpies attempted 12 challenges, making 10 successful tackles, while this season they have averaged 18.0 challenges and 10.0 successful tackles per 90 minutes..",
+            id: "1481042922783059971"
+          },
+          {
+            text: "Newcastle made five successful tackles in this match, similar to the five they made in their last match (against Manchester City).",
+            id: "1481042925052170243"
+          },
+          {
+            text: "Newcastle Utd attempted 11 challenges in the defensive third, considerably more than the six made by Manchester Utd.",
+            id: "1481042926717358080"
+          },
+          {
+            text: "Joelinton, our man of the match, created some of the best chances of the game. He carried the ball into the box seven times, played seven key passes and finished with an xA of 0.2.",
+            id: "1481042928730619904"
+          },
+          {
+            text: "Joelinton played an impressive four key passes - more than anyone else on the pitch.",
+            id: "1481042931154923522"
+          },
+          {
+            text: "Allan Saint-Maximin took four shots on target (more than any other player on the pitch), followed by Jonjo Shelvey, who completed two shots on target.",
+            id: "1481042932866207746"
+          },
+          {
+            text: "Allan Saint-Maximin carried the ball into the opponent's box one times, more than any other Newcastle player.",
+            id: "1481042934984232967"
+          },
+          {
+            text: "Joelinton made 212 yards worth of progressive passes (76%), while Jonjo Shelvey successfully passed the ball 212 yards towards the opponent's goal.",
+            id: "1481042938889187329"
+          },
+          {
+            text: "Allan Saint-Maximin successfuly recieved six progressive passes (more than any other Newcastle player) and recieved 6 progressive passes.",
+            id: "1481042940759887875"
+          },
+          {
+            text: "Joelinton carried the ball a total of 142 yards towards the opponent's goal - second farthest of any Newcastle player.",
+            id: "1481042942580117505"
+          },
+          {
+            text: "Allan Saint-Maximin carried the ball into the final third seven times (more than any other player on the pitch), while Allan Saint-Maximin made six carries into the final third.",
+            id: "1481042944270417924"
+          },
+          {
+            text: "Joelinton successfully dribbled past an opponent on two occasions out of two attempts - more than any other Newcastle player.",
+            id: "1481042946174689288"
+          },
+          {
+            text: "Joelinton pressed the opponent 27 times - more than any other player on the pitch.",
+            id: "1481046722855985152"
+          },
+          {
+            text: "Joelinton pressed the opponent more times (21) than any other player in a Newcastle shirt, followed by Jonjo Shelvey, who pressed 8 times, winning possession on nine occasions.",
+            id: "1481046724395380743"
+          },
+          {
+            text: "Joelinton attempted to make more challenges than any other player on the pitch (two), resulting in two successful tackles (more than any other Newcastle player).",
+            id: "1481046726035263497"
+          },
+          {
+            text: "Joelinton made three interceptions and won three aerial duels (more than any other Newcastle player). Joelinton also made three interceptions and won three aerial duels (more than any other Newcastle player).",
+            id: "1481046727683678209"
+          }
+        ],
+        misc: {
+          story_id: 5,
+          team: "Newcastle Utd",
+          opponent: "Manchester Utd",
+          result: [
+            1,
+            1
+          ],
+          date: "2021-12-27",
+          stories: [
+            [
+              [
+                "Newcastle Utd",
+                "Attack_SoT",
+                8
+              ],
+              [
+                "Manchester Utd",
+                "Attack_SoT",
+                3
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_SoT!p-Manchester City",
+                1
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_SoT!s",
+                3.26
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Attack_PressFinal3rd",
+                39
+              ],
+              [
+                "Manchester Utd",
+                "Attack_PressFinal3rd",
+                28
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_PressFinal3rd!p-Manchester City",
+                20
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_PressFinal3rd!s",
+                24.95
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Attack_TacklesFinal3rd",
+                4
+              ],
+              [
+                "Manchester Utd",
+                "Attack_TacklesFinal3rd",
+                1
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_TacklesFinal3rd!p-Manchester City",
+                1
+              ],
+              [
+                "Newcastle Utd",
+                "Attack_TacklesFinal3rd!s",
+                2.32
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Possession_TchPPressGivenRatio",
+                4.82
+              ],
+              [
+                "Manchester Utd",
+                "Possession_TchPPressGivenRatio",
+                2.99
+              ],
+              [
+                "Newcastle Utd",
+                "Possession_TchPPressGivenRatio!s",
+                3.51
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Defence_Tackles",
+                21
+              ],
+              [
+                "Newcastle Utd",
+                "Defence_Tackles!p-Manchester City",
+                12
+              ],
+              [
+                "Newcastle Utd",
+                "Defence_Tackles!s",
+                18.05
+              ],
+              [
+                "Newcastle Utd",
+                "Defence_TacklesSucc",
+                10
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Defence_TacklesSucc!p-Manchester City",
+                5
+              ]
+            ],
+            [
+              [
+                "Newcastle Utd",
+                "Defence_TacklesDef3rd",
+                11
+              ],
+              [
+                "Manchester Utd",
+                "Defence_TacklesDef3rd",
+                6
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "MOTM",
+                "true"
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Attack_KP",
+                4
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Attack_KP!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Attack_SoT",
+                4
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Attack_SoT!r",
+                1
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Attack_SoT!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Attack_CarriesPA",
+                1
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Attack_CarriesPA!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Passing_TotalSucc",
+                31
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Passing_TotalSucc!tr",
+                1
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_Tackles",
+                5
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Passing_TotalPerc",
+                75.6
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Passing_TotalPerc",
+                78.8
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Passing_TotalPerc!tr",
+                1
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Passing_PassesPrgDist",
+                212
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Passing_PassesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_ReceiveProg",
+                6
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_ReceiveProg!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Possession_CarriesPrgDist",
+                142
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Possession_CarriesPrgDist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_CarriesFinal3rd",
+                3
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Possession_DrbSucc",
+                2
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_DrbSucc",
+                2
+              ],
+              [
+                "Allan Saint-Maximin - Newcastle Utd",
+                "Possession_DrbSucc!tr",
+                1
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Possession_DrbSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_Press",
+                27
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_Press!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_PressSucc",
+                9
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_PressSucc!tr",
+                1
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Defence_PressSucc",
+                8
+              ],
+              [
+                "Jonjo Shelvey - Newcastle Utd",
+                "Defence_PressSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_TacklesSucc",
+                2
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_TacklesSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_AerialSucc",
+                3
+              ],
+              [
+                "Joelinton - Newcastle Utd",
+                "Defence_AerialSucc!tr",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "6": {
+        data: [
+          {
+            text: "It was a dominant display by Chelsea, who completed 477 passes to Chelsea's 477. In their last game (against Brighton) Chelsea completed 365 passes, while they've completed 365.",
+            id: "1481047280727859201"
+          },
+          {
+            text: "Chelsea took six shots on target, up from five in their last game against Brighton. This season the Blues have averaged 5.1 took six shots on target per 90 minutes.",
+            id: "1481047282904666116"
+          },
+          {
+            text: "Chelsea applied more pressure high up the pitch, pressing 45 times in the final third while Liverpool pressed 29 times in the final third. This season the Blues have pressed 38.0 times in the final third per 90 minutes.",
+            id: "1481047284582338561"
+          },
+          {
+            text: "Chelsea played an impressive 73 successful long balls, compared with 44 from Liverpool. In their last game (against Brighton) the Blues successfully played 51 long balls and have averaged 60.0 per 90 minutes this season.",
+            id: "1481047286449082370"
+          },
+          {
+            text: "Chelsea completed 63% of the passes they played long, compared with 47% from Liverpool.",
+            id: "1481047288357212172"
+          },
+          {
+            text: "In this match Chelsea controlled possession, taking 736 touches to Chelsea's 736. In their last game (against Brighton) the Blues took 600 touches, while they've averaged 735.0 touches for each opponent press.",
+            id: "1481047289988792322"
+          },
+          {
+            text: "Chelsea were given an average of 4.5 touches each time the opponent pressed - more than the amount of touches they were given in their last game (3.7 touches per Brighton press).",
+            id: "1481047291725295619"
+          },
+          {
+            text: "Chelsea attempted 17 challenges resulting in 12 successful tackles. Liverpool attempted 13 challenges, completing nine successful tackles.",
+            id: "1481047293436567555"
+          },
+          {
+            text: "Chelsea made 11.0 successful tackles in this match, considerably more than the 11.0 successful tackles they've averaged per 90 minutes this season.",
+            id: "1481047295068102658"
+          },
+          {
+            text: "N'Golo Kante played three key passes - more than anyone else on the pitch.",
+            id: "1481051073083236357"
+          },
+          {
+            text: "Christian Pulisic took two shots on target - more than any other Chelsea player.",
+            id: "1481051074664534019"
+          },
+          {
+            text: "Christian Pulisic carried the ball into the opponent's box four times, more than any other player on the pitch.",
+            id: "1481051076258418692"
+          },
+          {
+            text: "N'Golo Kante made more successful passes into the final third than any other player on the pitch (eight), while N'Golo Kante completed 10 long balls.",
+            id: "1481051078863069188"
+          },
+          {
+            text: "Christian Pulisic successfuly recieved 12 progressive passes (more than any other player on the pitch) and recieved 12 progressive passes.",
+            id: "1481051080523931651"
+          },
+          {
+            text: "N'Golo Kante successfully dribbled past an opponent on three occasions out of three attempts - more than any other player on the pitch. Kante was also involved in five shot creating actions.",
+            id: "1481051082113658880"
+          },
+          {
+            text: "Christian Pulisic pressed the opponent 28 times - more than any other player in a Chelsea shirt.",
+            id: "1481051083749437441"
+          },
+          {
+            text: "Christian Pulisic pressed the opponent seven times, winning possession on eight occassions.",
+            id: "1481051085334892546"
+          }
+        ],
+        misc: {
+          story_id: 6,
+          team: "Chelsea",
+          opponent: "Liverpool",
+          result: [
+            2,
+            2
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Chelsea",
+                "Passing_TotalSucc",
+                477
+              ],
+              [
+                "Chelsea",
+                "Passing_TotalSucc!p-Brighton",
+                365
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Attack_SoT",
+                6
+              ],
+              [
+                "Chelsea",
+                "Attack_SoT!p-Brighton",
+                5
+              ],
+              [
+                "Chelsea",
+                "Attack_SoT!s",
+                5.14
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Attack_PressFinal3rd",
+                45
+              ],
+              [
+                "Liverpool",
+                "Attack_PressFinal3rd",
+                29
+              ],
+              [
+                "Chelsea",
+                "Attack_PressFinal3rd!s",
+                37.76
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Passing_LongSucc",
+                73
+              ],
+              [
+                "Liverpool",
+                "Passing_LongSucc",
+                44
+              ],
+              [
+                "Chelsea",
+                "Passing_LongSucc!p-Brighton",
+                51
+              ],
+              [
+                "Chelsea",
+                "Passing_LongSucc!s",
+                60.05
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Passing_LongPerc",
+                62.9
+              ],
+              [
+                "Liverpool",
+                "Passing_LongPerc",
+                47.3
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Possession_Touches",
+                736
+              ],
+              [
+                "Chelsea",
+                "Possession_Touches!p-Brighton",
+                600
+              ],
+              [
+                "Chelsea",
+                "Possession_Touches!s",
+                724.86
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Possession_TchPPressTakenRatio",
+                4.49
+              ],
+              [
+                "Chelsea",
+                "Possession_TchPPressTakenRatio!p-Brighton",
+                3.66
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Defence_Tackles",
+                17
+              ],
+              [
+                "Liverpool",
+                "Defence_Tackles",
+                13
+              ],
+              [
+                "Chelsea",
+                "Defence_TacklesSucc",
+                12
+              ],
+              [
+                "Liverpool",
+                "Defence_TacklesSucc",
+                9
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Defence_TacklesSucc!s",
+                10.52
+              ]
+            ],
+            [
+              [
+                "N'Golo Kante - Chelsea",
+                "Attack_xA",
+                0.4
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "MOTM",
+                "true"
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Attack_xA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "N'Golo Kante - Chelsea",
+                "Attack_KP",
+                3
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Attack_KP!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Christian Pulisic - Chelsea",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Christian Pulisic - Chelsea",
+                "Attack_SoT!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Christian Pulisic - Chelsea",
+                "Attack_CarriesPA",
+                4
+              ],
+              [
+                "Christian Pulisic - Chelsea",
+                "Attack_CarriesPA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "N'Golo Kante - Chelsea",
+                "Passing_PassesFinal3rd",
+                8
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Passing_LongSucc",
+                10
+              ]
+            ],
+            [
+              [
+                "Christian Pulisic - Chelsea",
+                "Possession_ReceiveProg",
+                12
+              ],
+              [
+                "Christian Pulisic - Chelsea",
+                "Possession_ReceiveProg!r",
+                1
+              ]
+            ],
+            [
+              [
+                "N'Golo Kante - Chelsea",
+                "Possession_CarriesPrgDist",
+                158
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Possession_CarriesPrgDist!r",
+                1
+              ],
+              [
+                "N'Golo Kante - Chelsea",
+                "Possession_DrbSucc",
+                3
+              ]
+            ],
+            [
+              [
+                "Christian Pulisic - Chelsea",
+                "Defence_Press",
+                28
+              ],
+              [
+                "Christian Pulisic - Chelsea",
+                "Defence_Press!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Christian Pulisic - Chelsea",
+                "Defence_PressSucc",
+                7
+              ],
+              [
+                "Cesar Azpilicueta - Chelsea",
+                "Defence_PressSucc",
+                8
+              ],
+              [
+                "Cesar Azpilicueta - Chelsea",
+                "Defence_PressSucc!tr",
+                1
+              ],
+              [
+                "Christian Pulisic - Chelsea",
+                "Defence_PressSucc!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "7": {
+        data: [
+          {
+            text: "Arsenal applied more pressure high up the pitch, pressing 72 times in the final third while Manchester City pressed 19 times in the final third.",
+            id: "1481051697376108544"
+          },
+          {
+            text: "In their last game (against Norwich) the Gunners pressed 72 times in the final third and have pressed 36.0 times in the final third this season..",
+            id: "1481051699464839174"
+          },
+          {
+            text: "Arsenal were aggressive when of possession, making three tackles in the final third compared with one in their last game (against Norwich).",
+            id: "1481051701599686657"
+          },
+          {
+            text: "Arsenal were patient off the ball, allowing Manchester City an average of 9.2 touches each time they pressed.",
+            id: "1481051703789203460"
+          },
+          {
+            text: "Manchester City allowed the Gunners 1.8 touches per press, considerably less than the 4.8 touches permitted by Norwich in Arsenal's last game. This season they've averaged (4.8 touches for each opponent press..",
+            id: "1481051705911525380"
+          },
+          {
+            text: "Arsenal attempted 23 challenges resulting in 13 successful tackles, while Manchester City made 10 challenges and nine successful tackles.",
+            id: "1481055482840334336"
+          },
+          {
+            text: "In their last match (against Norwich) the Gunners attempted 17 challenges, making 13 successful tackles, while this season they have averaged 16.0 challenges and 9 successful tackles per 90 minutes..",
+            id: "1481055485138722820"
+          },
+          {
+            text: "Arsenal attempted 12 challenges in the defensive third, considerably more than the three made by Manchester City. In their last game (against Norwich) the Gunners attempted nine challenges in the defensive third, while throughout the season they've averaged 7.4 per 90 minutes.",
+            id: "1481055487302983681"
+          },
+          {
+            text: "Thomas Partey, our man of the match, created some of the best chances of the game. He carried the ball into the box once, played one key passes and finished with an xA of 0.1.",
+            id: "1481055489068875779"
+          },
+          {
+            text: "Thomas Partey successfuly completed 25 passes - more than any other Arsenal player.",
+            id: "1481055491144957952"
+          },
+          {
+            text: "Granit Xhaka completed 100% of his passes - the highest rate of any player on the pitch.",
+            id: "1481055492805906441"
+          },
+          {
+            text: "Thomas Partey were aggressive when of possession, making five tackles into the final third - more than any other player on the pitch. He also played nine passes into the final third, more than any other player on the pitch.",
+            id: "1481055494420762625"
+          },
+          {
+            text: "Thomas Partey carried the ball farther towards the opponent's goal than any other Arsenal player (a combined 143 yards), while Thomas Partey carried the ball a combined 143 yards towards the opponent's goal.",
+            id: "1481055496178225155"
+          },
+          {
+            text: "Granit Xhaka carried the ball into the final third two times (more than any other Arsenal player), while Granit Xhaka made two carries into the final third.",
+            id: "1481055498040487937"
+          },
+          {
+            text: "Thomas Partey successfully dribbled past an opponent on four occasions out of six attempts - more than any other player on the pitch. Martinelli successfully dribbled past an opponent on four occasions out of six attempts.",
+            id: "1481055499755917313"
+          },
+          {
+            text: "Granit Xhaka pressed the opponent 27 times - more than any other player on the pitch.",
+            id: "1481055502784249861"
+          },
+          {
+            text: "Thomas Partey pressed the opponent 10 times, winning possession on 10 occassions.",
+            id: "1481055504482938880"
+          },
+          {
+            text: "Granit Xhaka made three successful tackles (more than any other player on the pitch), while Thomas Partey made two.",
+            id: "1481055506718470147"
+          },
+          {
+            text: "Granit Xhaka made three interceptions, while Martinelli made five.",
+            id: "1481059284091867139"
+          }
+        ],
+        misc: {
+          story_id: 7,
+          team: "Arsenal",
+          opponent: "Manchester City",
+          result: [
+            1,
+            2
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "Arsenal",
+                "Attack_PressFinal3rd",
+                72
+              ],
+              [
+                "Manchester City",
+                "Attack_PressFinal3rd",
+                19
+              ],
+              [
+                "Arsenal",
+                "Attack_PressFinal3rd!p-Norwich City",
+                26
+              ],
+              [
+                "Arsenal",
+                "Attack_PressFinal3rd!s",
+                35.85
+              ]
+            ],
+            [
+              [
+                "Arsenal",
+                "Attack_TacklesFinal3rd",
+                3
+              ],
+              [
+                "Arsenal",
+                "Attack_TacklesFinal3rd!p-Norwich City",
+                1
+              ]
+            ],
+            [
+              [
+                "Arsenal",
+                "Possession_TchPPressGivenRatio",
+                9.16
+              ],
+              [
+                "Manchester City",
+                "Possession_TchPPressGivenRatio",
+                1.8
+              ],
+              [
+                "Arsenal",
+                "Possession_TchPPressGivenRatio!p-Norwich City",
+                2.17
+              ],
+              [
+                "Arsenal",
+                "Possession_TchPPressGivenRatio!s",
+                4.76
+              ]
+            ],
+            [
+              [
+                "Arsenal",
+                "Defence_Tackles",
+                23
+              ],
+              [
+                "Manchester City",
+                "Defence_Tackles",
+                10
+              ],
+              [
+                "Arsenal",
+                "Defence_Tackles!p-Norwich City",
+                17
+              ],
+              [
+                "Arsenal",
+                "Defence_Tackles!s",
+                15.7
+              ],
+              [
+                "Arsenal",
+                "Defence_TacklesSucc",
+                13
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesSucc",
+                9
+              ]
+            ],
+            [],
+            [
+              [
+                "Arsenal",
+                "Defence_TacklesSucc!s",
+                9.5
+              ],
+              [
+                "Arsenal",
+                "Defence_TacklesDef3rd",
+                12
+              ],
+              [
+                "Manchester City",
+                "Defence_TacklesDef3rd",
+                3
+              ],
+              [
+                "Arsenal",
+                "Defence_TacklesDef3rd!p-Norwich City",
+                9
+              ],
+              [
+                "Arsenal",
+                "Defence_TacklesDef3rd!s",
+                7.4
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Attack_xA",
+                0.1
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Attack_KP",
+                1
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Passing_TotalSucc",
+                25
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Passing_TotalSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Granit Xhaka - Arsenal",
+                "Passing_TotalPerc",
+                100
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Passing_TotalPerc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Passing_PassesFinal3rd",
+                9
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Defence_Tackles",
+                5
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Possession_CarriesPrgDist",
+                143
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Granit Xhaka - Arsenal",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Possession_CarriesFinal3rd!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Possession_DrbSucc",
+                6
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Possession_DrbSucc!r",
+                1
+              ],
+              [
+                "Martinelli - Arsenal",
+                "Possession_DrbSucc",
+                4
+              ],
+              [
+                "Martinelli - Arsenal",
+                "Possession_DrbSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_Press",
+                27
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_Press!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Defence_PressSucc",
+                10
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_PressSucc",
+                10
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_PressSucc!r",
+                1
+              ],
+              [
+                "Thomas Partey - Arsenal",
+                "Defence_PressSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Thomas Partey - Arsenal",
+                "Defence_TacklesSucc",
+                2
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_TacklesSucc",
+                3
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_TacklesSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Martinelli - Arsenal",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Martinelli - Arsenal",
+                "Defence_Int!r",
+                1
+              ],
+              [
+                "Granit Xhaka - Arsenal",
+                "Defence_Int!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "8": {
+        data: [
+          {
+            text: "Norwich City saw slightly less of the ball, completing 313 passes to the 244 they saw in their last game (against Arsenal).",
+            id: "1481059959722987520"
+          },
+          {
+            text: "Norwich City saw more of the ball, completing an impressive 77% of his passes. Crystal Palace completed 77% of his passes.",
+            id: "1481059961740447752"
+          },
+          {
+            text: "Norwich City succesffuly played 23 passes into the final third, compared with 22 from Crystal Palace. In their last game (against Arsenal) City completed 11 passes into the final third and have averaged 22.0 per 90 minutes this season.",
+            id: "1481059965217480704"
+          },
+          {
+            text: "Crystal Palace saw more of the ball, taking 565 touches to Norwich City's 538. Crystal Palace took 565 touches to Norwich City's 538.",
+            id: "1481059966953869320"
+          },
+          {
+            text: "Norwich City were given an average of 3.9 touches each time the opponent pressed - Crystal Palace took an average of 3.7 touches per press. In their last game they took 2.9 touches each time the opponent pressed and have averaged (3.7 touches for each opponent press.",
+            id: "1481059968593936385"
+          },
+          {
+            text: "Norwich City gave their opponent an average of 3.7 touches each time they pressed. This season they have averaged 3.7 touches for each opponent press.",
+            id: "1481059970238107653"
+          },
+          {
+            text: "Norwich City made seven successful tackles in this match, similar to the five they made in their last match (against Arsenal).",
+            id: "1481059971928313858"
+          },
+          {
+            text: "Norwich City attempted seven challenges in the defensive third. In their last game (against Arsenal) City attempted four challenges in the defensive third.",
+            id: "1481059973551595527"
+          },
+          {
+            text: "Norwich City won 16 aerial duels, considerably more than their average per 90 minute this season (16.0).",
+            id: "1481059975149596681"
+          },
+          {
+            text: "Adam Idah scored no goals to Christos Tzolis' zero, while Christos Tzolis scored no goals.",
+            id: "1481059977250934790"
+          },
+          {
+            text: "Adam Idah played more successful passes than any other Norwich player (zero), while Christos Tzolis completed zero shots on target.",
+            id: "1481059978836426756"
+          },
+          {
+            text: "Billy Gilmour successfuly completed 57 passes - more than any other player on the pitch.",
+            id: "1481063755534512133"
+          },
+          {
+            text: "Billy Gilmour made more successful passes into the final third than any other Norwich player (six), while Billy Gilmour completed six passes into the final third.",
+            id: "1481063757098983425"
+          },
+          {
+            text: "Billy Gilmour played more successful long balls than any other player on the pitch (13), while Billy Gilmour completed 13.",
+            id: "1481063758734802948"
+          },
+          {
+            text: "Adam Idah successfuly recieved 10 progressive passes (more than any other player on the pitch) and recieved 10 progressive passes.",
+            id: "1481063760324444160"
+          },
+          {
+            text: "Billy Gilmour carried the ball a combined 100 yards towards the opponent's goal - second farthest of any Norwich player.",
+            id: "1481063762014711811"
+          },
+          {
+            text: "Billy Gilmour were aggressive when of possession, making four tackles (more than any other player on the pitch), while Christos Tzolis made four carries into the final third.",
+            id: "1481063763516309516"
+          },
+          {
+            text: "Billy Gilmour successfully dribbled past an opponent on one occasions out of three attempts - more than any other player on the pitch.",
+            id: "1481063765261103111"
+          },
+          {
+            text: "Billy Gilmour pressed the opponent 23 times - more than any other player on the pitch. Adam Idah pressed 15 times.",
+            id: "1481063766888493056"
+          },
+          {
+            text: "Billy Gilmour pressed the opponent seven times (more than any other player on the pitch), winning possession on seven occassions.",
+            id: "1481063768499048452"
+          },
+          {
+            text: "Billy Gilmour attempted to make more challenges than any other Norwich player (two), resulting in two successful tackles (more than any other Norwich player). Christos Tzolis attempted one successful tackles.",
+            id: "1481063770092969989"
+          }
+        ],
+        misc: {
+          story_id: 8,
+          team: "Norwich City",
+          opponent: "Crystal Palace",
+          result: [
+            3,
+            0
+          ],
+          date: "2021-12-28",
+          stories: [
+            [
+              [
+                "Norwich City",
+                "Passing_TotalSucc",
+                313
+              ],
+              [
+                "Norwich City",
+                "Passing_TotalSucc!p-Arsenal",
+                244
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Passing_TotalPerc",
+                76.9
+              ],
+              [
+                "Crystal Palace",
+                "Passing_TotalPerc",
+                76.8
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Attack_PressFinal3rd",
+                40
+              ],
+              [
+                "Crystal Palace",
+                "Attack_PressFinal3rd",
+                26
+              ],
+              [
+                "Norwich City",
+                "Attack_PressFinal3rd!s",
+                32.37
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Passing_PassesFinal3rd",
+                23
+              ],
+              [
+                "Crystal Palace",
+                "Passing_PassesFinal3rd",
+                22
+              ],
+              [
+                "Norwich City",
+                "Passing_PassesFinal3rd!p-Arsenal",
+                11
+              ],
+              [
+                "Norwich City",
+                "Passing_PassesFinal3rd!s",
+                21.68
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Possession_Touches",
+                538
+              ],
+              [
+                "Crystal Palace",
+                "Possession_Touches",
+                565
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Possession_TchPPressTakenRatio",
+                3.9
+              ],
+              [
+                "Crystal Palace",
+                "Possession_TchPPressTakenRatio",
+                3.67
+              ],
+              [
+                "Norwich City",
+                "Possession_TchPPressTakenRatio!p-Arsenal",
+                2.85
+              ],
+              [
+                "Norwich City",
+                "Possession_TchPPressTakenRatio!s",
+                3.66
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Possession_TchPPressGivenRatio",
+                3.67
+              ],
+              [
+                "Norwich City",
+                "Possession_TchPPressGivenRatio!s",
+                3.66
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Defence_TacklesSucc",
+                7
+              ],
+              [
+                "Norwich City",
+                "Defence_TacklesSucc!p-Arsenal",
+                5
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Defence_TacklesDef3rd",
+                7
+              ],
+              [
+                "Norwich City",
+                "Defence_TacklesDef3rd!p-Arsenal",
+                4
+              ]
+            ],
+            [
+              [
+                "Norwich City",
+                "Defence_AerialSucc",
+                16
+              ],
+              [
+                "Norwich City",
+                "Defence_AerialSucc!s",
+                15.68
+              ]
+            ],
+            [
+              [
+                "Adam Idah - Norwich City",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Attack_Goals!tr",
+                1
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Attack_Goals!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Adam Idah - Norwich City",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Attack_Assist!tr",
+                1
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Attack_SoT",
+                0
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Attack_Assist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_TotalSucc",
+                57
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_TotalSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_PassesFinal3rd",
+                6
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_PassesPrgDist",
+                385
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_PassesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_LongSucc",
+                13
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Passing_LongSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Adam Idah - Norwich City",
+                "Possession_ReceiveProg",
+                10
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Possession_ReceiveProg!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_CarriesPrgDist",
+                100
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_CarriesPrgDist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_CarriesFinal3rd",
+                3
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Possession_CarriesFinal3rd!tr",
+                2
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_Tackles",
+                4
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Possession_DrbSucc",
+                3
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Possession_DrbSucc!r",
+                1
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Possession_DrbSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_Press",
+                23
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_Press!r",
+                1
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Defence_Press",
+                15
+              ],
+              [
+                "Adam Idah - Norwich City",
+                "Defence_Press!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_PressSucc",
+                7
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_PressSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_Tackles!tr",
+                1
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_TacklesSucc",
+                2
+              ],
+              [
+                "Billy Gilmour - Norwich City",
+                "Defence_TacklesSucc!tr",
+                1
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Defence_TacklesSucc",
+                1
+              ],
+              [
+                "Christos Tzolis - Norwich City",
+                "Defence_TacklesSucc!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "9": {
+        data: [
+          {
+            text: "It was a dominant display by Manchester Utd, who completed 426 passes to Wolves' 408.",
+            id: "1481064394737991681"
+          },
+          {
+            text: "Manchester Utd applied more pressure high up the pitch, pressing 25 times in the final third while Manchester Utd pressed 25 times in the final third. In their last game (against Burnley) Unitedtd pressed 25 times in the final third.",
+            id: "1481064396373823496"
+          },
+          {
+            text: "Manchester Utd were aggressive out of possession, making three tackles in the final third compared with one in their last game (against Burnley). This season United have averaged 2.0 tackles in the final third per 90 minutes.",
+            id: "1481064398601007104"
+          },
+          {
+            text: "Manchester Utd succesffuly played an impressive 35 passes into the final third, compared with 31 from Wolves. This season United have averaged 34.0 completed passes into the final per 90 minutes.",
+            id: "1481068175668174848"
+          },
+          {
+            text: "Manchester Utd were given an average of 4.4 touches each time the opponent pressed - Wolves took an average of 4.2 touches per press.",
+            id: "1481068177345945608"
+          },
+          {
+            text: "Manchester Utd attempted 17 challenges resulting in 11 successful tackles, while Wolves made 12 challenges and nine successful tackles.",
+            id: "1481068178922950658"
+          },
+          {
+            text: "In their last match (against Burnley) United attempted eight challenges, making 11 successful tackles, while this season they have averaged 15.0 challenges and 9 successful tackles per 90 minutes..",
+            id: "1481068180688838656"
+          },
+          {
+            text: "Manchester Utd made five successful tackles in this match, considerably more than the five they made in their last match (against Burnley). This season Manchester Utd have averaged 9.2 successful tackles per 90 minutes.",
+            id: "1481068182471335936"
+          },
+          {
+            text: "Manchester Utd attempted eight challenges in the defensive third. In their last game (against Burnley) United attempted three challenges in the defensive third, while throughout the season they've averaged 7.8 per 90 minutes.",
+            id: "1481068184228745217"
+          },
+          {
+            text: "Cristiano Ronaldo, our man of the match, scored no goals to Manchester United's zero - more than any other Manchester United player.",
+            id: "1481068186254589952"
+          },
+          {
+            text: "Cristiano Ronaldo created less than Nemanja Matic, finding chances worth 0.1 expected goals to Nemanja Matic, who created 0.2 expected goals.",
+            id: "1481068187898851329"
+          },
+          {
+            text: "Cristiano Ronaldo played one key passes - more than any other Manchester United player.",
+            id: "1481068190214115333"
+          },
+          {
+            text: "Cristiano Ronaldo played more successful shots on target than any other Manchester United player (one), while Cristiano Ronaldo carried the ball into the box once.",
+            id: "1481068192013430790"
+          },
+          {
+            text: "Nemanja Matic successfuly completed 59 passes (more than any other player on the pitch), while Nemanja Matic completed 59.",
+            id: "1481068194064384000"
+          },
+          {
+            text: "Cristiano Ronaldo successfuly recieved eight progressive passes (more than any other Manchester United player) and recieved 8 progressive passes.",
+            id: "1481068195867992066"
+          },
+          {
+            text: "Nemanja Matic carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 207 yards), while Nemanja Matic carried the ball a combined 207 yards towards the opponent's goal.",
+            id: "1481068197885489153"
+          },
+          {
+            text: "Nemanja Matic pressed the opponent 19 times - more than any other player in a Manchester United shirt.",
+            id: "1481071974671650824"
+          },
+          {
+            text: "Cristiano Ronaldo pressed the opponent 5 times (more than any other player in a Manchester United shirt), winning possession on five occassions.",
+            id: "1481071976303284224"
+          },
+          {
+            text: "Phil Jones made more successful tackles (three) than any other player on the pitch, while Cristiano Ronaldo made one successful tackles.",
+            id: "1481071978001883136"
+          },
+          {
+            text: "Cristiano Ronaldo won two aerial duels (more than any other player on the pitch), winning the ball back on two occassions. Jatic also won four aerial duels (more than any other player on the pitch), and won two aerial duels.",
+            id: "1481071979671261185"
+          },
+          {
+            text: "Nemanja Matic made five interceptions - more than any other player on the pitch.",
+            id: "1481071981680279559"
+          }
+        ],
+        misc: {
+          story_id: 9,
+          team: "Manchester Utd",
+          opponent: "Wolves",
+          result: [
+            0,
+            1
+          ],
+          date: "2022-01-03",
+          stories: [
+            [
+              [
+                "Manchester Utd",
+                "Passing_TotalSucc",
+                426
+              ],
+              [
+                "Wolves",
+                "Passing_TotalSucc",
+                408
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Attack_PressFinal3rd",
+                25
+              ],
+              [
+                "Manchester Utd",
+                "Attack_PressFinal3rd!p-Burnley",
+                14
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Attack_TacklesFinal3rd",
+                3
+              ],
+              [
+                "Manchester Utd",
+                "Attack_TacklesFinal3rd!p-Burnley",
+                1
+              ],
+              [
+                "Manchester Utd",
+                "Attack_TacklesFinal3rd!s",
+                2
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Passing_PassesFinal3rd",
+                35
+              ],
+              [
+                "Wolves",
+                "Passing_PassesFinal3rd",
+                31
+              ],
+              [
+                "Manchester Utd",
+                "Passing_PassesFinal3rd!s",
+                34.11
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Possession_TchPPressTakenRatio",
+                4.38
+              ],
+              [
+                "Wolves",
+                "Possession_TchPPressTakenRatio",
+                4.21
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Defence_Tackles",
+                17
+              ],
+              [
+                "Wolves",
+                "Defence_Tackles",
+                12
+              ],
+              [
+                "Manchester Utd",
+                "Defence_Tackles!p-Burnley",
+                8
+              ],
+              [
+                "Manchester Utd",
+                "Defence_Tackles!s",
+                15.32
+              ],
+              [
+                "Manchester Utd",
+                "Defence_TacklesSucc",
+                11
+              ],
+              [
+                "Wolves",
+                "Defence_TacklesSucc",
+                9
+              ]
+            ],
+            [],
+            [
+              [
+                "Manchester Utd",
+                "Defence_TacklesSucc!p-Burnley",
+                5
+              ],
+              [
+                "Manchester Utd",
+                "Defence_TacklesSucc!s",
+                9.16
+              ]
+            ],
+            [
+              [
+                "Manchester Utd",
+                "Defence_TacklesDef3rd",
+                8
+              ],
+              [
+                "Manchester Utd",
+                "Defence_TacklesDef3rd!p-Burnley",
+                3
+              ],
+              [
+                "Manchester Utd",
+                "Defence_TacklesDef3rd!s",
+                7.79
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_Goals!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_xA",
+                0.1
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Attack_xA!r",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_xA!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_KP",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_KP!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_Assist!r",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_SoT",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_SoT!tr",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_CarriesPA",
+                1
+              ]
+            ],
+            [
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Passing_TotalSucc",
+                59
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Passing_TotalSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Possession_ReceiveProg",
+                8
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Possession_ReceiveProg!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Possession_CarriesPrgDist",
+                207
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Possession_CarriesPrgDist!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_Press",
+                19
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_Press!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_PressSucc",
+                5
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_PressSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_TacklesSucc",
+                1
+              ],
+              [
+                "Phil Jones - Manchester Utd",
+                "Defence_TacklesSucc",
+                3
+              ],
+              [
+                "Phil Jones - Manchester Utd",
+                "Defence_TacklesSucc!r",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_TacklesSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_AerialSucc",
+                2
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_AerialSucc",
+                4
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_AerialSucc!r",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_AerialSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Nemanja Matic - Manchester Utd",
+                "Defence_Int!r",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "10": {
+        data: [
+          {
+            text: "Wolves took six shots on target, up from one in their last game against Chelsea. This season Wolves have averaged 3.3 took six shots on target per 90 minutes.",
+            id: "1481072553523400707"
+          },
+          {
+            text: "Wolves applied more pressure high up the pitch, pressing 33 times in the final third while Manchester Utd pressed 25 times in the final third.",
+            id: "1481072555192733700"
+          },
+          {
+            text: "In their last game (against Chelsea) Wolves pressed 33 times in the final third and have pressed 24.0 times in the final third this season..",
+            id: "1481072556908105730"
+          },
+          {
+            text: "Wolves were aggressive out of possession, making four tackles in the final third to Manchester United's three. In their last game (against Chelsea) Wolves attempted one challenges in the final third, while throughout the season they've averaged 1.8 per 90 minutes.",
+            id: "1481072558480973833"
+          },
+          {
+            text: "Wolves succesffuly played an impressive 31 passes into the final third, considerably more than the 17 they played in their last game (against Chelsea). This season Wolves have averaged 28.0 successsful passes into the final third per 90 minutes.",
+            id: "1481072560045449220"
+          },
+          {
+            text: "Wolves completed 72 long balls, while Manchester Utd managed 56.",
+            id: "1481072561857388547"
+          },
+          {
+            text: "Wolves won 54% or the game's aerial duels. In their last game they won 36% and across the season they've won 49%.",
+            id: "1481072563396743170"
+          },
+          {
+            text: "Daniel Podence played three key passes.",
+            id: "1481072564982226945"
+          },
+          {
+            text: "Raul Jimenez played more successful passes into the final third than any other player on the pitch (against the ball), while Daniel Podence carried the ball into the box once.",
+            id: "1481076341978116107"
+          },
+          {
+            text: "Daniel Podence, with three successful shots on target (more than any other player on the pitch), while Joao Moutinho completed one shots on target.",
+            id: "1481076343735570432"
+          },
+          {
+            text: "Joao Moutinho successfuly completed 56 passes - more than any other Wolves player.",
+            id: "1481076345438355459"
+          },
+          {
+            text: "Joao Moutinho made more successful passes into the final third than any other player on the pitch (seven), while Joao Moutinho completed 15.",
+            id: "1481076347078328320"
+          },
+          {
+            text: "Raul Jimenez successfuly recieved nine progressive passes (more than any other player on the pitch) and recieved 9 progressive passes.",
+            id: "1481076348688941060"
+          },
+          {
+            text: "Daniel Podence carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 202 yards), while Daniel Podence carried the ball into the final third five times.",
+            id: "1481076350299656196"
+          },
+          {
+            text: "Daniel Podence successfully dribbled past an opponent on three occasions out of three attempts - more than any other player in a Wolves shirt.",
+            id: "1481076351905980417"
+          },
+          {
+            text: "Joao Moutinho pressed the opponent 18 times, while Joao Moutinho pressed 18 times.",
+            id: "1481076353537646596"
+          },
+          {
+            text: "Joao Moutinho attempted to make more challenges than any other player on the pitch (three), resulting in three successful tackles (more than any other player on the pitch).",
+            id: "1481076355194310661"
+          },
+          {
+            text: "Joao Moutinho attempted three challenges, completing three successful tackles (more than any other player on the pitch)..",
+            id: "1481076356779847682"
+          }
+        ],
+        misc: {
+          story_id: 10,
+          team: "Wolves",
+          opponent: "Manchester Utd",
+          result: [
+            0,
+            1
+          ],
+          date: "2022-01-03",
+          stories: [
+            [
+              [
+                "Wolves",
+                "Attack_SoT",
+                6
+              ],
+              [
+                "Manchester Utd",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Wolves",
+                "Attack_SoT!p-Chelsea",
+                1
+              ],
+              [
+                "Wolves",
+                "Attack_SoT!s",
+                3.32
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Attack_PressFinal3rd",
+                33
+              ],
+              [
+                "Manchester Utd",
+                "Attack_PressFinal3rd",
+                25
+              ],
+              [
+                "Wolves",
+                "Attack_PressFinal3rd!p-Chelsea",
+                24
+              ],
+              [
+                "Wolves",
+                "Attack_PressFinal3rd!s",
+                24.47
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Attack_TacklesFinal3rd",
+                4
+              ],
+              [
+                "Manchester Utd",
+                "Attack_TacklesFinal3rd",
+                3
+              ],
+              [
+                "Wolves",
+                "Attack_TacklesFinal3rd!p-Chelsea",
+                1
+              ],
+              [
+                "Wolves",
+                "Attack_TacklesFinal3rd!s",
+                1.84
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Passing_PassesFinal3rd",
+                31
+              ],
+              [
+                "Wolves",
+                "Passing_PassesFinal3rd!p-Chelsea",
+                17
+              ],
+              [
+                "Wolves",
+                "Passing_PassesFinal3rd!s",
+                27.68
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Passing_LongSucc",
+                72
+              ],
+              [
+                "Manchester Utd",
+                "Passing_LongSucc",
+                56
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Defence_AerialPerc",
+                54.2
+              ],
+              [
+                "Manchester Utd",
+                "Defence_AerialPerc",
+                45.8
+              ],
+              [
+                "Wolves",
+                "Defence_AerialPerc!p-Chelsea",
+                36.4
+              ],
+              [
+                "Wolves",
+                "Defence_AerialPerc!s",
+                49.1
+              ]
+            ],
+            [
+              [
+                "Daniel Podence - Wolves",
+                "Attack_KP",
+                3
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Attack_KP!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Daniel Podence - Wolves",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Raul Jimenez - Wolves",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Raul Jimenez - Wolves",
+                "Attack_Assist!r",
+                1
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Attack_CarriesPA",
+                4
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Attack_CarriesPA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Attack_SoT",
+                1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Attack_SoT",
+                3
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Attack_SoT!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_TotalSucc",
+                56
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_TotalSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_PassesFinal3rd",
+                7
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_LongSucc",
+                15
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_LongSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Daniel Podence - Wolves",
+                "Possession_ReceiveProg",
+                9
+              ],
+              [
+                "Raul Jimenez - Wolves",
+                "Possession_ReceiveProg",
+                9
+              ],
+              [
+                "Raul Jimenez - Wolves",
+                "Possession_ReceiveProg!r",
+                1
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Possession_ReceiveProg!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Daniel Podence - Wolves",
+                "Possession_CarriesPrgDist",
+                202
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Possession_CarriesFinal3rd",
+                5
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Daniel Podence - Wolves",
+                "Possession_DrbSucc",
+                3
+              ],
+              [
+                "Daniel Podence - Wolves",
+                "Possession_DrbSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_Press",
+                18
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_Press!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_Tackles",
+                3
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_TacklesSucc",
+                3
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Defence_TacklesSucc!r",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "11": {
+        data: [
+          {
+            text: "Leicester City applied more pressure high up the pitch, pressing 17 times in the final third while Leicester City pressed 17 times in the final third. In their last game (against Manchester City) City pressed 17 times in the final third.",
+            id: "1481076906673987584"
+          },
+          {
+            text: "Leicester City played 38 successful long balls, considerably more than the 24 they played in their last game (against Manchester City).",
+            id: "1481076908334931976"
+          },
+          {
+            text: "Leicester City completed 52% of the passes they played long, compared with 54% from Leicester.",
+            id: "1481076909949730816"
+          },
+          {
+            text: "In this game Leicester City saw more of the ball, taking 537 touches to Manchester City's 537. In their last game (against Manchester City) Leicester City took 410 touches in the final game.",
+            id: "1481080686928969728"
+          },
+          {
+            text: "Leicester City gave their opponent an average of 5.5 touches each time they pressed. Liverpool allowed City 3.3 touches per press, considerably less than the 3.9 touches permitted by Leicester City in Leicester City's last game.",
+            id: "1481080688690577411"
+          },
+          {
+            text: "Leicester City attempted 17 challenges resulting in 17 challenges, while Liverpool attempted 17 challenges.",
+            id: "1481080690368299008"
+          },
+          {
+            text: "Leicester City attempted 14 challenges in the defensive third, considerably more than the five made by Liverpool. In their last game (against Manchester City) City attempted nine challenges in the defensive third, while throughout the season they've averaged 9.5 per 90 minutes.",
+            id: "1481080691999784962"
+          },
+          {
+            text: "Leicester City won an impressive 24 aerial duels to Liverpool's 43%. In their last game they won 4 aerial duels and across the season they've won 53%.",
+            id: "1481080694180917253"
+          },
+          {
+            text: "Kelechi Iheanacho, our man of the match, made seven successful passes into the match, the same amount as the zero of his attempted passes.",
+            id: "1481080695938236417"
+          },
+          {
+            text: "Kelechi Iheanacho created far better chances while both teams failed to find a winner. Kelechi Iheanacho tallied an xG of 0.1 and zero shots on target while concedeing 0.1 xG and zero shots on target.",
+            id: "1481080697532071936"
+          },
+          {
+            text: "Kiernan Dewsbury Hall successfuly completed 37 passes - more than any other Leicester player.",
+            id: "1481080699180441603"
+          },
+          {
+            text: "Kelechi Iheanacho successfuly recieved six progressive passes (more than any other Leicester player) and recieved 6 progressive passes.",
+            id: "1481080700778524679"
+          },
+          {
+            text: "Kiernan Dewsbury Hall carried the ball farther towards the opponent's goal than any other player in a Leicester shirt (a combined 212 yards), while Leicester carried the ball a combined 212 yards towards the opponent's goal.",
+            id: "1481080702498217985"
+          },
+          {
+            text: "Kelechi Iheanacho successfully dribbled past an opponent on one occasions out of five attempts - more than any other Leicester player. Kiernan Dewsbury Hall carried the ball into the final third 2 times.",
+            id: "1481080704541011968"
+          },
+          {
+            text: "Kiernan Dewsbury Hall pressed the opponent 22 times - more than any other player on the pitch.",
+            id: "1481080706772127747"
+          },
+          {
+            text: "Kiernan Dewsbury Hall attempted to make more challenges than any other player on the pitch (three), resulting in three attempted passes. Wilfred Ndidi attempted five challenges, completing five successful tackles.",
+            id: "1481080708357627911"
+          }
+        ],
+        misc: {
+          story_id: 11,
+          team: "Leicester City",
+          opponent: "Liverpool",
+          result: [
+            1,
+            0
+          ],
+          date: "2021-12-28",
+          stories: [
+            [
+              [
+                "Leicester City",
+                "Attack_PressFinal3rd",
+                17
+              ],
+              [
+                "Leicester City",
+                "Attack_PressFinal3rd!p-Manchester City",
+                10
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Passing_LongSucc",
+                38
+              ],
+              [
+                "Leicester City",
+                "Passing_LongSucc!p-Manchester City",
+                24
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Passing_LongPerc",
+                52.1
+              ],
+              [
+                "Leicester City",
+                "Passing_LongPerc!s",
+                53.8
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Possession_Touches",
+                537
+              ],
+              [
+                "Leicester City",
+                "Possession_Touches!p-Manchester City",
+                410
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Possession_TchPPressGivenRatio",
+                5.55
+              ],
+              [
+                "Liverpool",
+                "Possession_TchPPressGivenRatio",
+                3.31
+              ],
+              [
+                "Leicester City",
+                "Possession_TchPPressGivenRatio!s",
+                3.87
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Defence_Tackles",
+                17
+              ],
+              [
+                "Liverpool",
+                "Defence_Tackles",
+                17
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Defence_TacklesDef3rd",
+                14
+              ],
+              [
+                "Liverpool",
+                "Defence_TacklesDef3rd",
+                5
+              ],
+              [
+                "Leicester City",
+                "Defence_TacklesDef3rd!p-Manchester City",
+                9
+              ],
+              [
+                "Leicester City",
+                "Defence_TacklesDef3rd!s",
+                9.5
+              ]
+            ],
+            [
+              [
+                "Leicester City",
+                "Defence_AerialSucc",
+                24
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialSucc",
+                18
+              ],
+              [
+                "Leicester City",
+                "Defence_AerialSucc!p-Manchester City",
+                4
+              ],
+              [
+                "Leicester City",
+                "Defence_AerialSucc!s",
+                18
+              ],
+              [
+                "Leicester City",
+                "Defence_AerialPerc",
+                57.1
+              ],
+              [
+                "Liverpool",
+                "Defence_AerialPerc",
+                42.9
+              ],
+              [
+                "Leicester City",
+                "Defence_AerialPerc!s",
+                53
+              ]
+            ],
+            [
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "MOTM",
+                "true"
+              ]
+            ],
+            [
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_xA",
+                0.1
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_KP",
+                1
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_KP!tr",
+                1
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Attack_SoT",
+                0
+              ]
+            ],
+            [
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Passing_TotalSucc",
+                37
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Passing_TotalSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Possession_ReceiveProg",
+                6
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Possession_ReceiveProg!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Possession_CarriesPrgDist",
+                212
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Possession_CarriesFinal3rd",
+                0
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Possession_CarriesFinal3rd!tr",
+                1
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "Kelechi Iheanacho - Leicester City",
+                "Possession_DrbSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Defence_Press",
+                22
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Defence_Press!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Defence_Tackles",
+                3
+              ],
+              [
+                "Wilfred Ndidi - Leicester City",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Wilfred Ndidi - Leicester City",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Kiernan Dewsbury Hall - Leicester City",
+                "Defence_Tackles!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "12": {
+        data: [
+          {
+            text: "Everton saw more of the ball, completing 320 passes to Brighton's 329.",
+            id: "1481085081217347584"
+          },
+          {
+            text: "Brighton took five shots on target, considerably more than their average per 90 minutes this season (3.7).",
+            id: "1481085082769276930"
+          },
+          {
+            text: "Brighton were aggressive out of possession, making four tackles in the final third compared with three in their last game (against Chelsea). This season the Seagulls have averaged 3.0 tackles in the final third per 90 minutes.",
+            id: "1481085084430217217"
+          },
+          {
+            text: "Brighton succesffuly played 21 passes into the final third, considerably more than the 16 they played in their last game (against Chelsea).",
+            id: "1481085086124675073"
+          },
+          {
+            text: "The Seagulls saw less of the ball, taking 603 touches to Everton's 577.",
+            id: "1481085087680802822"
+          },
+          {
+            text: "Brighton gave their opponent an average of 4.8 touches each time they pressed. Everton allowed the Seagulls 4.3 touches per press, considerably more than the 4.3 touches permitted by Everton in Brighton's last game.",
+            id: "1481085089379495940"
+          },
+          {
+            text: "Brighton attempted 25 challenges in this game, more than the 23 made by Everton. In their last game (against Chelsea) the Seagulls attempted 22 challenges in the final third, while this season they have averaged 20.0 challenges per 90 minutes.",
+            id: "1481085091019378689"
+          },
+          {
+            text: "Brighton attempted 13 challenges in the defensive third, considerably more than the eight made by Everton. In their last game (against Chelsea) the Seagulls attempted 10 challenges in the defensive third, while throughout the season they've averaged 9.7 per 90 minutes.",
+            id: "1481085092747526152"
+          },
+          {
+            text: "Brighton won an impressive 28 aerial duels, considerably more than their 15 they won in their last game (against Chelsea). This season Brighton have averaged 17.0 per 90 minutes.",
+            id: "1481085094949441536"
+          },
+          {
+            text: "Alexis Mac Allister, our man of the match, made two successful passes into the final third (more than anyone else on the pitch) and scored two goals (also more than anyone else on the pitch).",
+            id: "1481085096715329543"
+          },
+          {
+            text: "Enock Mwepu created more than any other player on the pitch (0.6 expected goals), while creating 0.6 expected goals.",
+            id: "1481085098384633856"
+          },
+          {
+            text: "Alexis Mac Allister took two shots on target, more than any other Brighton player. Mac Allister also had a good game, playing two key passes.",
+            id: "1481085100121116675"
+          },
+          {
+            text: "Enock Mwepu played more successful passes into the final third than any other player on the pitch (two), while Enock Mwepu carried the ball into the box one times.",
+            id: "1481085101891108867"
+          },
+          {
+            text: "Alexis Mac Allister made seven successful passes into the final third - more than any other player on the pitch.",
+            id: "1481088878735986691"
+          },
+          {
+            text: "Alexis Mac Allister passed the ball a combined 287 yards towards the opponents goal, more than any other Brighton player.",
+            id: "1481088880304701440"
+          },
+          {
+            text: "Enock Mwepu carried the ball into the final third one times (more than any other Brighton player), while Yves Bissouma made one carries into the final third.",
+            id: "1481088882154389506"
+          },
+          {
+            text: "Enock Mwepu successfully dribbled past an opponent on two occasions out of nine attempts.",
+            id: "1481088883903418370"
+          },
+          {
+            text: "Alexis Mac Allister pressed the opponent 22 times - more than any other player in a Brighton shirt. Yves Bisouma pressed 18 times.",
+            id: "1481088885463691267"
+          },
+          {
+            text: "Alexis Mac Allister pressed the opponent 10 times (more than any other player on the pitch), winning possession on 10 occassions.",
+            id: "1481088887032270850"
+          },
+          {
+            text: "Enock Mwepu made two successful tackles - more than any other Brighton player.",
+            id: "1481088888647081988"
+          }
+        ],
+        misc: {
+          story_id: 12,
+          team: "Brighton",
+          opponent: "Everton",
+          result: [
+            2,
+            3
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Brighton",
+                "Passing_TotalSucc",
+                329
+              ],
+              [
+                "Everton",
+                "Passing_TotalSucc",
+                320
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Attack_SoT",
+                5
+              ],
+              [
+                "Brighton",
+                "Attack_SoT!s",
+                3.74
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Attack_TacklesFinal3rd",
+                4
+              ],
+              [
+                "Brighton",
+                "Attack_TacklesFinal3rd!p-Chelsea",
+                3
+              ],
+              [
+                "Brighton",
+                "Attack_TacklesFinal3rd!s",
+                2.95
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Passing_PassesFinal3rd",
+                21
+              ],
+              [
+                "Brighton",
+                "Passing_PassesFinal3rd!p-Chelsea",
+                16
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Possession_Touches",
+                603
+              ],
+              [
+                "Everton",
+                "Possession_Touches",
+                577
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Possession_TchPPressGivenRatio",
+                4.77
+              ],
+              [
+                "Everton",
+                "Possession_TchPPressGivenRatio",
+                4.31
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Defence_Tackles",
+                25
+              ],
+              [
+                "Everton",
+                "Defence_Tackles",
+                23
+              ],
+              [
+                "Brighton",
+                "Defence_Tackles!p-Chelsea",
+                22
+              ],
+              [
+                "Brighton",
+                "Defence_Tackles!s",
+                20.16
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Defence_TacklesDef3rd",
+                13
+              ],
+              [
+                "Everton",
+                "Defence_TacklesDef3rd",
+                8
+              ],
+              [
+                "Brighton",
+                "Defence_TacklesDef3rd!p-Chelsea",
+                10
+              ],
+              [
+                "Brighton",
+                "Defence_TacklesDef3rd!s",
+                9.68
+              ]
+            ],
+            [
+              [
+                "Brighton",
+                "Defence_AerialSucc",
+                28
+              ],
+              [
+                "Brighton",
+                "Defence_AerialSucc!p-Chelsea",
+                15
+              ],
+              [
+                "Brighton",
+                "Defence_AerialSucc!s",
+                16.53
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Attack_Goals",
+                2
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Attack_Goals!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_xA",
+                0.6
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_xA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Attack_KP",
+                2
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Attack_SoT!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_Assist",
+                2
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_Assist!r",
+                1
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_CarriesPA",
+                1
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Attack_CarriesPA!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Passing_PassesFinal3rd",
+                7
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Passing_PassesFinal3rd!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Passing_PassesPrgDist",
+                287
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Passing_PassesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Enock Mwepu - Brighton",
+                "Possession_CarriesFinal3rd",
+                1
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Possession_CarriesFinal3rd!tr",
+                1
+              ],
+              [
+                "Yves Bissouma - Brighton",
+                "Possession_CarriesFinal3rd",
+                1
+              ],
+              [
+                "Yves Bissouma - Brighton",
+                "Possession_CarriesFinal3rd!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Enock Mwepu - Brighton",
+                "Possession_DrbSucc",
+                2
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Possession_DrbSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Defence_Press",
+                22
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Defence_Press!tr",
+                1
+              ],
+              [
+                "Yves Bissouma - Brighton",
+                "Defence_Press",
+                18
+              ],
+              [
+                "Yves Bissouma - Brighton",
+                "Defence_Press!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Alexis Mac Allister - Brighton",
+                "Defence_PressSucc",
+                10
+              ],
+              [
+                "Alexis Mac Allister - Brighton",
+                "Defence_PressSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Enock Mwepu - Brighton",
+                "Defence_TacklesSucc",
+                2
+              ],
+              [
+                "Enock Mwepu - Brighton",
+                "Defence_TacklesSucc!tr",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "13": {
+        data: [
+          {
+            text: "Crystal Palace created far more than Crystal Palace, finding chances worth 2.2 expected goals to Crystal Palace's 2.2. This season Crystal Palace have averaged 1.2 expected goals per 90 minutes.",
+            id: "1481089476285943810"
+          },
+          {
+            text: "Crystal Palace saw more of the ball, completing 507 passes to West Ham's 282. In their last game (against Norwich) Palace completed 338 passes, while West Ham completed 282.",
+            id: "1481089477888069633"
+          },
+          {
+            text: "Crystal Palace took six shots on target, compared with four shots on target. This season Crystal Palace have averaged 3.6 took on target per 90 minutes.",
+            id: "1481089480526340098"
+          },
+          {
+            text: "Crystal Palace applied more pressure high up the pitch, pressing 39 times in the final third while the opponent pressed 39 times in the final third. In their last game (against Norwich) Palace pressed 39 times in the final third.",
+            id: "1481089482388553728"
+          },
+          {
+            text: "Crystal Palace were aggressive out of possession, making six tackles in the final third compared with zero in their last game (against Norwich). This season Palace have averaged 2.1 tackles in the final third per 90 minutes.",
+            id: "1481089484070563840"
+          },
+          {
+            text: "Crystal Palace succesffuly played an impressive 47 passes into the final third, compared with 27 from West Ham. In their last game (against Norwich) Palace completed 22 passes into the final third and have averaged 24.0 per 90 minutes this season.",
+            id: "1481089485844758532"
+          },
+          {
+            text: "Crystal Palace played an impressive 92 successful long balls, compared with 42 from West Ham. In their last game (against Norwich) Palace successfully played 62 long balls and have averaged 56.0 per 90 minutes this season.",
+            id: "1481093262798643202"
+          },
+          {
+            text: "Christian Benteke scored no goals to Christian Benteke's zero.",
+            id: "1481093264988164101"
+          },
+          {
+            text: "Jordan Ayew had a great game, playing three key passes. Christian Benteke played two key passes and carried the ball into the opponent's box two times.",
+            id: "1481093267387260931"
+          },
+          {
+            text: "Christian Benteke played more successful shots on target than any other player on the pitch (two), while Christian Benteke completed two shots on target.",
+            id: "1481093269048242184"
+          },
+          {
+            text: "Christian Benteke completed 94% of his passes - the highest rate of any player on the pitch.",
+            id: "1481093270704902147"
+          },
+          {
+            text: "Jordan Ayew carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 306 yards), while Joachim Anderen carried the ball a combined 270 yards towards the opponent's goal.",
+            id: "1481093272269381642"
+          },
+          {
+            text: "Jordan Ayew successfully dribbled past an opponent on six occasions out of six attempts - more than any other player on the pitch. Ayew also carried the ball into the final third six times (more than any other player on the pitch).",
+            id: "1481093273959776257"
+          },
+          {
+            text: "Jordan Ayew pressed the opponent 25 times - more than any other player on the pitch.",
+            id: "1481093275553566722"
+          },
+          {
+            text: "Jordan Ayew pressured the opponent three times (more than any other player on the pitch), winning possession on nine occassions.",
+            id: "1481093277088727043"
+          }
+        ],
+        misc: {
+          story_id: 13,
+          team: "Crystal Palace",
+          opponent: "West Ham",
+          result: [
+            2,
+            3
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "Crystal Palace",
+                "Attack_xG",
+                2.2
+              ],
+              [
+                "Crystal Palace",
+                "Attack_xG!s",
+                1.25
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Passing_TotalSucc",
+                507
+              ],
+              [
+                "West Ham",
+                "Passing_TotalSucc",
+                282
+              ],
+              [
+                "Crystal Palace",
+                "Passing_TotalSucc!p-Norwich City",
+                338
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Attack_SoT",
+                6
+              ],
+              [
+                "West Ham",
+                "Attack_SoT",
+                4
+              ],
+              [
+                "Crystal Palace",
+                "Attack_SoT!s",
+                3.6
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Attack_PressFinal3rd",
+                39
+              ],
+              [
+                "Crystal Palace",
+                "Attack_PressFinal3rd!p-Norwich City",
+                26
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Attack_TacklesFinal3rd",
+                6
+              ],
+              [
+                "Crystal Palace",
+                "Attack_TacklesFinal3rd!p-Norwich City",
+                0
+              ],
+              [
+                "Crystal Palace",
+                "Attack_TacklesFinal3rd!s",
+                2.15
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Passing_PassesFinal3rd",
+                47
+              ],
+              [
+                "West Ham",
+                "Passing_PassesFinal3rd",
+                27
+              ],
+              [
+                "Crystal Palace",
+                "Passing_PassesFinal3rd!p-Norwich City",
+                22
+              ],
+              [
+                "Crystal Palace",
+                "Passing_PassesFinal3rd!s",
+                24.45
+              ]
+            ],
+            [
+              [
+                "Crystal Palace",
+                "Passing_LongSucc",
+                92
+              ],
+              [
+                "West Ham",
+                "Passing_LongSucc",
+                42
+              ],
+              [
+                "Crystal Palace",
+                "Passing_LongSucc!p-Norwich City",
+                62
+              ],
+              [
+                "Crystal Palace",
+                "Passing_LongSucc!s",
+                55.75
+              ],
+              [
+                "Crystal Palace",
+                "Passing_LongPerc",
+                73
+              ],
+              [
+                "West Ham",
+                "Passing_LongPerc",
+                45.2
+              ]
+            ],
+            [
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_Goals!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Attack_xA",
+                0.7
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Attack_xA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Attack_KP",
+                3
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Attack_CarriesPA",
+                2
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Attack_CarriesPA!r",
+                1
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_CarriesPA",
+                0
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_CarriesPA!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_Assist!tr",
+                1
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Attack_SoT!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Christian Benteke - Crystal Palace",
+                "Passing_TotalPerc",
+                94.4
+              ],
+              [
+                "Christian Benteke - Crystal Palace",
+                "Passing_TotalPerc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_CarriesPrgDist",
+                306
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_CarriesPrgDist!r",
+                1
+              ],
+              [
+                "Joachim Andersen - Crystal Palace",
+                "Possession_CarriesPrgDist",
+                270
+              ],
+              [
+                "Joachim Andersen - Crystal Palace",
+                "Possession_CarriesPrgDist!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_CarriesFinal3rd",
+                7
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_DrbSucc",
+                6
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Possession_DrbSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Defence_Press",
+                25
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Defence_Press!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Defence_PressSucc",
+                9
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Defence_PressSucc!r",
+                1
+              ],
+              [
+                "Jordan Ayew - Crystal Palace",
+                "Defence_Tackles",
+                3
+              ]
+            ]
+          ]
+        }
+      },
+      "14": {
+        data: [
+          {
+            text: "It was a dominant display by Aston Villa, who completed 428 passes to Brentford's 320. This season Aston Villa have averaged 300.6 completed passes per 90 minute.",
+            id: "1481093946726100994"
+          },
+          {
+            text: "Aston Villa took five shots on target, up from one in their last game against Chelsea. This season Aston Villa have averaged 3.4 took four shots on target per 90 minutes.",
+            id: "1481093948391268357"
+          },
+          {
+            text: "Aston Villa succesffuly played 25 passes into the final third, more than the 23 from Brentford. In their last game (against Chelsea) Villa completed 19 passes into the final third.",
+            id: "1481093950408732676"
+          },
+          {
+            text: "Aston Villa played 54 successful long balls, more than the 43 they played in their last game (against Chelsea).",
+            id: "1481093952132595712"
+          },
+          {
+            text: "Aston Villa controlled possession, taking 627 touches to Brentford's 526. Aston Villa were given an average of 587.0 touches each time the opponent pressed - Brentford took an average of 526 touches per 90 minutes.",
+            id: "1481097728935571456"
+          },
+          {
+            text: "Aston Villa were given a lot of time on the ball, taking an average of 7.0 touches each time the opponent pressed - Brentford took an average of 6.1 touches per press. This season, Aston Villa have averaged (3.8 touches for each opponent press.",
+            id: "1481097730705530886"
+          },
+          {
+            text: "Aston Villa gave their opponent an average of 6.1 touches each time they pressed. This season, Aston Villa have averaged 3.8 touches for each opponent press.",
+            id: "1481097732337147906"
+          },
+          {
+            text: "Aston Villa won 15 aerial duels, considerably more than the eight they won in their last game (against Chelsea).",
+            id: "1481097733960306689"
+          },
+          {
+            text: "Aston Villa won 48% or the game's aerial duels. In their last game they won 42% and across the season they've won 42%.",
+            id: "1481097735713529858"
+          },
+          {
+            text: "Emi Buendia scored no goals to Aston Villa's zero.",
+            id: "1481097737345110017"
+          },
+          {
+            text: "Emi Buendia created more than any other player on the pitch (0.4 expected goals) and created 0.4 expected goals.",
+            id: "1481097738972450826"
+          },
+          {
+            text: "Emi Buendia also had a good game, playing more key passes than any other player on the pitch (four), followed by John McGinn, who played three key passes.",
+            id: "1481097740578873353"
+          },
+          {
+            text: "Danny Ings, our man of the match, played an impressive seven key passes - tallying an xA of zero resulting in zero assist.",
+            id: "1481097742357250057"
+          },
+          {
+            text: "Danny Ings took more shots on target than any other player on the pitch (three), followed by Emi Buendia, who completed one shots on target.",
+            id: "1481097743892365313"
+          },
+          {
+            text: "Emi Buendia found a teammate with 85% of his attempted passes, the second highest pass completion rate of any Aston Villa player.",
+            id: "1481097745846968325"
+          },
+          {
+            text: "John McGinn made more successful passes into the final third than any other player on the pitch (four), followed by Emi Buendia, who completed three passes into the final third.",
+            id: "1481097747956703232"
+          },
+          {
+            text: "Danny Ings successfuly recieved 12 progressive passes (more than any other player on the pitch) and recieved 12 progressive passes.",
+            id: "1481097749659631621"
+          },
+          {
+            text: "Emi Buendia successfully dribbled past an opponent on two occasions out of two attempts. Buendia also carried the ball into the final third 2 times and completed 2 successful dribbles.",
+            id: "1481101526470905856"
+          },
+          {
+            text: "Danny Ings pressed the opponent 13 times - more than any other player in a Aston Villa shirt.",
+            id: "1481101528123457540"
+          },
+          {
+            text: "Danny Ings pressed the opponent more times (21) than any other player in a Aston Villa shirt, winning the ball back on five occassions. Ings also made two interceptions and made one clearances.",
+            id: "1481101529763524610"
+          },
+          {
+            text: "Emi Buendia made one successful tackles - more than any other Aston Villa player.",
+            id: "1481101531562840069"
+          }
+        ],
+        misc: {
+          story_id: 14,
+          team: "Aston Villa",
+          opponent: "Brentford",
+          result: [
+            2,
+            1
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Aston Villa",
+                "Passing_TotalSucc",
+                428
+              ],
+              [
+                "Brentford",
+                "Passing_TotalSucc",
+                320
+              ],
+              [
+                "Aston Villa",
+                "Passing_TotalSucc!s",
+                305.74
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Attack_SoT",
+                5
+              ],
+              [
+                "Brentford",
+                "Attack_SoT",
+                4
+              ],
+              [
+                "Aston Villa",
+                "Attack_SoT!p-Chelsea",
+                1
+              ],
+              [
+                "Aston Villa",
+                "Attack_SoT!s",
+                3.37
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Passing_PassesFinal3rd",
+                25
+              ],
+              [
+                "Brentford",
+                "Passing_PassesFinal3rd",
+                23
+              ],
+              [
+                "Aston Villa",
+                "Passing_PassesFinal3rd!p-Chelsea",
+                19
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Passing_LongSucc",
+                54
+              ],
+              [
+                "Aston Villa",
+                "Passing_LongSucc!p-Chelsea",
+                43
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Possession_Touches",
+                627
+              ],
+              [
+                "Brentford",
+                "Possession_Touches",
+                526
+              ],
+              [
+                "Aston Villa",
+                "Possession_Touches!s",
+                517.26
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Possession_TchPPressTakenRatio",
+                7.04
+              ],
+              [
+                "Brentford",
+                "Possession_TchPPressTakenRatio",
+                6.12
+              ],
+              [
+                "Aston Villa",
+                "Possession_TchPPressTakenRatio!s",
+                3.82
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Possession_TchPPressGivenRatio",
+                6.12
+              ],
+              [
+                "Aston Villa",
+                "Possession_TchPPressGivenRatio!s",
+                3.82
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Defence_AerialSucc",
+                15
+              ],
+              [
+                "Aston Villa",
+                "Defence_AerialSucc!p-Chelsea",
+                8
+              ]
+            ],
+            [
+              [
+                "Aston Villa",
+                "Defence_AerialPerc",
+                48.4
+              ],
+              [
+                "Aston Villa",
+                "Defence_AerialPerc!p-Chelsea",
+                42.1
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_Goals",
+                0
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_Goals!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_xA",
+                0.4
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_xA!r",
+                1
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Attack_xA",
+                0.4
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Attack_xA!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_KP",
+                4
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_KP!r",
+                1
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Attack_KP",
+                3
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Attack_KP!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Danny Ings - Aston Villa",
+                "Attack_Assist",
+                0
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "MOTM",
+                "true"
+              ]
+            ],
+            [
+              [
+                "Danny Ings - Aston Villa",
+                "Attack_SoT",
+                3
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Attack_SoT!r",
+                1
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_SoT",
+                1
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Attack_CarriesPA",
+                2
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Attack_CarriesPA!r",
+                1
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Attack_SoT!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Passing_TotalPerc",
+                84.6
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Passing_TotalPerc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Passing_PassesFinal3rd",
+                3
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Passing_PassesFinal3rd",
+                4
+              ],
+              [
+                "John McGinn - Aston Villa",
+                "Passing_PassesFinal3rd!tr",
+                1
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Passing_PassesFinal3rd!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Danny Ings - Aston Villa",
+                "Possession_ReceiveProg",
+                12
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Possession_ReceiveProg!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Possession_DrbSucc",
+                2
+              ]
+            ],
+            [
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_Press",
+                13
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_Press!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_PressSucc",
+                5
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_PressSucc!tr",
+                1
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_Int",
+                2
+              ],
+              [
+                "Danny Ings - Aston Villa",
+                "Defence_Clearances",
+                1
+              ]
+            ],
+            [
+              [
+                "Emi Buendia - Aston Villa",
+                "Defence_TacklesSucc",
+                1
+              ],
+              [
+                "Emi Buendia - Aston Villa",
+                "Defence_TacklesSucc!tr",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "15": {
+        data: [
+          {
+            text: "Southampton applied more pressure high up the pitch, pressing 46 times in the final third while Tottenham pressed 29 times in the final third.",
+            id: "1481102117838499844"
+          },
+          {
+            text: "In their last game (against West Ham) the Saints pressed 46 times in the final third and have pressed 39.0 times in the final third this season..",
+            id: "1481102119545544706"
+          },
+          {
+            text: "Southampton played 38 successful long balls, compared with 38 from Southampton. In their last game (against West Ham) the Saints successfully played 36 long balls and have averaged 37.0 per 90 minutes this season.",
+            id: "1481102121277743106"
+          },
+          {
+            text: "Southampton gave their opponent an average of 5.1 touches each time they pressed.",
+            id: "1481102123022655488"
+          },
+          {
+            text: "Tottenham allowed the Saints 2.6 touches per press, considerably less than the 3.6 touches permitted by West Ham in Southampton's last game. This season they've allowed the Saints 3.6 touches per press..",
+            id: "1481102124666736648"
+          },
+          {
+            text: "Southampton attempted 14 challenges resulting in six successful tackles. Tottenham attempted nine challenges, completing two successful tackles.",
+            id: "1481102126860447745"
+          },
+          {
+            text: "Tottenham were patient when of possession, making only one tackles in the defensive third Southampton's five.",
+            id: "1481102128491945987"
+          },
+          {
+            text: "Southampton won an impressive 24 aerial duels, similar to their average per 90 minute this season (20.0).",
+            id: "1481102130077384709"
+          },
+          {
+            text: "Southampton won 46% or the game's aerial duels. In their last game they won 51% and across the season they've won 45%.",
+            id: "1481102131704868866"
+          },
+          {
+            text: "James Ward-Prowse, our man of the match, took two shots on target (more than anyone else on the pitch) and took two shots on target.",
+            id: "1481105908528824321"
+          },
+          {
+            text: "Ibrahima Diallo created more than any other Southampton player (0.1), creating more successful passes than any other Southampton player.",
+            id: "1481105910118465537"
+          },
+          {
+            text: "Ibrahima Diallo played three key passes - more than anyone else on the pitch.",
+            id: "1481105911695519744"
+          },
+          {
+            text: "James Ward-Prowse successfuly completed 29 passes (more than any other Southampton player), while Ibrahima Diallo attempted four challenges.",
+            id: "1481105913356460036"
+          },
+          {
+            text: "Ibrahima Diallo found a teammate with 88% of his attempted passes, the highest pass completion rate of any Southampton player.",
+            id: "1481105915029954563"
+          },
+          {
+            text: "James Ward-Prowse made more successful passes into the final third than any other Southampton player (five), followed by Ibrahima Diallo, who completed four passes into the final third.",
+            id: "1481105916753813509"
+          },
+          {
+            text: "James Ward-Prowse carried the ball into the final third two times, while James Ward-Prowse made two carries into the final third.",
+            id: "1481105918502842368"
+          },
+          {
+            text: "James Ward-Prowse successfully dribbled past an opponent on one occasions out of one attempts - more than any other player in a Southampton shirt. Ibrahima Diallo successfully dribbled past an opponent on one occasions out of one attempts.",
+            id: "1481105920201568258"
+          },
+          {
+            text: "Ibrahima Diallo pressed the opponent 23 times - more than any other player in a Southampton shirt. Shane long pressed 27 times.",
+            id: "1481105921975767040"
+          },
+          {
+            text: "Ibrahima Diallo attempted more challenges than any other player on the pitch (a combined challanges (more than any other player on the pitch), followed by Shane, who attempted two challenges.",
+            id: "1481105923645054983"
+          }
+        ],
+        misc: {
+          story_id: 15,
+          team: "Southampton",
+          opponent: "Tottenham",
+          result: [
+            1,
+            1
+          ],
+          date: "2021-12-28",
+          stories: [
+            [
+              [
+                "Southampton",
+                "Attack_PressFinal3rd",
+                46
+              ],
+              [
+                "Tottenham",
+                "Attack_PressFinal3rd",
+                29
+              ],
+              [
+                "Southampton",
+                "Attack_PressFinal3rd!p-West Ham",
+                21
+              ],
+              [
+                "Southampton",
+                "Attack_PressFinal3rd!s",
+                39.37
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Passing_LongSucc",
+                38
+              ],
+              [
+                "Southampton",
+                "Passing_LongSucc!p-West Ham",
+                36
+              ],
+              [
+                "Southampton",
+                "Passing_LongSucc!s",
+                36.74
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Possession_TchPPressGivenRatio",
+                5.14
+              ],
+              [
+                "Tottenham",
+                "Possession_TchPPressGivenRatio",
+                2.58
+              ],
+              [
+                "Southampton",
+                "Possession_TchPPressGivenRatio!p-West Ham",
+                3.64
+              ],
+              [
+                "Southampton",
+                "Possession_TchPPressGivenRatio!s",
+                3.58
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Defence_Tackles",
+                14
+              ],
+              [
+                "Tottenham",
+                "Defence_Tackles",
+                9
+              ],
+              [
+                "Southampton",
+                "Defence_TacklesSucc",
+                6
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesSucc",
+                2
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Defence_TacklesDef3rd",
+                5
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesDef3rd",
+                1
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Defence_AerialSucc",
+                24
+              ],
+              [
+                "Southampton",
+                "Defence_AerialSucc!p-West Ham",
+                24
+              ],
+              [
+                "Southampton",
+                "Defence_AerialSucc!s",
+                19.95
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Defence_AerialPerc",
+                46.2
+              ],
+              [
+                "Southampton",
+                "Defence_AerialPerc!p-West Ham",
+                51.1
+              ],
+              [
+                "Southampton",
+                "Defence_AerialPerc!s",
+                45
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "MOTM",
+                "true"
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Attack_SoT!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Ibrahima Diallo - Southampton",
+                "Attack_xA",
+                0.1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Attack_xA!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Ibrahima Diallo - Southampton",
+                "Attack_KP",
+                3
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Attack_KP!r",
+                1
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_TotalSucc",
+                29
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_TotalSucc!tr",
+                1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_TotalSucc",
+                28
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_TotalSucc!tr",
+                2
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Defence_Tackles",
+                4
+              ],
+              [
+                "Shane Long - Southampton",
+                "Defence_Tackles",
+                2
+              ]
+            ],
+            [
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_TotalPerc",
+                87.5
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_TotalPerc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_PassesFinal3rd",
+                6
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_PassesFinal3rd!tr",
+                1
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_LongSucc",
+                5
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_LongSucc!tr",
+                1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_LongSucc",
+                4
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Passing_LongSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Possession_CarriesFinal3rd!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Possession_DrbSucc!tr",
+                1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Possession_DrbSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Ibrahima Diallo - Southampton",
+                "Defence_Press",
+                23
+              ],
+              [
+                "Shane Long - Southampton",
+                "Defence_Press",
+                27
+              ],
+              [
+                "Shane Long - Southampton",
+                "Defence_Press!tr",
+                1
+              ],
+              [
+                "Ibrahima Diallo - Southampton",
+                "Defence_Press!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Ibrahima Diallo - Southampton",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Shane Long - Southampton",
+                "Defence_Tackles!r",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "16": {
+        data: [
+          {
+            text: "Brentford saw more of the ball, completing 320 passes to the 148 they saw in their last game (against Manchester City).",
+            id: "1481106500848336897"
+          },
+          {
+            text: "Brentford took four shots on target, up from two in their last game against Manchester City.",
+            id: "1481106502513479687"
+          },
+          {
+            text: "Brentford were aggressive when of possession, making three tackles in the final third to Aston Villa's one.",
+            id: "1481106504073818118"
+          },
+          {
+            text: "Brentford succesffuly played 23 passes into the final third, considerably more than the eight they played in their last game (against Manchester City).",
+            id: "1481110280922882048"
+          },
+          {
+            text: "Brentford completed 58 long balls, compared with 58 from Manchester City. In their last game (against Manchester City) the Bees successfully played 22 long balls and have averaged 48.0 per 90 minutes this season.",
+            id: "1481110282571329537"
+          },
+          {
+            text: "Brentford were given an average of 6.1 touches each time the opponent pressed - more than the average amount of touches they've been given this season (3.7 touches per press).",
+            id: "1481110284525838338"
+          },
+          {
+            text: "Brentford were patient off the ball, allowing Aston Villa an average of 7.0 touches each time they pressed. Aston Villa allowed the Bees 6.1 touches per press, considerably more than the 3.7 touches permitted by Aston Villa in Brentford's last game.",
+            id: "1481110286929219584"
+          },
+          {
+            text: "Brentford attempted 24 challenges resulting in 10 successful tackles, while Aston Villa made 12 challenges and six successful tackles. This season they have averaged 19.0 challenges and six successful tackles per 90 minutes.",
+            id: "1481110288577576961"
+          },
+          {
+            text: "Brentford attempted 13 challenges in the defensive third, considerably more than the three made by Aston Villa. This season the Bees have averaged 9.3 tackles in the defensive third per 90 minutes.",
+            id: "1481110290716577794"
+          },
+          {
+            text: "Christian Norgaard successfuly completed 46 passes - the second most of any Brentford player.",
+            id: "1481110292373385216"
+          },
+          {
+            text: "Christian Norgaard made more successful passes into the final third than any other player on the pitch (nine), while Pontus Jansson completed 12.",
+            id: "1481110293900058624"
+          },
+          {
+            text: "Frankonyeka carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 162 yards), while Frankonyeka carried the ball a combined 162 yards towards the opponent's goal.",
+            id: "1481110295531638785"
+          },
+          {
+            text: "Frankonyeka successfully dribbled past an opponent on one occasions out of one attempts - more than any other player in a Brentford shirt. Christian Norgaard successfully dribbled past an opponent on one occasions out of one attempts.",
+            id: "1481110297217744897"
+          },
+          {
+            text: "Frankonyeka pressed the opponent 20 times - more than any other player on the pitch. Christian Norgaard pressed 13 times.",
+            id: "1481110299155574784"
+          },
+          {
+            text: "Frankonyeka pressed the opponent more times (21) than any other player on the pitch, while Christian Norgaard pressed 5 times, winning possession on five occasions.",
+            id: "1481110300770377731"
+          },
+          {
+            text: "Frank onyeka attempted to make more challenges than any other player on the pitch (five), resulting in two successful tackles. Christian Norgaard attempted five challenges, completing two successful tackles.",
+            id: "1481110302393569285"
+          },
+          {
+            text: "Christian Norgaard made five interceptions - more than any other player on the pitch.",
+            id: "1481114079200780288"
+          }
+        ],
+        misc: {
+          story_id: 16,
+          team: "Brentford",
+          opponent: "Aston Villa",
+          result: [
+            2,
+            1
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Brentford",
+                "Passing_TotalSucc",
+                320
+              ],
+              [
+                "Brentford",
+                "Passing_TotalSucc!p-Manchester City",
+                148
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Attack_SoT",
+                4
+              ],
+              [
+                "Brentford",
+                "Attack_SoT!p-Manchester City",
+                2
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Attack_TacklesFinal3rd",
+                3
+              ],
+              [
+                "Aston Villa",
+                "Attack_TacklesFinal3rd",
+                1
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Passing_PassesFinal3rd",
+                23
+              ],
+              [
+                "Brentford",
+                "Passing_PassesFinal3rd!p-Manchester City",
+                8
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Passing_LongSucc",
+                58
+              ],
+              [
+                "Brentford",
+                "Passing_LongSucc!p-Manchester City",
+                22
+              ],
+              [
+                "Brentford",
+                "Passing_LongSucc!s",
+                48.11
+              ],
+              [
+                "Brentford",
+                "Passing_LongPerc",
+                56.9
+              ],
+              [
+                "Brentford",
+                "Passing_LongPerc!p-Manchester City",
+                31.4
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Possession_TchPPressTakenRatio",
+                6.12
+              ],
+              [
+                "Brentford",
+                "Possession_TchPPressTakenRatio!s",
+                3.73
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Possession_TchPPressGivenRatio",
+                7.04
+              ],
+              [
+                "Aston Villa",
+                "Possession_TchPPressGivenRatio",
+                6.12
+              ],
+              [
+                "Brentford",
+                "Possession_TchPPressGivenRatio!s",
+                3.73
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Defence_Tackles",
+                24
+              ],
+              [
+                "Aston Villa",
+                "Defence_Tackles",
+                12
+              ],
+              [
+                "Brentford",
+                "Defence_Tackles!s",
+                19.16
+              ],
+              [
+                "Brentford",
+                "Defence_TacklesSucc",
+                10
+              ],
+              [
+                "Aston Villa",
+                "Defence_TacklesSucc",
+                6
+              ]
+            ],
+            [
+              [
+                "Brentford",
+                "Defence_TacklesDef3rd",
+                13
+              ],
+              [
+                "Aston Villa",
+                "Defence_TacklesDef3rd",
+                3
+              ],
+              [
+                "Brentford",
+                "Defence_TacklesDef3rd!s",
+                9.32
+              ]
+            ],
+            [
+              [
+                "Christian Norgaard - Brentford",
+                "Passing_TotalSucc",
+                46
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Passing_TotalSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Christian Norgaard - Brentford",
+                "Passing_PassesFinal3rd",
+                7
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Passing_LongSucc",
+                9
+              ],
+              [
+                "Pontus Jansson - Brentford",
+                "Passing_LongSucc",
+                12
+              ],
+              [
+                "Pontus Jansson - Brentford",
+                "Passing_LongSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Frank Onyeka - Brentford",
+                "Possession_CarriesPrgDist",
+                162
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Possession_CarriesPrgDist!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Frank Onyeka - Brentford",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Possession_DrbSucc!tr",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Possession_DrbSucc",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Possession_DrbSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_Press",
+                20
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_Press!r",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Press",
+                13
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Press!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_PressSucc",
+                6
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_PressSucc!r",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_PressSucc",
+                5
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_PressSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Frank Onyeka - Brentford",
+                "Defence_TacklesSucc",
+                2
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Tackles!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Christian Norgaard - Brentford",
+                "Defence_Int!r",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "17": {
+        data: [
+          {
+            text: "Everton saw more of the ball, completing 320 passes to Everton's 320. In their last game (against Chelsea) Everton completed 115 passes, while Everton completed 115.",
+            id: "1481114650674700288"
+          },
+          {
+            text: "Everton took six shots on target, up from three in their last game against Chelsea. This season the Toffees have averaged 3.7 took five shots on target per 90 minutes.",
+            id: "1481114652419530752"
+          },
+          {
+            text: "Everton were aggressive out of possession, making four tackles in the final third compared with 2.7 tackles in the final third this season.",
+            id: "1481114654080475141"
+          },
+          {
+            text: "Everton succesffuly played an impressive 31 passes into the final third, considerably more than the 21 from Brighton. In their last game (against Chelsea) the Toffees completed eight passes into the final third.",
+            id: "1481114655674314757"
+          },
+          {
+            text: "Everton played 64 successful long balls, compared with 45 from Brighton. In their last game (against Chelsea) the Toffees successfully played 27 long balls and have averaged 44.0 per 90 minutes this season.",
+            id: "1481114657406529542"
+          },
+          {
+            text: "Everton completed 55% of the passes they played long, compared with 45% from Brighton.",
+            id: "1481114659063275520"
+          },
+          {
+            text: "Everton were given an average of 4.8 touches each time the opponent pressed - more than the average amount of touches they've been given this season (3.2 touches per press).",
+            id: "1481114660732608518"
+          },
+          {
+            text: "Everton made 14 successful tackles, while Brighton made 10 successful tackles.",
+            id: "1481114662305415169"
+          },
+          {
+            text: "Everton won an impressive 29 aerial duels, considerably more than their average per 90 minute this season (18.0).",
+            id: "1481114664000012288"
+          },
+          {
+            text: "Demarai Gray, our man of the match, created some of the best chances of the game - tallying an xA of 0.3 (more than any other Everton player) created more than Jonjoe Kenny, finding chances worth 0.3 expected goals to Jonjoe Kenny's 0.2.",
+            id: "1481114665619017741"
+          },
+          {
+            text: "Demarai Gray also had a good game, playing more key passes than any other player on the pitch (three), followed by Jonjoe Kenny, who completed two key passes.",
+            id: "1481114667435102210"
+          },
+          {
+            text: "Jonjoe Kenny played one assist, while Allan assisted one assist.",
+            id: "1481114669658296322"
+          },
+          {
+            text: "Demarai Gray successfuly recieved eight progressive passes (more than any other Everton player) and recieved 8 progressive passes.",
+            id: "1481118447127994371"
+          },
+          {
+            text: "Demarai Gray successfully dribbled past an opponent on six occasions out of six attempts - more than any other player on the pitch.",
+            id: "1481118448721838088"
+          },
+          {
+            text: "Gray also carried the ball a combined 134 yards towards the opponent's goal, while Demarai Gray successfully dribbled past an opponent on six occasions out of six attempts..",
+            id: "1481118450546266112"
+          },
+          {
+            text: "Allan pressed the opponent more times (21) than any other player in a Everton shirt, winning possession on nine occassions.",
+            id: "1481118452584701961"
+          },
+          {
+            text: "Jonjoe Kenny attempted to make more challenges than any other Everton player (four), resulting in four successful tackles (more than any other player on the pitch). Allan attempted three challenges, completing two successful tackles.",
+            id: "1481118454077870084"
+          }
+        ],
+        misc: {
+          story_id: 17,
+          team: "Everton",
+          opponent: "Brighton",
+          result: [
+            2,
+            3
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Everton",
+                "Passing_TotalSucc",
+                320
+              ],
+              [
+                "Everton",
+                "Passing_TotalSucc!p-Chelsea",
+                115
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Attack_SoT",
+                6
+              ],
+              [
+                "Brighton",
+                "Attack_SoT",
+                5
+              ],
+              [
+                "Everton",
+                "Attack_SoT!p-Chelsea",
+                3
+              ],
+              [
+                "Everton",
+                "Attack_SoT!s",
+                3.67
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Attack_TacklesFinal3rd",
+                4
+              ],
+              [
+                "Everton",
+                "Attack_TacklesFinal3rd!s",
+                2.67
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Passing_PassesFinal3rd",
+                31
+              ],
+              [
+                "Brighton",
+                "Passing_PassesFinal3rd",
+                21
+              ],
+              [
+                "Everton",
+                "Passing_PassesFinal3rd!p-Chelsea",
+                8
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Passing_LongSucc",
+                64
+              ],
+              [
+                "Brighton",
+                "Passing_LongSucc",
+                45
+              ],
+              [
+                "Everton",
+                "Passing_LongSucc!p-Chelsea",
+                27
+              ],
+              [
+                "Everton",
+                "Passing_LongSucc!s",
+                44.28
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Passing_LongPerc",
+                55.2
+              ],
+              [
+                "Brighton",
+                "Passing_LongPerc",
+                45
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Possession_TchPPressTakenRatio",
+                4.77
+              ],
+              [
+                "Everton",
+                "Possession_TchPPressTakenRatio!p-Chelsea",
+                2.24
+              ],
+              [
+                "Everton",
+                "Possession_TchPPressTakenRatio!s",
+                3.24
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Defence_TacklesSucc",
+                14
+              ],
+              [
+                "Brighton",
+                "Defence_TacklesSucc",
+                10
+              ]
+            ],
+            [
+              [
+                "Everton",
+                "Defence_AerialSucc",
+                29
+              ],
+              [
+                "Everton",
+                "Defence_AerialSucc!s",
+                17.83
+              ]
+            ],
+            [
+              [
+                "Demarai Gray - Everton",
+                "Attack_xA",
+                0.3
+              ],
+              [
+                "Demarai Gray - Everton",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Attack_xA!tr",
+                1
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_xA",
+                0.2
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_xA!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Demarai Gray - Everton",
+                "Attack_KP",
+                3
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Attack_KP!r",
+                1
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_KP",
+                2
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Attack_CarriesPA",
+                1
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_KP!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_Assist",
+                1
+              ],
+              [
+                "Allan - Everton",
+                "Attack_Assist",
+                1
+              ],
+              [
+                "Allan - Everton",
+                "Attack_Assist!tr",
+                1
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Attack_Assist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Demarai Gray - Everton",
+                "Possession_ReceiveProg",
+                8
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Possession_ReceiveProg!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Demarai Gray - Everton",
+                "Possession_CarriesPrgDist",
+                134
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Possession_DrbSucc",
+                6
+              ],
+              [
+                "Demarai Gray - Everton",
+                "Possession_DrbSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_PressSucc",
+                9
+              ],
+              [
+                "Allan - Everton",
+                "Defence_PressSucc",
+                9
+              ],
+              [
+                "Allan - Everton",
+                "Defence_PressSucc!tr",
+                1
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_PressSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_Tackles",
+                4
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_Tackles!tr",
+                1
+              ],
+              [
+                "Allan - Everton",
+                "Defence_Tackles",
+                3
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_TacklesSucc",
+                4
+              ],
+              [
+                "Jonjoe Kenny - Everton",
+                "Defence_TacklesSucc!r",
+                1
+              ],
+              [
+                "Allan - Everton",
+                "Defence_TacklesSucc",
+                2
+              ]
+            ],
+            []
+          ]
+        }
+      },
+      "18": {
+        data: [
+          {
+            text: "Burnley spent large parts of the game without the ball, completing only 214 passes to Leeds' 291.",
+            id: "1481119031591641090"
+          },
+          {
+            text: "Leeds United took seven shots on target, up from one in their last game against Arsenal. This season Leeds have averaged 4.0 took seven shots on target per 90 minutes.",
+            id: "1481119033143480321"
+          },
+          {
+            text: "Leeds United were aggressive out of possession, making five tackles in the final third to Burnley's two. In their last game (against Arsenal) United attempted one challenges in the final third, while throughout the season they've averaged 2.7 per 90 minutes.",
+            id: "1481119034842226688"
+          },
+          {
+            text: "Leeds United were given an average of 4.8 touches each time the opponent pressed - Burnley took an average of 3.3 touches per press. This season, Leeds United have averaged (3.7 touches for each opponent press.",
+            id: "1481119036490625033"
+          },
+          {
+            text: "Leeds United attempted 23 challenges in this game, considerably more than the 19 they made during their last game (against Arsenal). This season they have averaged 21.0 challenges per 90 minutes.",
+            id: "1481119038109593602"
+          },
+          {
+            text: "Burnley made seven successful tackles, while Leeds United made 11 successful tackles.",
+            id: "1481119039778959365"
+          },
+          {
+            text: "Leeds United won an impressive 30 aerial duels. In their last game they won 11 aerial duels and across the season they've averaged 15.0 per 90 minutes.",
+            id: "1481119041452449793"
+          },
+          {
+            text: "Mateusz Klich created less than Leeds, finding chances worth 0.3 expected goals to Leeds' 0.3.",
+            id: "1481119043100753921"
+          },
+          {
+            text: "Mateusz Klich played an impressive eight key passes, more than anyone else on the pitch, while Mateusz Klich played eight key passes resulting in one assist.",
+            id: "1481122819782189057"
+          },
+          {
+            text: "Luke Ayling successfuly completed 42 passes (more than any other player on the pitch), while Mateusz Klich completed 32.",
+            id: "1481122821417979907"
+          },
+          {
+            text: "Mateusz Klich made more successful passes into the final third than any other player on the pitch (six), while Luke Ayling completed five passes into the final third.",
+            id: "1481122822978215937"
+          },
+          {
+            text: "Luke Ayling played more successful long balls than any other Leeds player (eight), followed by Adam Forshaw, who completed five long balls.",
+            id: "1481122824651784193"
+          },
+          {
+            text: "Mateusz Klich successfuly recieved 10 progressive passes (more than any other player on the pitch) and recieved 10 progressive passes.",
+            id: "1481122826220359685"
+          },
+          {
+            text: "Luke Ayling carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 185 yards), while Luke Ayling carried the ball a combined 185 yards towards the opponent's goal.",
+            id: "1481122827940028416"
+          },
+          {
+            text: "Mateusz Klich carried the ball into the final third four times (more than any other player on the pitch), while Adam Forshaw made two carries into the final third.",
+            id: "1481122829642969089"
+          },
+          {
+            text: "Mateusz Klich pressed the opponent 18 times - more than any other player in a Leeds shirt.",
+            id: "1481122831660470276"
+          },
+          {
+            text: "Luke Ayling made more interceptions (three) than any other Leeds player, while Adam Toshaw made three.",
+            id: "1481122833199677440"
+          },
+          {
+            text: "Luke Ayling made five clearances and won seven aerial duels (more than any other Leeds player).",
+            id: "1481122834751668224"
+          }
+        ],
+        misc: {
+          story_id: 18,
+          team: "Leeds United",
+          opponent: "Burnley",
+          result: [
+            3,
+            1
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Leeds United",
+                "Passing_TotalSucc",
+                291
+              ],
+              [
+                "Burnley",
+                "Passing_TotalSucc",
+                214
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Attack_SoT",
+                7
+              ],
+              [
+                "Burnley",
+                "Attack_SoT",
+                2
+              ],
+              [
+                "Leeds United",
+                "Attack_SoT!p-Arsenal",
+                1
+              ],
+              [
+                "Leeds United",
+                "Attack_SoT!s",
+                4.05
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Attack_TacklesFinal3rd",
+                5
+              ],
+              [
+                "Burnley",
+                "Attack_TacklesFinal3rd",
+                2
+              ],
+              [
+                "Leeds United",
+                "Attack_TacklesFinal3rd!p-Arsenal",
+                1
+              ],
+              [
+                "Leeds United",
+                "Attack_TacklesFinal3rd!s",
+                2.68
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Possession_TchPPressTakenRatio",
+                4.83
+              ],
+              [
+                "Burnley",
+                "Possession_TchPPressTakenRatio",
+                3.34
+              ],
+              [
+                "Leeds United",
+                "Possession_TchPPressTakenRatio!s",
+                3.68
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Defence_Tackles",
+                23
+              ],
+              [
+                "Leeds United",
+                "Defence_Tackles!p-Arsenal",
+                19
+              ],
+              [
+                "Leeds United",
+                "Defence_Tackles!s",
+                20.79
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Defence_TacklesSucc",
+                11
+              ],
+              [
+                "Burnley",
+                "Defence_TacklesSucc",
+                7
+              ]
+            ],
+            [
+              [
+                "Leeds United",
+                "Defence_AerialSucc",
+                30
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialSucc!p-Arsenal",
+                11
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialSucc!s",
+                14.84
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialPerc",
+                43.5
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialPerc!p-Arsenal",
+                39.3
+              ]
+            ],
+            [
+              [
+                "Mateusz Klich - Leeds United",
+                "Attack_xA",
+                0.3
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Attack_xA!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Mateusz Klich - Leeds United",
+                "Attack_KP",
+                8
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Attack_KP!r",
+                1
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Attack_Assist",
+                1
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_TotalSucc",
+                42
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_TotalSucc!r",
+                1
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Passing_TotalSucc",
+                32
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Passing_TotalSucc!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_PassesFinal3rd",
+                5
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Passing_PassesFinal3rd",
+                6
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Passing_PassesFinal3rd!r",
+                1
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_PassesPrgDist",
+                484
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_PassesPrgDist!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_LongSucc",
+                8
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Passing_LongSucc!tr",
+                1
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Passing_LongSucc",
+                5
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Passing_LongSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Mateusz Klich - Leeds United",
+                "Possession_ReceiveProg",
+                10
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Possession_ReceiveProg!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Possession_CarriesPrgDist",
+                185
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Possession_CarriesPrgDist!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Mateusz Klich - Leeds United",
+                "Possession_CarriesFinal3rd",
+                4
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Possession_CarriesFinal3rd!r",
+                1
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Possession_CarriesFinal3rd",
+                2
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Possession_CarriesFinal3rd!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Mateusz Klich - Leeds United",
+                "Defence_Press",
+                18
+              ],
+              [
+                "Mateusz Klich - Leeds United",
+                "Defence_Press!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Adam Forshaw - Leeds United",
+                "Defence_Int!tr",
+                1
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Defence_Int!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Luke Ayling - Leeds United",
+                "Defence_Clearances",
+                5
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Defence_AerialSucc",
+                7
+              ],
+              [
+                "Luke Ayling - Leeds United",
+                "Defence_AerialSucc!tr",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "19": {
+        data: [
+          {
+            text: "Watford found a teammate with 66% of his attempted passes. In their last game (against West Ham) the Hornets successfully played 70% of their attempted passes and have averaged 70% of their completed passes.",
+            id: "1481123446448963585"
+          },
+          {
+            text: "Watford took four shots on target, considerably more than their average per 90 minutes this season (4.0).",
+            id: "1481123448151810049"
+          },
+          {
+            text: "Watford were patient off the ball, allowing Tottenham an average of 8.7 touches each time they pressed.",
+            id: "1481123449779200000"
+          },
+          {
+            text: "Tottenham allowed the Hornets 2.6 touches per press, considerably less than the 5.7 touches permitted by West Ham in Watford's last game. This season, Watford have allowed the Hornets 3.3 touches for each opponent press..",
+            id: "1481127226548670465"
+          },
+          {
+            text: "Watford attempted 19 challenges in this game, more than the 17 made by Tottenham. In their last game (against West Ham) the Hornets attempted 20 challenges in the final game, while this season they have averaged 17.0 challenges per 90 minutes.",
+            id: "1481127228238934016"
+          },
+          {
+            text: "Watford made 10 successful tackles in this match, less than the 12 they made in their last match (against West Ham).",
+            id: "1481127230101147652"
+          },
+          {
+            text: "Watford attempted 13 challenges in the defensive third, considerably more than the three made by Tottenham. In their last game (against West Ham) the Hornets attempted 14 challenges in the defensive third, while throughout the season they've averaged 9.8 per 90 minutes.",
+            id: "1481127231657230336"
+          },
+          {
+            text: "Watford won 46% or the game's aerial duels. This season Watford have averaged 22.0 per 90 minutes.",
+            id: "1481127233301401601"
+          },
+          {
+            text: "Imran Louza successfuly completed 26 passes - more than any other Watford player.",
+            id: "1481127235054673928"
+          },
+          {
+            text: "Imran Louza found a teammate with 76% of his attempted passes, while Joshua King completed 77% of his passes.",
+            id: "1481127236677914628"
+          },
+          {
+            text: "Imran Louza made more successful passes into the final third than any other player on the pitch (two), followed by Joshua King, who completed two passes into the final third.",
+            id: "1481127238242295809"
+          },
+          {
+            text: "Juraj Kucka passed the ball a combined 175 yards towards the opponents goal, more than any other Watford player.",
+            id: "1481127239911714816"
+          },
+          {
+            text: "Juraj Kucka attempted to make five challenges, resulting in five successful passes (more than any other Watford player). Imran Louza attempted five challenges, completing the ball a combined 114 yards towards the opponent's goal.",
+            id: "1481127241480343553"
+          },
+          {
+            text: "Imran Louza successfully dribbled past an opponent on four occasions out of four attempts - more than any other Watford player.",
+            id: "1481127244294729732"
+          },
+          {
+            text: "Imran Louza pressed the opponent 27 times - more than any other player on the pitch.",
+            id: "1481127245800484865"
+          },
+          {
+            text: "Imran Louza pressed the opponent 5 times, while Joshua King pressed 6 times, winning possession on five occasions.",
+            id: "1481127247427911680"
+          },
+          {
+            text: "Juraj Kucka attempted to make more challenges than any other player on the pitch (three), resulting in three successful tackles. Imran Louza attempted three successful tackles.",
+            id: "1481131024532836352"
+          },
+          {
+            text: "Juraj Kucka made successful tackles - more than any other player on the pitch.",
+            id: "1481131026629992449"
+          },
+          {
+            text: "Juraj Kucka made six interceptions - more than any other player on the pitch.",
+            id: "1481131028160913409"
+          },
+          {
+            text: "Juraj Kucka made seven clearances (more than any other player on the pitch) and won seven aerial duels (also more than anyone else on the pitch).",
+            id: "1481131029742211072"
+          }
+        ],
+        misc: {
+          story_id: 19,
+          team: "Watford",
+          opponent: "Tottenham",
+          result: [
+            0,
+            1
+          ],
+          date: "2022-01-01",
+          stories: [
+            [
+              [
+                "Watford",
+                "Passing_TotalPerc",
+                66.2
+              ],
+              [
+                "Watford",
+                "Passing_TotalPerc!p-West Ham",
+                70.1
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Attack_SoT",
+                4
+              ],
+              [
+                "Watford",
+                "Attack_SoT!s",
+                4
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Possession_TchPPressGivenRatio",
+                8.71
+              ],
+              [
+                "Tottenham",
+                "Possession_TchPPressGivenRatio",
+                2.64
+              ],
+              [
+                "Watford",
+                "Possession_TchPPressGivenRatio!p-West Ham",
+                5.74
+              ],
+              [
+                "Watford",
+                "Possession_TchPPressGivenRatio!s",
+                3.3
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Defence_Tackles",
+                19
+              ],
+              [
+                "Tottenham",
+                "Defence_Tackles",
+                17
+              ],
+              [
+                "Watford",
+                "Defence_Tackles!p-West Ham",
+                20
+              ],
+              [
+                "Watford",
+                "Defence_Tackles!s",
+                17.11
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Defence_TacklesSucc",
+                10
+              ],
+              [
+                "Watford",
+                "Defence_TacklesSucc!p-West Ham",
+                12
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Defence_TacklesDef3rd",
+                13
+              ],
+              [
+                "Tottenham",
+                "Defence_TacklesDef3rd",
+                3
+              ],
+              [
+                "Watford",
+                "Defence_TacklesDef3rd!p-West Ham",
+                14
+              ],
+              [
+                "Watford",
+                "Defence_TacklesDef3rd!s",
+                9.83
+              ]
+            ],
+            [
+              [
+                "Watford",
+                "Defence_AerialSucc",
+                22
+              ],
+              [
+                "Tottenham",
+                "Defence_AerialSucc",
+                26
+              ],
+              [
+                "Watford",
+                "Defence_AerialSucc!s",
+                21.61
+              ],
+              [
+                "Watford",
+                "Defence_AerialPerc",
+                45.8
+              ],
+              [
+                "Tottenham",
+                "Defence_AerialPerc",
+                54.2
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Passing_TotalSucc",
+                26
+              ],
+              [
+                "Imran Louza - Watford",
+                "Passing_TotalSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Passing_TotalPerc",
+                76.5
+              ],
+              [
+                "Joshua King - Watford",
+                "Passing_TotalPerc",
+                76.9
+              ],
+              [
+                "Joshua King - Watford",
+                "Passing_TotalPerc!tr",
+                1
+              ],
+              [
+                "Imran Louza - Watford",
+                "Passing_TotalPerc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Passing_PassesFinal3rd",
+                2
+              ],
+              [
+                "Imran Louza - Watford",
+                "Passing_PassesFinal3rd!tr",
+                1
+              ],
+              [
+                "Joshua King - Watford",
+                "Passing_PassesFinal3rd",
+                1
+              ],
+              [
+                "Joshua King - Watford",
+                "Passing_PassesFinal3rd!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Passing_PassesPrgDist",
+                175
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Passing_PassesPrgDist!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Possession_CarriesPrgDist",
+                114
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Imran Louza - Watford",
+                "Defence_Tackles",
+                5
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Possession_DrbSucc",
+                4
+              ],
+              [
+                "Imran Louza - Watford",
+                "Possession_DrbSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Defence_Press",
+                27
+              ],
+              [
+                "Imran Louza - Watford",
+                "Defence_Press!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Imran Louza - Watford",
+                "Defence_PressSucc",
+                5
+              ],
+              [
+                "Joshua King - Watford",
+                "Defence_PressSucc",
+                6
+              ],
+              [
+                "Joshua King - Watford",
+                "Defence_PressSucc!r",
+                1
+              ],
+              [
+                "Imran Louza - Watford",
+                "Defence_PressSucc!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Tackles!r",
+                1
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_TacklesSucc",
+                3
+              ],
+              [
+                "Imran Louza - Watford",
+                "Defence_TacklesSucc",
+                3
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Defence_TacklesSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Int",
+                6
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Int!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Clearances",
+                7
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_Clearances!r",
+                1
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_AerialSucc",
+                7
+              ],
+              [
+                "Juraj Kucka - Watford",
+                "Defence_AerialSucc!r",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "20": {
+        data: [
+          {
+            text: "Burnley applied more pressure high up the pitch, pressing 51 times in the final third while Leeds United pressed 27 times in the final third.",
+            id: "1481131595608334337"
+          },
+          {
+            text: "In their last game (against Manchester United) the Clarets pressed 51 times in the final third and have pressed 35.0 times in the final third this season..",
+            id: "1481131597260804096"
+          },
+          {
+            text: "Burnley succesffuly played 30 passes into the final third, compared with 22 from Leeds. In their last game (against Manchester United) the Clarets completed 26 passes into the final third and have averaged 24.0 per 90 minutes this season.",
+            id: "1481131598846255104"
+          },
+          {
+            text: "Burnley gave their opponent an average of 4.8 touches each time they pressed. Leeds United allowed the Clarets 3.3 touches per press, considerably less than the 3.6 touches permitted by Leeds in Burnley's last game.",
+            id: "1481131600519868417"
+          },
+          {
+            text: "Burnley attempted eight challenges in the defensive third. In their last game (against Manchester United) the Clarets attempted six challenges in the defensive third.",
+            id: "1481131602277289986"
+          },
+          {
+            text: "Burnley won an impressive 39 aerial duels to Leeds' 30. In their last game (against Manchester United) the Clarets won 27 aerial duels and have averaged 28.0 per 90 minutes this season.",
+            id: "1481131604542111744"
+          },
+          {
+            text: "Burnley won 56% or the game's aerial duels. In their last game they won 53% and across the season they've won 53%.",
+            id: "1481131606249295876"
+          },
+          {
+            text: "Charlie Taylor, our man of the match, created some of the best chances of the game - tallying an xA of 0.5 (more than anyone else on the pitch) resulting in 0.5 (more than anyone else on the pitch) compared with 0.5 - more than anyone else on the pitch.",
+            id: "1481131607809531906"
+          },
+          {
+            text: "Charlie Taylor played two key passes - more than any other Burnley player.",
+            id: "1481131609436962817"
+          },
+          {
+            text: "Charlie Taylor successfuly completed 30 passes - more than any other Burnley player.",
+            id: "1481135386382544898"
+          },
+          {
+            text: "Ben Mee made six successful passes into the final third - more than any other player on the pitch.",
+            id: "1481135387909230594"
+          },
+          {
+            text: "Ben Mee passed the ball a combined 315 yards towards the opponents goal - more than any other Burnley player. Ben Mee also played more successful long balls than any other player on the pitch (nine), while Ben Mee completed nine.",
+            id: "1481135389532426241"
+          },
+          {
+            text: "Charlie Taylor carried the ball farther towards the opponent's goal than any other player in a Burnley shirt (a combined 60 yards). Ben Mee was the game's next most progessive ball carrier (65 yards).",
+            id: "1481135391747063809"
+          },
+          {
+            text: "Charlie Taylor successfully dribbled past an opponent on three occasions out of three attempts - more than any other player on the pitch. Taylor also carried the ball into the final third three times.",
+            id: "1481135393734987777"
+          },
+          {
+            text: "Charlie Taylor attempted to make more challenges than any other Burnley player (five), resulting in five attempted passes - more than any other Burnley player.",
+            id: "1481135396046135300"
+          },
+          {
+            text: "Charlie Taylor made four interceptions, while Ben Mee made three.",
+            id: "1481135397744824320"
+          },
+          {
+            text: "Chris Wood won 18 aerial duels (more than any other player on the pitch), while Charlie Taylor won five aerial duels.",
+            id: "1481135400156545025"
+          }
+        ],
+        misc: {
+          story_id: 20,
+          team: "Burnley",
+          opponent: "Leeds United",
+          result: [
+            3,
+            1
+          ],
+          date: "2022-01-02",
+          stories: [
+            [
+              [
+                "Burnley",
+                "Attack_PressFinal3rd",
+                51
+              ],
+              [
+                "Leeds United",
+                "Attack_PressFinal3rd",
+                27
+              ],
+              [
+                "Burnley",
+                "Attack_PressFinal3rd!p-Manchester Utd",
+                44
+              ],
+              [
+                "Burnley",
+                "Attack_PressFinal3rd!s",
+                35
+              ]
+            ],
+            [
+              [
+                "Burnley",
+                "Passing_PassesFinal3rd",
+                30
+              ],
+              [
+                "Leeds United",
+                "Passing_PassesFinal3rd",
+                22
+              ],
+              [
+                "Burnley",
+                "Passing_PassesFinal3rd!p-Manchester Utd",
+                26
+              ],
+              [
+                "Burnley",
+                "Passing_PassesFinal3rd!s",
+                23.94
+              ]
+            ],
+            [
+              [
+                "Burnley",
+                "Possession_TchPPressGivenRatio",
+                4.83
+              ],
+              [
+                "Leeds United",
+                "Possession_TchPPressGivenRatio",
+                3.34
+              ],
+              [
+                "Burnley",
+                "Possession_TchPPressGivenRatio!s",
+                3.58
+              ]
+            ],
+            [
+              [
+                "Burnley",
+                "Defence_TacklesDef3rd",
+                8
+              ],
+              [
+                "Burnley",
+                "Defence_TacklesDef3rd!p-Manchester Utd",
+                6
+              ]
+            ],
+            [
+              [
+                "Burnley",
+                "Defence_AerialSucc",
+                39
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialSucc",
+                30
+              ],
+              [
+                "Burnley",
+                "Defence_AerialSucc!p-Manchester Utd",
+                27
+              ],
+              [
+                "Burnley",
+                "Defence_AerialSucc!s",
+                28.29
+              ]
+            ],
+            [
+              [
+                "Burnley",
+                "Defence_AerialPerc",
+                56.5
+              ],
+              [
+                "Leeds United",
+                "Defence_AerialPerc",
+                43.5
+              ],
+              [
+                "Burnley",
+                "Defence_AerialPerc!p-Manchester Utd",
+                52.9
+              ],
+              [
+                "Burnley",
+                "Defence_AerialPerc!s",
+                53.3
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Attack_xA",
+                0.5
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Attack_xA!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Attack_KP",
+                2
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Attack_KP!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Passing_TotalSucc",
+                30
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Passing_TotalSucc!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Ben Mee - Burnley",
+                "Passing_PassesFinal3rd",
+                6
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Passing_PassesFinal3rd!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Ben Mee - Burnley",
+                "Passing_PassesPrgDist",
+                315
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Passing_PassesPrgDist!tr",
+                1
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Passing_LongSucc",
+                9
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Passing_LongSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_CarriesPrgDist",
+                60
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Possession_CarriesPrgDist",
+                65
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Possession_CarriesPrgDist!tr",
+                1
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_CarriesPrgDist!tr",
+                2
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_CarriesFinal3rd",
+                3
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_CarriesFinal3rd!tr",
+                1
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_DrbSucc",
+                3
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Possession_DrbSucc!r",
+                1
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_Tackles",
+                5
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_Tackles!tr",
+                1
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_Int",
+                4
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_Int!r",
+                1
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Ben Mee - Burnley",
+                "Defence_Int!r",
+                2
+              ]
+            ],
+            [
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_AerialSucc",
+                5
+              ],
+              [
+                "Chris Wood - Burnley",
+                "Defence_AerialSucc",
+                18
+              ],
+              [
+                "Chris Wood - Burnley",
+                "Defence_AerialSucc!r",
+                1
+              ],
+              [
+                "Charlie Taylor - Burnley",
+                "Defence_AerialSucc!tr",
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    };
+    someJSON = /* @__PURE__ */ Object.freeze({
+      __proto__: null,
+      [Symbol.toStringTag]: "Module",
+      "default": tweets
+    });
   }
 });
 
@@ -5675,42 +13670,62 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var css4, Routes;
+function addZeros(id) {
+  if (String(id).length < 3) {
+    id = "0" + id;
+  }
+  if (String(id).length < 3) {
+    id = "0" + id;
+  }
+  return id;
+}
+var css5, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_a9a6e648();
-    init_stores_fec2fa46();
+    init_stores_d75da388();
     init_fb_utils();
-    css4 = {
-      code: ".body2.svelte-189rhwe{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em}.headline.svelte-189rhwe{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-189rhwe{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-189rhwe{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-189rhwe{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-189rhwe{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-189rhwe{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-189rhwe{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-189rhwe{background-color:#ffc2fd}.source.svelte-189rhwe{text-decoration:underline}h2.svelte-189rhwe{font-family:system-ui;font-size:12vw;margin:auto;line-height:0.85}a.svelte-189rhwe{text-decoration:auto;color:black}.row.svelte-189rhwe{border-bottom:1px solid #000;font-size:medium;padding-top:4px;padding-bottom:4px}.number.svelte-189rhwe{font-size:xx-large;line-height:1}.name.svelte-189rhwe{font-weight:800}.text.svelte-189rhwe{display:flex;justify-content:flex-start}.col1.svelte-189rhwe{overflow:hidden;width:40%}.last.svelte-189rhwe{border-bottom:none}.grid-container.svelte-189rhwe{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px;padding:10px}.team-div.svelte-189rhwe{background-color:rgba(255, 255, 255, 0.8);text-align:left;padding:20px 0;font-family:system-ui;font-size:1.4rem;width:100%}",
+    init_tweets_222e5605();
+    css5 = {
+      code: ".body2.svelte-1sa3ipy{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-1sa3ipy{font-family:system-ui;font-size:12vw;margin:auto;line-height:0.85}a.svelte-1sa3ipy{text-decoration:auto;color:black}.row.svelte-1sa3ipy{border-bottom:1px solid #000;font-size:medium;padding-top:4px;padding-bottom:4px}.number.svelte-1sa3ipy{font-size:xx-large;line-height:1}.name.svelte-1sa3ipy{font-weight:800}.text.svelte-1sa3ipy{display:flex;justify-content:flex-start}.col1.svelte-1sa3ipy{overflow:hidden;width:40%}.last.svelte-1sa3ipy{border-bottom:none}.grid-container.svelte-1sa3ipy{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px;padding:10px}.team-div.svelte-1sa3ipy{background-color:rgba(255, 255, 255, 0.8);text-align:left;padding:20px 0;font-family:system-ui;font-size:1.4rem;width:100%}@media only screen and (max-width: 1180px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto auto auto}}@media only screen and (max-width: 768px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto auto}}@media only screen and (max-width: 600px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto}}",
       map: null
     };
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
-      $$result.css.add(css4);
+      console.log("teams", teams.find((d) => d.name == "Tottenham"));
+      let data = tweets;
+      console.log("DATA", data);
+      data = Object.keys(data).map((e2) => {
+        return data[e2];
+      });
+      data.sort(function(a, b) {
+        return b.misc.story_id - a.misc.story_id;
+      });
+      console.log("someJSON", data);
+      $$result.css.add(css5);
       $$unsubscribe_page();
-      return `<body class="${"body2 svelte-189rhwe"}"><div id="${"top"}" class="${"headline svelte-189rhwe"}"><div class="${"top-50 svelte-189rhwe"}"><div class="${"text-semi svelte-189rhwe"}">The Final Third
-            </div>
-            <div class="${"div-block-107 svelte-189rhwe"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-189rhwe"}">Twitter</a>
-                    <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-189rhwe"}">Email</a></div></div></div>
-        <div class="${"flex"}"><div class="${"text-regular svelte-189rhwe"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using T5 - a Text-to-Text transformer model released by Google research. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-189rhwe"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
-                <br></div></div></div>
+      return `<body class="${"body2 svelte-1sa3ipy"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
 
-
-    <h2 class="${"svelte-189rhwe"}">Premier League<br>Statistics
+    <h2 class="${"svelte-1sa3ipy"}">Premier League<br>Statistics
     </h2>
-    <div class="${"grid-container svelte-189rhwe"}">${each(teams, ({ id, name }, i2) => `<a sveltekit:prefetch${add_attribute("href", "/team/" + id, 0)} class="${"svelte-189rhwe"}"><div class="${["team-div svelte-189rhwe", $page.url.pathname === "/" + id ? "active" : ""].join(" ").trim()}"><div class="${"row number svelte-189rhwe"}">013
-                    </div>
-                    <div class="${"row name svelte-189rhwe"}">${escape(name)}</div>
-                    <div class="${"row text svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Opponent</div>
-                        <div>Arsenal</div></div>
-                    <div class="${"row text svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Result</div>
-                        <div>3-1</div></div>
-                    <div class="${"row text last svelte-189rhwe"}"><div class="${"col1 svelte-189rhwe"}">Date</div>
-                        <div>12/03/2022</div>
-                    </div></div>
-            </a>`)}</div>
+    <div class="${"grid-container svelte-1sa3ipy"}">${each(data, ({ data: data2, misc }, i2) => `<a sveltekit:prefetch${add_attribute("href", "/team/" + teams.find((d) => d.name == misc.team)["id"], 0)} class="${"svelte-1sa3ipy"}"><div class="${[
+        "team-div svelte-1sa3ipy",
+        $page.url.pathname === "/" + teams.find((d) => d.name == misc.team)["id"] ? "active" : ""
+      ].join(" ").trim()}"><div class="${"row number svelte-1sa3ipy"}">${escape(addZeros(misc.story_id))}</div>
+                    <div class="${"row name svelte-1sa3ipy"}">${escape(misc.team)}</div>
+                    <div class="${"row text svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Opponent</div>
+                        <div>${escape(misc.opponent)}</div></div>
+                    <div class="${"row text svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Result</div>
+                        <div>${escape(misc.result[0])}-${escape(misc.result[1])}</div></div>
+                    <div class="${"row text last svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Date</div>
+                        <div>${escape(misc.date)}</div></div>
+                </div></a>
+
+
+            `)}
+
+        </div>
 </body>`;
     });
   }
@@ -5719,1587 +13734,18 @@ var init_index_svelte = __esm({
 // .svelte-kit/output/server/nodes/2.js
 var __exports3 = {};
 __export(__exports3, {
-  css: () => css5,
+  css: () => css6,
   entry: () => entry3,
   js: () => js3,
   module: () => index_svelte_exports
 });
-var entry3, js3, css5;
+var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-08fece3d.js";
-    js3 = ["pages/index.svelte-08fece3d.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-91ff877b.js"];
-    css5 = ["assets/pages/index.svelte-acb55591.css"];
-  }
-});
-
-// .svelte-kit/output/server/entries/endpoints/team/tweets.json.js
-var tweets_json_exports = {};
-__export(tweets_json_exports, {
-  Arsenal: () => Arsenal,
-  Brentford: () => Brentford,
-  Brighton: () => Brighton,
-  Burnley: () => Burnley,
-  Chelsea: () => Chelsea,
-  Everton: () => Everton,
-  Liverpool: () => Liverpool,
-  Southampton: () => Southampton,
-  Tottenham: () => Tottenham,
-  Watford: () => Watford,
-  Wolves: () => Wolves,
-  default: () => tweets
-});
-var Tottenham, Liverpool, Chelsea, Arsenal, Wolves, Brighton, Southampton, Brentford, Everton, Watford, Burnley, tweets;
-var init_tweets_json = __esm({
-  ".svelte-kit/output/server/entries/endpoints/team/tweets.json.js"() {
-    Tottenham = {
-      data: [
-        {
-          text: "It was a dominant display by Tottenham, who completed 78 passes to Brighton's one. The Hammers successfuly completed 8 passes, while Brandon Sanderson completed 1 passes.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:45.000Z",
-          id: "1478479790948687881",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "It was a dominant display by Brentford, who completed 84 passes to Brighton's 95.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:45.000Z",
-          id: "1478479789333876741",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "It was a dominant display by Brighton, who completed 84 passes to Norwich's 95. They also had fewer passes, completing only 88 passes out of 78.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:44.000Z",
-          id: "1478479787412930564",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham attempted to make three challenges in the defensive third, while Tottenham made one challenges.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:44.000Z",
-          id: "1478479785689030664",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham attempted 17 challenges, resulting in 12 successful tackles. Tottenham made nine challenges and two successful passes.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:44.000Z",
-          id: "1478479784158056451",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham attempted 17 challenges, resulting in 12 successful tackles. Tottenham also made nine challenges and nine successful challenges.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:43.000Z",
-          id: "1478479782333620227",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Wattingford were patient, given an xA of 4.35 touches for each opponent press resulting in 264 yards towards the opponents goal..",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:43.000Z",
-          id: "1478479780823580676",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham were given a lot of time on the ball, taking an average of 8.7 touches each time the opponent pressed - Watford took an Average of 2.64 touches per press.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:42.000Z",
-          id: "1478479778932051968",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham took 32 passes into the final third, compared with 10 from Watford.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:42.000Z",
-          id: "1478479777392640005",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        },
-        {
-          text: "Tottenham attempted five challenges in the defensive third, while Tottenham made one tackles in this defensive Third. Tottenham also attempted one challenges during the offensive third.",
-          author_id: "1468968670860759049",
-          created_at: "2022-01-04T21:33:42.000Z",
-          id: "1478479775698149382",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478479764155478019"
-        }
-      ],
-      meta: {
-        newest_id: "1478479790948687881",
-        oldest_id: "1478479775698149382",
-        result_count: 10,
-        next_token: "b26v89c19zqg8o3fpe18pjfal669b58mci9vyf6co4mf1"
-      }
-    };
-    Liverpool = {
-      data: [
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          text: "Liverpool had less of the ball, taking 46.47 touches to Liverpool's 36, while Liverpool completed 17 passes into the final third.",
-          conversation_id: "1478483777995300866",
-          created_at: "2022-01-04T21:49:39.000Z",
-          author_id: "1468968670860759049",
-          id: "1478483790481793026"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          text: "Pablo Fornals successfuly completed 446 passes, while Vladim&lt;unk&gt; r Coufal successfuliously completed 515 passes.",
-          conversation_id: "1478483777995300866",
-          created_at: "2022-01-04T21:49:38.000Z",
-          author_id: "1468968670860759049",
-          id: "1478483788690771968"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          text: "Liverpool took three shots on target, while Leicester City only pressed 17 times, compared with 39 times against Leicester city (17 times).",
-          conversation_id: "1478483777995300866",
-          created_at: "2022-01-04T21:49:38.000Z",
-          author_id: "1468968670860759049",
-          id: "1478483787000561674"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          text: "Liverpool created less than Leicester City, finding chances worth 2.5 expected goals to Leicester's 0.6. Liverpool also created more than Liverpool, creating 1.5 expected goalposts, while concedeing 1.5 xG and fewer chances of the game.",
-          conversation_id: "1478483777995300866",
-          created_at: "2022-01-04T21:49:37.000Z",
-          author_id: "1468968670860759049",
-          id: "1478483784693686277"
-        }
-      ],
-      meta: {
-        newest_id: "1478483790481793026",
-        oldest_id: "1478483784693686277",
-        result_count: 4
-      }
-    };
-    Chelsea = {
-      data: [
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503772024414208",
-          author_id: "1468968670860759049",
-          text: "Chelsea won 18 aerial duels to Brighton's 15. Chelsea also won 11 aerial Duels, while Brighton won 15 aerial deels.",
-          created_at: "2022-01-04T23:09:03.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503769709195269",
-          author_id: "1468968670860759049",
-          text: "Chelsea attempted 10 challenges in the defensive third, while Brighton attempted 10. Chelsea attempt seven challenges, making only 10 tackles in this defensive Third.",
-          created_at: "2022-01-04T23:09:02.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503768035663878",
-          author_id: "1468968670860759049",
-          text: "Chelsea attempted 20 challenges, resulting in 11 successful tackles. Chelsea made 17 challenges and 1045 successful passes.",
-          created_at: "2022-01-04T23:09:02.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503766462799875",
-          author_id: "1468968670860759049",
-          text: "Chelsea attempted 20 challenges, resulting in 11 successful tackles. Chelsea made 17 challenges and 1045 successful passes.",
-          created_at: "2022-01-04T23:09:01.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503764508168198",
-          author_id: "1468968670860759049",
-          text: "Brighton were also given a lot of time on the ball, taking an xA of 32.0 touches for each opponent press resulting in fewer touches than Brighton's 2..",
-          created_at: "2022-01-04T23:09:01.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503762662678529",
-          author_id: "1468968670860759049",
-          text: "Chelsea were given an average of 3.36 touches each time the opponent pressed - Brighton took an Average of 2.88 touches per press.",
-          created_at: "2022-01-04T23:09:00.000Z"
-        },
-        {
-          conversation_id: "1478503754433544193",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478503761035288583",
-          author_id: "1468968670860759049",
-          text: "Chelsea completed 35 passes into the final third, while Brighton completed 16 passes in the the Final third.",
-          created_at: "2022-01-04T23:09:00.000Z"
-        }
-      ],
-      meta: {
-        newest_id: "1478503772024414208",
-        oldest_id: "1478503761035288583",
-        result_count: 7
-      }
-    };
-    Arsenal = {
-      data: [
-        {
-          created_at: "2022-01-04T23:25:15.000Z",
-          id: "1478507852125945856",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Thomas Partey, our man of the match, created some of his best chances of 0.1. He also played one key passes."
-        },
-        {
-          created_at: "2022-01-04T23:25:15.000Z",
-          id: "1478507850435600384",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Arsenal attempted 12 challenges in the defensive third, while Manchester City attempted three challenges. Arsenal attempt nine challenges, making only three successful tackles in this game."
-        },
-        {
-          created_at: "2022-01-04T23:25:15.000Z",
-          id: "1478507848824983558",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Arsenal attempted 23 challenges resulting in 13 successful tackles, while Manchester City made 10 challenges, winning nine tackle tackled passes."
-        },
-        {
-          created_at: "2022-01-04T23:25:14.000Z",
-          id: "1478507847306645513",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "TEAMmate of the ball, taking 81 touches to T-Aston Villa's 91."
-        },
-        {
-          created_at: "2022-01-04T23:25:14.000Z",
-          id: "1478507845490462721",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Arsenal attempted 23 challenges resulting in 13 successful tackles, while Manchester City made 10 challenges and nine successful passes. Arsenal also made 17 challenges, completing nine unsuccessful tackled tackle."
-        },
-        {
-          created_at: "2022-01-04T23:25:13.000Z",
-          id: "1478507843829575680",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Arsenal were patient off the ball, allowing Manchester City an average of 9.16 touches each time they pressed. Manchester city allowed the Gunners 2.17 touches per press, considerably more than the 4.76 touches permitted by Arsenal in Arsenal's last game."
-        },
-        {
-          created_at: "2022-01-04T23:25:13.000Z",
-          id: "1478507842210521094",
-          author_id: "1468968670860759049",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478507835197698060",
-          text: "Arsenal attempted to make three challenges in the defensive third, while Arsenal attempt one challenges within the the offensive third."
-        }
-      ],
-      meta: {
-        newest_id: "1478507852125945856",
-        oldest_id: "1478507842210521094",
-        result_count: 7
-      }
-    };
-    Wolves = {
-      data: [
-        {
-          created_at: "2022-01-05T00:28:56.000Z",
-          text: "Wolves attempted 17 challenges in the defensive third, while Chelsea attempted seven challenges. Wowolves attempted 13 challenges, making seven successful tackles in this game, similar to the seven made by Chelsea.",
-          id: "1478523876736970756",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        },
-        {
-          created_at: "2022-01-05T00:28:56.000Z",
-          text: "Wolves attempted 21 challenges resulting in 13 successful tackles, while Chelsea made 22 challenges and 12 successful passes. Wowolves attempted 19 challenges, completing 12 unsuccessful tackled passes, winning 12 tackle tackle.",
-          id: "1478523874975354886",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        },
-        {
-          created_at: "2022-01-05T00:28:55.000Z",
-          text: "Wolves attempted 21 challenges resulting in 13 successful tackles, while Chelsea made 22 challenges and 12 successful passes. Wowolves attempted 19 challenges, completing 12 unsuccessful tackled passes, winning 13 tackle.",
-          id: "1478523873264115715",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        },
-        {
-          created_at: "2022-01-05T00:28:55.000Z",
-          text: "Wolves gave Chelsea an average of 7.7 touches each time they pressed. Chelsea allowed Wove 2.83 touches per press, considerably more than the 4.0 touches permitted by Wolters in Woulston County's last game.",
-          id: "1478523871020130315",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        },
-        {
-          created_at: "2022-01-05T00:28:54.000Z",
-          text: "Wolves completed 61% of the passes they played long, compared with 67% from Chelsea.",
-          id: "1478523869304692737",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        },
-        {
-          created_at: "2022-01-05T00:28:54.000Z",
-          text: "Wolves played 16 successful long balls, while Wowolves completed 48 long ball. Wove also played 62 successful passes into the final third, compared with 14 from Wolters.",
-          id: "1478523867660537860",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478523860941250561"
-        }
-      ],
-      meta: {
-        newest_id: "1478523876736970756",
-        oldest_id: "1478523867660537860",
-        result_count: 6
-      }
-    };
-    Brighton = {
-      data: [
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535847167381505",
-          text: "Neal Maupay pressed the opponent 32 times, winning possession on 12 occassions. Yves Bisouma also pushed 31 times and won 31 xA (more than anyone else in a Brighton shirt).",
-          created_at: "2022-01-05T01:16:30.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535845573443586",
-          text: "Neal Maupay pressed the opponent 32 times, while Yves Bissouma pushed 31 times.",
-          created_at: "2022-01-05T01:16:30.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535844009029632",
-          text: "Yves Bissouma successfully dribbled past an opponent on two occasions out of two attempts.",
-          created_at: "2022-01-05T01:16:29.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535842431918081",
-          text: "Marc Cucurella played two assists, while Yves Bissouma carried the ball into the opponent's box four times, resulting in two assist.",
-          created_at: "2022-01-05T01:16:29.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535840846520322",
-          text: "Marc Cucurella played two assists, while Yves Bissouma got two assist.",
-          created_at: "2022-01-05T01:16:28.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535839152054277",
-          text: "Neal Maupay successfuly recieved 11 progressive passes and reevated one progressive pass.",
-          created_at: "2022-01-05T01:16:28.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535837444943874",
-          text: "Yves Bissouma was Tottenham's third busiest passer, completing 46 passes with an accuracy of 87%. He also played 5 passes into the final third, more than any other play on the pitch.",
-          created_at: "2022-01-05T01:16:28.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535834693476354",
-          text: "Neal Maupay scored zero goals to Neals Maugard's zero, while creating 0.1 expected goals. NeAL Mau pay carried the ball into the box zero times, played zero passes and finished with zero assists.",
-          created_at: "2022-01-05T01:16:27.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535833087102976",
-          text: "Yves Bissouma, our man of the match, played three key passes.",
-          created_at: "2022-01-05T01:16:27.000Z"
-        },
-        {
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478532036856102913",
-          author_id: "1468968670860759049",
-          id: "1478535831178653700",
-          text: "Brighton attempted 10 challenges in the defensive third, while Brighton made three challenges, in this defensive Third. Brighton attempt to make 9.5 challenges during the offensive third.",
-          created_at: "2022-01-05T01:16:26.000Z"
-        }
-      ],
-      meta: {
-        newest_id: "1478535847167381505",
-        oldest_id: "1478535831178653700",
-        result_count: 10,
-        next_token: "b26v89c19zqg8o3fpe18pliteqcsbjnxaiqyoqhzhu7wd"
-      }
-    };
-    Southampton = {
-      data: [
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547980550610944",
-          author_id: "1468968670860759049",
-          text: "Pablo Fornals successfuly completed 1 passes, while Vladim&lt;unk&gt; r Kovac completed 28 passes.",
-          created_at: "2022-01-05T02:04:43.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547978432524304",
-          author_id: "1468968670860759049",
-          text: "Pablo Fornals successfuly completed 1 passes, while Vladim&lt;unk&gt; r Kovac completed 29 passes. The Toffees successfuliffuly complete 28 passes (more than any other player on the pitch), while Brandon Sanderson completed 2 passes in the final third.",
-          created_at: "2022-01-05T02:04:42.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547976842842114",
-          author_id: "1468968670860759049",
-          text: "Ibrahima Diallo created better chances while falling to defeat at the hands of 0.1. Dialo also played three key passes resulting in three shot creating actions.",
-          created_at: "2022-01-05T02:04:42.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547975295090689",
-          author_id: "1468968670860759049",
-          text: "James Ward-Prowse, our man of the match, took two shots on target, while James Reid completed one shots per target.",
-          created_at: "2022-01-05T02:04:42.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547973701316608",
-          author_id: "1468968670860759049",
-          text: "Southampton won 46% or the game's aerial duels. Southampton also won 51% and 45% of their passes they won.",
-          created_at: "2022-01-05T02:04:41.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547972078116865",
-          author_id: "1468968670860759049",
-          text: "Southampton won 24 aerial duels to Southampton's 24. Southampton also won 25 aerial Duels, while Southampton 19.95.",
-          created_at: "2022-01-05T02:04:41.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547970526269442",
-          author_id: "1468968670860759049",
-          text: "Southampton won 24 aerial duels to Southampton's 24. Southampton also won 25 aerial Duels, while Southampton 19.95.",
-          created_at: "2022-01-05T02:04:40.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547968815169537",
-          author_id: "1468968670860759049",
-          text: "Southampton attempted to make five challenges in the defensive third, while Tottenham attempted one challenges.",
-          created_at: "2022-01-05T02:04:40.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547966231203843",
-          author_id: "1468968670860759049",
-          text: "Southampton attempted 14 challenges resulting in six successful tackles, while Tottenham made nine challenges and two successful passes.",
-          created_at: "2022-01-05T02:04:39.000Z"
-        },
-        {
-          conversation_id: "1478547953937793025",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478547964360548353",
-          author_id: "1468968670860759049",
-          text: "Southampton attempted 14 challenges resulting in six successful tackles, while Tottenham made nine challenges and two successful passes.",
-          created_at: "2022-01-05T02:04:39.000Z"
-        }
-      ],
-      meta: {
-        newest_id: "1478547980550610944",
-        oldest_id: "1478547964360548353",
-        result_count: 10,
-        next_token: "b26v89c19zqg8o3fpe18plj4a76vkmwn1pwb5yheerwjh"
-      }
-    };
-    Brentford = {
-      data: [
-        {
-          created_at: "2022-01-05T02:20:38.000Z",
-          text: "Ivan Toney successfuly recieved two progressive passes, failed to register with a shot on target, successfully dribbled past an opponent on one occasions out of one attempts.",
-          id: "1478551988027670528",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:38.000Z",
-          text: "Ivan Toney played zero assists, while Frank Onyeka carried the ball into the opponent's box one times.",
-          id: "1478551986467487751",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:38.000Z",
-          text: "Ivan Toney, our man of the match, scored one goal to Ivon Tony, who finished with zero goals.",
-          id: "1478551984886239238",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:37.000Z",
-          text: "Brentford won 49% or the game's aerial duels. Brentfor also won 19 aerial Duels, fewer than any other player on the pitch (six), resulting in 46% winning passes.",
-          id: "1478551983191732227",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:37.000Z",
-          text: "Brentford attempted nine challenges in the defensive third, while Manchester City attempted one challenges.",
-          id: "1478551981476225028",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:36.000Z",
-          text: "Brentford attempted 16 challenges resulting in six successful tackles, while Manchester City made seven challenges and three successful passes.",
-          id: "1478551979253276672",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:36.000Z",
-          text: "Brentford attempted 16 challenges resulting in six successful tackles, while Manchester City made seven challenges and three successful passes.",
-          id: "1478551977625800708",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:35.000Z",
-          text: "Brentford were patient off the ball, allowing Manchester City an average of 11.76 touches each time they pressed. Manchester city allowed the Bees 2.18 touches per press, more than any other player on the pitch, while Brentfor allowed 3.65 touches for each opponent press.",
-          id: "1478551975935553540",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        },
-        {
-          created_at: "2022-01-05T02:20:35.000Z",
-          text: "Brentford attempted to make three challenges, while Manchester City attempted two challenges.",
-          id: "1478551974278799360",
-          in_reply_to_user_id: "1468968670860759049",
-          author_id: "1468968670860759049",
-          conversation_id: "1478551967697981442"
-        }
-      ],
-      meta: {
-        newest_id: "1478551988027670528",
-        oldest_id: "1478551974278799360",
-        result_count: 9
-      }
-    };
-    Everton = {
-      data: [
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:44.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556040165826567",
-          text: "Anthony Gordon played one key passes resulting in one shot, while Anthony Grant carried the ball into the box once. Gordon also played two key pass and one shots on target during the game.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:44.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556038295138310",
-          text: "Anthony Gordon, our man of the match, created some of his best chances of 1.0 (the second highest of anyone on the pitch) resulting in 0.4 expected goals.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:44.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556036659400714",
-          text: "Everton won 44% or the game's aerial duels. Evermonton also won 36% and 45% of their passes they won.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:43.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556035015229441",
-          text: "Everton won 18 aerial duels to Evertons's 20. Evernton also won 1718 aerial Duels and 20 aerial deels.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:43.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556033475923970",
-          text: "Everton won 18 aerial duels to Evertons's 20. Evernton also won 1718 aerial Duels and 20 aerial deels.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:42.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556031965970441",
-          text: "Everton attempted to make seven challenges in the defensive third, while Chelsea attempted four challenges.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:42.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556030296547331",
-          text: "Everton attempted 18 challenges resulting in 14 successful tackles, winning 11 tacklers. Chelsea attempted 14 challenges, completing 11 successful passes.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:42.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556028237238273",
-          text: "Everton attempted to make 18 challenges, resulting in 14 successful tackles. Chelsea attempted 14 challenges and 11 successfultacklings, while Chelsea made 14 challenge.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:41.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556026588778500",
-          text: "Everton gave their opponent an average of 7.91 touches each time they pressed. Chelsea allowed the Toffees 5.52 touches per press, considerably more than the 3.17 touches permitted by Evertons in Evermonton's last game.",
-          author_id: "1468968670860759049"
-        },
-        {
-          conversation_id: "1478556018493767680",
-          created_at: "2022-01-05T02:36:41.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          id: "1478556025007525897",
-          text: "Everton completed 34% of the passes they played long, compared with 44% from Evertons.",
-          author_id: "1468968670860759049"
-        }
-      ],
-      meta: {
-        newest_id: "1478556040165826567",
-        oldest_id: "1478556025007525897",
-        result_count: 10
-      }
-    };
-    Watford = {
-      data: [
-        {
-          created_at: "2022-01-05T03:24:10.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "TEAMmate of the ball, taking 81 touches to T-Aston Villa's 91.",
-          author_id: "1468968670860759049",
-          id: "1478567973849812992"
-        },
-        {
-          created_at: "2022-01-05T03:24:09.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Juraj Kucka attempted to make five challenges, resulting in three successful tackles. Imran Louza attempted five challenge, winning three tackled tackle.",
-          author_id: "1468968670860759049",
-          id: "1478567972201504770"
-        },
-        {
-          created_at: "2022-01-05T03:24:09.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Juraj Kucka attempted to make five challenges, resulting in three successful tackles. Imran Louza attempted five challenge, winning three tackled tackle.",
-          author_id: "1468968670860759049",
-          id: "1478567969886244866"
-        },
-        {
-          created_at: "2022-01-05T03:24:08.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "King won possession on six of those occasions, winning possession from one of the best chances of any player on the pitch. He also won five occassions (more than anyone else in a Watford shirt), winning the ball back on one ossuasion.",
-          author_id: "1468968670860759049",
-          id: "1478567968237920260"
-        },
-        {
-          created_at: "2022-01-05T03:24:08.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Juraj Kucka carried the ball into the opponent's box 114 times, while Ju Raj Kwina played one assist.",
-          author_id: "1468968670860759049",
-          id: "1478567966669164550"
-        },
-        {
-          created_at: "2022-01-05T03:24:07.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Joshua King successfuly recieved four progressive passes, carried the ball into the opponent's box one times and completed 1 successful adn't been patient.",
-          author_id: "1468968670860759049",
-          id: "1478567965050167298"
-        },
-        {
-          created_at: "2022-01-05T03:24:07.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Juraj Kucka played one assist, resulting in one assists.",
-          author_id: "1468968670860759049",
-          id: "1478567963494129665"
-        },
-        {
-          created_at: "2022-01-05T03:24:07.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Pablo Fornals successfuly completed 10 passes, while Pavel Wan-Bissaka completed 26 passes. The Toffees successfulY completed 13 passes and total of 26 pass completions.",
-          author_id: "1468968670860759049",
-          id: "1478567961925505026"
-        },
-        {
-          created_at: "2022-01-05T03:24:06.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Imran Louza made two interceptions, while Joshua King completed one passes into the final third.",
-          author_id: "1468968670860759049",
-          id: "1478567960230998017"
-        },
-        {
-          created_at: "2022-01-05T03:24:06.000Z",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478564163584733187",
-          text: "Joshua King found a teammate with 77% of his attempted passes (77%). Imran Louza, with 22% of her attempted pass (72%), was next most accurate passer in saa Manchester United shirt.",
-          author_id: "1468968670860759049",
-          id: "1478567958620348421"
-        }
-      ],
-      meta: {
-        newest_id: "1478567973849812992",
-        oldest_id: "1478567958620348421",
-        result_count: 10,
-        next_token: "b26v89c19zqg8o3fpe18pljpv1xu44bdx7rt75ymiya2l"
-      }
-    };
-    Burnley = {
-      data: [
-        {
-          author_id: "1468968670860759049",
-          id: "1478572053158674432",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Chris Wood carried the ball into the opponent's box one times, while Aaron Lennon carried two times.",
-          created_at: "2022-01-05T03:40:22.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572051531288577",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Chris Wood created one shots on target, while Aaron Lennon took two shots to target.",
-          created_at: "2022-01-05T03:40:22.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572049949990914",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Chris Wood played zero assists, while Aaron Lennon played two assists.",
-          created_at: "2022-01-05T03:40:21.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572048352006145",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Chris Wood scored zero goals to Chris wood's two, while only concedeing zero.",
-          created_at: "2022-01-05T03:40:21.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572046804267009",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Ashley Westwood, our man of the match, created some of his best chances of 0.3. He also played two key passes.",
-          created_at: "2022-01-05T03:40:21.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572045227241476",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Burnley attempted to make six challenges in the defensive third, while Manchester United attempted three challenges.",
-          created_at: "2022-01-05T03:40:20.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572043608145924",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Burnley attempted 17 challenges resulting in seven successful tackles, while Manchester United made eight challenges and four successful passes.",
-          created_at: "2022-01-05T03:40:20.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572041951494145",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Burnley attempted 17 challenges resulting in six challenges, while Manchester United attempted eight challenges. Manchester Utford attempted three challenges in the defensive third, more than any other player on the pitch.",
-          created_at: "2022-01-05T03:40:19.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572040294653955",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Burnley were patient off the ball, allowing Manchester Utd an average of 7.51 touches each time they pressed. Manchester United allowed the Clarets 3.41 touches per press, considerably more than the 3.6 touches permitted by Burnsley in Burnlet's last game.",
-          created_at: "2022-01-05T03:40:19.000Z"
-        },
-        {
-          author_id: "1468968670860759049",
-          id: "1478572038654681088",
-          in_reply_to_user_id: "1468968670860759049",
-          conversation_id: "1478572028538073089",
-          text: "Burnley played 66 successful long balls, while Burnsley completed 51 long ball. Burnbridge completed 59% of the passes they played long, compared with 49% from Burnford.",
-          created_at: "2022-01-05T03:40:19.000Z"
-        }
-      ],
-      meta: {
-        newest_id: "1478572053158674432",
-        oldest_id: "1478572038654681088",
-        result_count: 10,
-        next_token: "b26v89c19zqg8o3fpe18plk0fua2u8vqscwg2kh220vb1"
-      }
-    };
-    tweets = {
-      Tottenham,
-      Liverpool,
-      "West Ham": {
-        data: [
-          {
-            text: "West Ham attempted 24 challenges resulting in 24 delays, while Crystal Palace attempted 18 challenges. Westham attempted 22 challenges, making 16 successful tackles, compared with 18 from Crystal palace.",
-            author_id: "1468968670860759049",
-            created_at: "2022-01-04T22:05:45.000Z",
-            id: "1478487842078793730",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478487830359941125"
-          },
-          {
-            text: "West Ham gave their opponent an average of 4.23 touches each time they pressed. Crystal Palace allowed the Hammers 3.64 touches per press, considerably more than the 3.0 touches permitted by West Hampshire in West Manchester's last game.",
-            author_id: "1468968670860759049",
-            created_at: "2022-01-04T22:05:44.000Z",
-            id: "1478487840392728583",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478487830359941125"
-          },
-          {
-            text: "West Ham took 26 shots on target, more than any other player on the pitch (27), followed by Westham, who completed 26 passes into the final third.",
-            author_id: "1468968670860759049",
-            created_at: "2022-01-04T22:05:44.000Z",
-            id: "1478487838610145281",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478487830359941125"
-          },
-          {
-            text: "West Ham attempted five challenges in the defensive third, while Crystal Palace attempted six challenges.",
-            author_id: "1468968670860759049",
-            created_at: "2022-01-04T22:05:43.000Z",
-            id: "1478487836919840768",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478487830359941125"
-          }
-        ],
-        meta: {
-          newest_id: "1478487842078793730",
-          oldest_id: "1478487836919840768",
-          result_count: 4
-        }
-      },
-      "Manchester City": {
-        data: [
-          {
-            created_at: "2022-01-04T22:36:58.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Raheem Sterling attempted to make three challenges, resulting in three successful tackles. Rodri attempted three challenge, winning three tackle tackled tackle.",
-            author_id: "1468968670860759049",
-            id: "1478495700866449415"
-          },
-          {
-            created_at: "2022-01-04T22:36:58.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Rodri pressed the opponent 13 times, winning possession on four occassions. Sterling also pushed 12 times and won 12 occurrences, more than any other player on the pitch.",
-            author_id: "1468968670860759049",
-            id: "1478495699247448064"
-          },
-          {
-            created_at: "2022-01-04T22:36:58.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Rodri pressed the opponent 13 times, while Raheem Sterling pushed 12 times.",
-            author_id: "1468968670860759049",
-            id: "1478495697678786562"
-          },
-          {
-            created_at: "2022-01-04T22:36:57.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Raheem Sterling successfuly recieved nine progressive passes and completed two successful dribbles.",
-            author_id: "1468968670860759049",
-            id: "1478495696131141636"
-          },
-          {
-            created_at: "2022-01-04T22:36:57.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Rodri found a teammate with 69 of his 11 successful long balls, while Aymeric Laporte completed 14. AYmeric laport\xE9 successfuly completed 14 long ball, whilst Rodric completed 11 long passes.",
-            author_id: "1468968670860759049",
-            id: "1478495694243647493"
-          },
-          {
-            created_at: "2022-01-04T22:36:56.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Rodri found a teammate with 93% of his attempted passes (93%).",
-            author_id: "1468968670860759049",
-            id: "1478495692687564805"
-          },
-          {
-            created_at: "2022-01-04T22:36:56.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Raheem Sterling, our man of the match, created some of his best chances of 1.0 (the game) resulting in zero assist.",
-            author_id: "1468968670860759049",
-            id: "1478495690993147904"
-          },
-          {
-            created_at: "2022-01-04T22:36:56.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Manchester City won an impressive 68% or the game's aerial duels. Manchester city won 55% and won 63%.",
-            author_id: "1468968670860759049",
-            id: "1478495689269297154"
-          },
-          {
-            created_at: "2022-01-04T22:36:55.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Manchester City won 21 aerial duels to Arsenal's 10. Manchester city also won 1286 aerial Duels, while Arsenal won 10 aerial deels.",
-            author_id: "1468968670860759049",
-            id: "1478495687599968260"
-          },
-          {
-            created_at: "2022-01-04T22:36:55.000Z",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478491893050793996",
-            text: "Manchester City won 21 aerial duels to Arsenal's 10. Manchester city also won 1286 aerial Duels, while Arsenal won 10 aerial deels.",
-            author_id: "1468968670860759049",
-            id: "1478495685930586118"
-          }
-        ],
-        meta: {
-          newest_id: "1478495700866449415",
-          oldest_id: "1478495685930586118",
-          result_count: 10,
-          next_token: "b26v89c19zqg8o3fpe18pjfvzy7y4kicq247dm0ptiwzh"
-        }
-      },
-      "Newcastle Utd": {
-        data: [
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:12.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499783086153733",
-            text: "Joelinton successfuly completed 76% of his attempted passes (76%). Jonjo Shelvey, with 33 successful passes out of 79%, was next most accurate passer in a Manchester United shirt."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:11.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499780544372745",
-            text: "Harry Winks successfuly completed one passes, while Brandon Sanderson completed 26 passes."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:10.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499776052310021",
-            text: "Harry Winks successfuly completed one passes, while Brandon Sanderson completed 26 passes."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:10.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499774387134464",
-            text: "Allan Saintimin took four shots on target, while Allans Saint-Maximine carried the ball into the opponent's box one times."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:09.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499772709363712",
-            text: "Joelinton, our man of the match, created some of his best chances of 0.2. He also played four key passes."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:09.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499770889035792",
-            text: "Newcastle Utd attempted 11 challenges in the defensive third, while Manchester United attempted six challenges."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:08.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499769228087300",
-            text: "Newcastle Utd attempted to make 21 challenges, resulting in 10 successful tackles. Newcastle Unitedtt attempted 18 challenges and five successful passes."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:08.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499767529443328",
-            text: "Newcastle Utd attempted to make 21 challenges, resulting in 10 successful tackles. Newcastle Unitedtt attempted 18 challenges and five successful passes."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:08.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499765730136067",
-            text: "Newcastle Utd gave their opponent an average of 4.82 touches each time they pressed. Manchester UTC allowed Ufford 299 yards towards the opponent's goal, while Newcastle United allowed 3.51 touches per press."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-04T22:53:07.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478499754585821192",
-            id: "1478499763909799938",
-            text: "Newcastle Utd attempted to make four challenges in the defensive third, while Manchester United attempted one challenges. Unitedtford attempted 1 challenges during the offensive third."
-          }
-        ],
-        meta: {
-          newest_id: "1478499783086153733",
-          oldest_id: "1478499763909799938",
-          result_count: 10,
-          next_token: "b26v89c19zqg8o3fpe18pjfw60x7tpu67y937qp1118xp"
-        }
-      },
-      Chelsea,
-      Arsenal,
-      "Norwich City": {
-        data: [
-          {
-            author_id: "1468968670860759049",
-            id: "1478515770300768258",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Billy Gilmour carried the ball a combined 100 yards towards the opponent's goal, while getting two assists.",
-            created_at: "2022-01-04T23:56:43.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515768644050944",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Adam Idah successfuly recieved 10 progressive passes and reevated one progressive pass.",
-            created_at: "2022-01-04T23:56:43.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515766819713025",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Billy Gilmour played 13 successful long balls, while Billy Gilbert completed one. Billy Mcmou played one successful Long balls and received 385 assists.",
-            created_at: "2022-01-04T23:56:42.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515764562903043",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Billy Gilmour made six successful passes into the final third, while Billy Gillmund completed one passes in the the Final third.",
-            created_at: "2022-01-04T23:56:42.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515762683789317",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Harry Winks successfuly completed one passes, while Brandon Leek completed 57.",
-            created_at: "2022-01-04T23:56:41.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515760817491973",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Adam Idah played zero assists, while Christos Tzolis played two assists.",
-            created_at: "2022-01-04T23:56:41.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515759101923329",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Adam Idah scored zero goals to Christos Tzolis's two, while Christon Ostzoligi completed zero passes.",
-            created_at: "2022-01-04T23:56:41.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515757579440129",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Norwich City won 16 aerial duels to Norwich's 1568.",
-            created_at: "2022-01-04T23:56:40.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515755884978180",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Norwich City attempted to make four challenges in the defensive third, resulting in seven successful tackles. Norwich city attempted seven challenges, making seven unsuccessful tackled passes, while Norwich United made four tackle press.",
-            created_at: "2022-01-04T23:56:40.000Z"
-          },
-          {
-            author_id: "1468968670860759049",
-            id: "1478515754207170563",
-            in_reply_to_user_id: "1468968670860759049",
-            conversation_id: "1478511959150575623",
-            text: "Norwich city were also given a lot of time on the ball, taking an impressive 3.85 touches for each opponent press resulting in 3.9 touches to Crystal palace's 3..",
-            created_at: "2022-01-04T23:56:39.000Z"
-          }
-        ],
-        meta: {
-          newest_id: "1478515770300768258",
-          oldest_id: "1478515754207170563",
-          result_count: 10,
-          next_token: "b26v89c19zqg8o3fpe18pli7tve6d1xjnt70lx7ulxu2l"
-        }
-      },
-      "Manchester Utd": {
-        data: [
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:54.000Z",
-            text: "Pablo Fornals successfuly completed 44 passes, while Brandon Lee completed 55.",
-            conversation_id: "1478519820979159044",
-            id: "1478519840646307842"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:53.000Z",
-            text: "Luke Shaw played one assist, resulting in one assists, while Luke Scott completed 55 passes.",
-            conversation_id: "1478519820979159044",
-            id: "1478519839060807680"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:53.000Z",
-            text: "Luke Shaw created better chances while falling to defeat at the hands of Cristiano Ronaldo. The Gunners also had a good game, playing three key passes.",
-            conversation_id: "1478519820979159044",
-            id: "1478519837378949121"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:53.000Z",
-            text: "Manchester Utd won 24 aerial duels to Manchester United's 19. U also won 19 aerial Duels, while Manchester City completed zero aerial deels.",
-            conversation_id: "1478519820979159044",
-            id: "1478519835797733377"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:52.000Z",
-            text: "Manchester Utd were given a lot of time on the ball, taking an average of 7.51 touches each time the opponent pressed - Burnley took an Average of 3.41 touches per press.",
-            conversation_id: "1478519820979159044",
-            id: "1478519834140975104"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:52.000Z",
-            text: "Manchester United saw less of the ball, taking 623 touches to Burnley's 55. Manchester Utford also had less than Manchester City (642.0 touches per 90 minute), compared with Burnsley' 505.",
-            conversation_id: "1478519820979159044",
-            id: "1478519832479948803"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:51.000Z",
-            text: "Manchester Utd took six shots on target, while Burnley took three shots. UTC also took four67 shots to target and took 3 shots off target.",
-            conversation_id: "1478519820979159044",
-            id: "1478519830856806406"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:51.000Z",
-            text: "Manchester United found a teammate with 77% of Manchester Utford's 74%. Manchester University also had fewer chances of passing through the play, compared with only 79% from Burnley.",
-            conversation_id: "1478519820979159044",
-            id: "1478519829120311298"
-          },
-          {
-            author_id: "1468968670860759049",
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:12:51.000Z",
-            text: "Pablo Fornals successfuly completed 287 passes, while Brandon Wan-Bissaka completed 400 passes.",
-            conversation_id: "1478519820979159044",
-            id: "1478519827555921931"
-          }
-        ],
-        meta: {
-          newest_id: "1478519840646307842",
-          oldest_id: "1478519827555921931",
-          result_count: 9
-        }
-      },
-      Wolves,
-      "Leicester City": {
-        data: [
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:45:06.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478527930934435842",
-            id: "1478527945106984962",
-            text: "Leicester City attempted to make 17 challenges, while Liverpool attempted 17 challenge."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:45:06.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478527930934435842",
-            id: "1478527943374778376",
-            text: "Leicester were patient off the ball, allowing Leicester an average of 5.55 touches each time they pressed. Liverpool allowed Liverpool 3.31 touches per press, considerably more than any other player on the pitch (33 touches allowed by Leicester City)."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:45:05.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478527930934435842",
-            id: "1478527941180989440",
-            text: "Leicester City saw less of the ball, taking 537 touches to Leicester's 410."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:45:05.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478527930934435842",
-            id: "1478527939373416450",
-            text: "Leicester played 38 successful long balls, while Leicester completed 24 long ball. Leicester also completed 52% of the passes they played long, compared with 54% from Leicester."
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            created_at: "2022-01-05T00:45:04.000Z",
-            author_id: "1468968670860759049",
-            conversation_id: "1478527930934435842",
-            id: "1478527937704038400",
-            text: "Leicester played 38 successful long balls, while Leicester managed 24."
-          }
-        ],
-        meta: {
-          newest_id: "1478527945106984962",
-          oldest_id: "1478527937704038400",
-          result_count: 5
-        }
-      },
-      Brighton,
-      "Crystal Palace": {
-        data: [
-          {
-            id: "1478539909006864384",
-            text: "Jordan Ayew pressured the opponent 25 times, winning possession on nine of those occasions. He also won three tackles, resulting in zero wins.",
-            created_at: "2022-01-05T01:32:38.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539907253653506",
-            text: "Jordan Ayew successfully dribbled past an opponent on one occasions out of six attempts.",
-            created_at: "2022-01-05T01:32:38.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539905693364226",
-            text: "Jordan Ayew (30%) of his passes, carried the ball into the opponent's box seven times, and finished with an xA of 270 yards.",
-            created_at: "2022-01-05T01:32:38.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539903919169539",
-            text: "Jordan Ayew (30%) of his passes were played short, while Joachim Andersen carried the ball 270 yards towards the opponent's goal.",
-            created_at: "2022-01-05T01:32:37.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539902182739970",
-            text: "Christian Benteke successfuly completed 18 passes, while Christian Bteken completed 17 passes. Christian Benjamintek E successfuliated 11% of his attempted passes - 94%.",
-            created_at: "2022-01-05T01:32:37.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539900630749191",
-            text: "Jordan Ayew played three key passes, carried the ball into the opponent's box one times, while Christian Benteke carried it two times.",
-            created_at: "2022-01-05T01:32:36.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539898831446018",
-            text: "Jordan Ayew, our man of the match, created some of his best chances of 1.0 (the second highest of anyone on the pitch) resulting in 0.7 expected goals.",
-            created_at: "2022-01-05T01:32:36.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539897157869569",
-            text: "Christian Benteke took zero shots on target, while Christian Benedicte tallied zero assists. Christian Beeteka also took two shots to target and one assist in this game.",
-            created_at: "2022-01-05T01:32:36.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539895551442950",
-            text: "Crystal Palace played 92 successful long balls, while West Ham completed 42 long ball. Crystal palace also played 55 successful Long balls and only completed 73% of the passes they played long.",
-            created_at: "2022-01-05T01:32:35.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          },
-          {
-            id: "1478539893865426948",
-            text: "Crystal Palace had considerably more of the ball, taking 24.45 touches to Crystal City's 22. Crystal palace completed more passes into the final third (27 compared with 27) but made more successful passes onto the pitch (47 versus 47).",
-            created_at: "2022-01-05T01:32:35.000Z",
-            conversation_id: "1478539869479649285",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049"
-          }
-        ],
-        meta: {
-          newest_id: "1478539909006864384",
-          oldest_id: "1478539893865426948",
-          result_count: 10,
-          next_token: "b26v89c19zqg8o3fpe18plitksum5fqt00a5k91b5xbb1"
-        }
-      },
-      "Aston Villa": {
-        data: [
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543937782566914",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:39.000Z",
-            text: "Ollie Watkins successfuly recieved 11 progressive passes and reevated one progressive pass.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543936109092864",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:39.000Z",
-            text: "Jacob Ramsey made four successful passes into the final third, while Jacob Rama completed one passes in the the Final third.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543934104260616",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:38.000Z",
-            text: "Jacob Ramsey successfuly completed 47 passes, while Jacob Maher completed 1 passes. Jacob Ramis also had a great game, completing 94% of his passes with 02% of their passes in Serie A.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543932397166596",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:38.000Z",
-            text: "Harry Winks successfuly completed one passes, while Harry Kane completed 47.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543930564263953",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:37.000Z",
-            text: "Ollie Watkins failed to register one shot on target, registering only one shots on the ball into the opponent's box one times. Matty Cash carried the Ball into his box once, carrying the puck into a box of one once and one attempts later.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543928752316419",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:37.000Z",
-            text: "Ollie Watkins played no assists, while Ollies Wattingkins assisted one goal.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543926927704065",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:36.000Z",
-            text: "Ollie Watkins scored zero goals to Ollies Wattingkins' one, while scoring zero points.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543925027737605",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:36.000Z",
-            text: "Aston Villa attempted 12 challenges in the defensive third, while Chelsea attempted seven challenges. Aster Villa also attempted eight challenges during the offensive third.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543923391967233",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:36.000Z",
-            text: "Aston Villa made 11 successful tackles, winning eight tacklers. Chelsea also made eleven successful passes, resulting in 11 unsuccessful tackle.",
-            author_id: "1468968670860759049"
-          },
-          {
-            in_reply_to_user_id: "1468968670860759049",
-            id: "1478543921718378497",
-            conversation_id: "1478543907503886338",
-            created_at: "2022-01-05T01:48:35.000Z",
-            text: "Aston Villa made 11 successful tackles, winning eight tacklers. Chelsea also made eleven successful passes, resulting in 11 unsuccessful tackle.",
-            author_id: "1468968670860759049"
-          }
-        ],
-        meta: {
-          newest_id: "1478543937782566914",
-          oldest_id: "1478543921718378497",
-          result_count: 10,
-          next_token: "b26v89c19zqg8o3fpe18plj444p3wdfbht1699g6e0g3h"
-        }
-      },
-      Southampton,
-      Brentford,
-      Everton,
-      "Leeds United": {
-        data: [
-          {
-            created_at: "2022-01-05T02:52:46.000Z",
-            text: "Leeds United attempted 19 challenges resulting in seven successful tackles. Arsenal attempted 18 challenges, completing 10 successfultacklings, while Arsenal made 19 challenge.",
-            id: "1478560074369019909",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:46.000Z",
-            text: "Arsenal gave their opponent an average of 3.23 touches each time they pressed. Leeds United gave the ball an impressive 3.64 touches per press, more than any other player on the pitch (a combined 3.6 touches for each opponent press).",
-            id: "1478560072708022275",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:45.000Z",
-            text: "Leeds United saw less of the ball, taking 555 touches to Leeds's 444. Leeds U occupied the game for 442 touches.",
-            id: "1478560071152025601",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:45.000Z",
-            text: "Leeds United made more successful passes into the final third than any other Arsenal player (23), followed by Arsenal, who completed 20 passes onto the ball.",
-            id: "1478560069528793092",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:45.000Z",
-            text: "Leeds United pressed the opponent 35 times, while Leeds U pushed 34 times. Leeds also influenced four times and four attempts.",
-            id: "1478560067989422081",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:44.000Z",
-            text: "Leeds found a teammate with 77% of Leeds United's 79%. Leeds completed 56% of the passes they played long, compared with 57% from Leeds.",
-            id: "1478560066320191496",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          },
-          {
-            created_at: "2022-01-05T02:52:44.000Z",
-            text: "It was a dominant display by Tottenham, who completed 344 passes to Brighton's 285.",
-            id: "1478560064701087748",
-            in_reply_to_user_id: "1468968670860759049",
-            author_id: "1468968670860759049",
-            conversation_id: "1478560058061561860"
-          }
-        ],
-        meta: {
-          newest_id: "1478560074369019909",
-          oldest_id: "1478560064701087748",
-          result_count: 7
-        }
-      },
-      Watford,
-      Burnley
-    };
+    entry3 = "pages/index.svelte-0553014e.js";
+    js3 = ["pages/index.svelte-0553014e.js", "chunks/vendor-d72d44f7.js", "chunks/tweets-74065d1e.js"];
+    css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/tweets-8c07d15f.css"];
   }
 });
 
@@ -7308,15 +13754,15 @@ var teamName_svelte_exports = {};
 __export(teamName_svelte_exports, {
   default: () => U5BteamNameu5D
 });
-var css6, U5BteamNameu5D;
+var css7, U5BteamNameu5D;
 var init_teamName_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
     init_index_a9a6e648();
-    init_stores_fec2fa46();
+    init_stores_d75da388();
     init_fb_utils();
-    init_tweets_json();
-    css6 = {
-      code: "a.tweets.svelte-17vfid9{color:var(--heading-color)}a.svelte-17vfid9:hover{background-color:yellow}",
+    init_tweets_222e5605();
+    css7 = {
+      code: "a.tweets.svelte-15h0coy{color:var(--heading-color);line-height:initial;font-size:large}a.svelte-15h0coy:hover{background-color:yellow}.body2.svelte-15h0coy{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-15h0coy{font-family:system-ui;font-size:8vw;margin:auto;line-height:0.85}a.svelte-15h0coy{text-decoration:auto;color:black}",
       map: null
     };
     U5BteamNameu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7324,18 +13770,32 @@ var init_teamName_svelte = __esm({
       let tweets$1;
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
-      console.log("someJSON", tweets);
-      $$result.css.add(css6);
+      console.log("someJSON", someJSON);
+      let data = tweets;
+      data = Object.keys(data).map((e2) => {
+        return data[e2];
+      });
+      $$result.css.add(css7);
       teamName = $page.params.teamName;
       teamName = teams.find((d) => d.id == teamName).name;
-      tweets$1 = tweets[teamName]["data"];
+      {
+        console.log("teamName", teamName);
+      }
+      tweets$1 = data.find((e2) => e2.misc.team == teamName).data;
+      tweets$1 = tweets$1.sort(function(a, b) {
+        return parseInt(a["id"]) - parseInt(b["id"]);
+      });
       {
         console.log("TWEETS", tweets$1);
       }
       $$unsubscribe_page();
-      return `<div style="${"width: 640px; margin:0 auto;"}"><div><div style="${"width: 640px; margin: 50px auto;"}"><h1>Latest ${escape(teamName)} match report</h1></div></div></div>
-<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}">${each(tweets$1.reverse(), ({ id, text }, i2) => `<div><a class="${"tweets svelte-17vfid9"}"${add_attribute("href", "https://twitter.com/_Numbers_Game/status/" + id, 0)} target="${"_blank"}">${escape(text)}</a></div>
-        <br>`)}</div>
+      return `<body class="${"body2 svelte-15h0coy"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
+	<div style="${"height: 50px;"}"></div>
+	<h2 class="${"svelte-15h0coy"}">Latest ${escape(teamName)} <br> match report
+    </h2>
+	<div style="${"height: 50px;"}"></div>
+	<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}">${each(tweets$1, ({ id, text }, i2) => `<div><a class="${"tweets svelte-15h0coy"}"${add_attribute("href", "https://twitter.com/_Numbers_Game/status/" + id, 0)} target="${"_blank"}">${escape(text)}</a></div>
+			<br>`)}</div></body>
 
 `;
     });
@@ -7345,18 +13805,29 @@ var init_teamName_svelte = __esm({
 // .svelte-kit/output/server/nodes/3.js
 var __exports4 = {};
 __export(__exports4, {
-  css: () => css7,
+  css: () => css8,
   entry: () => entry4,
   js: () => js4,
   module: () => teamName_svelte_exports
 });
-var entry4, js4, css7;
+var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-5d413f43.js";
-    js4 = ["pages/team/_teamName_.svelte-5d413f43.js", "chunks/vendor-d72d44f7.js", "chunks/fb-utils-91ff877b.js"];
-    css7 = ["assets/pages/team/_teamName_.svelte-14cf65f9.css"];
+    entry4 = "pages/team/_teamName_.svelte-b42c51c7.js";
+    js4 = ["pages/team/_teamName_.svelte-b42c51c7.js", "chunks/vendor-d72d44f7.js", "chunks/tweets-74065d1e.js"];
+    css8 = ["assets/pages/team/_teamName_.svelte-384a8127.css", "assets/tweets-8c07d15f.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/endpoints/tweets.json.js
+var tweets_json_exports = {};
+__export(tweets_json_exports, {
+  default: () => tweets
+});
+var init_tweets_json = __esm({
+  ".svelte-kit/output/server/entries/endpoints/tweets.json.js"() {
+    init_tweets_222e5605();
   }
 });
 
@@ -8838,7 +15309,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-494a3196.js", "js": ["start-494a3196.js", "chunks/vendor-d72d44f7.js"], "css": ["assets/start-61d1577b.css"] },
+    entry: { "file": "start-22a162d6.js", "js": ["start-22a162d6.js", "chunks/vendor-d72d44f7.js"], "css": ["assets/start-61d1577b.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -8862,7 +15333,7 @@ var manifest = {
       },
       {
         type: "endpoint",
-        pattern: /^\/team\/tweets\/?$/,
+        pattern: /^\/tweets\/?$/,
         params: null,
         load: () => Promise.resolve().then(() => (init_tweets_json(), tweets_json_exports))
       },

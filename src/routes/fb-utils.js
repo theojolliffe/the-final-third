@@ -15,10 +15,10 @@ var teams = [
     {id: "aston-villa", name: "Aston Villa"},
     {id: "crystal-palace", name: "Crystal Palace"},
     {id: "brighton", name: "Brighton"},
-    {id: "leicester", name: "Leicester"},
+    {id: "leicester", name: "Leicester City"},
     {id: "wolves", name: "Wolves"},
     {id: "man-utd", name: "Manchester Utd"},
-    {id: "norwich", name: "Norwich"},
+    {id: "norwich", name: "Norwich City"},
 ]
 
 export { teams };
