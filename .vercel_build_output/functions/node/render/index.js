@@ -5560,8 +5560,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "layout.svelte-bdc62a30.js";
-    js = ["layout.svelte-bdc62a30.js", "chunks/vendor-37473da7.js"];
+    entry = "layout.svelte-e62a3880.js";
+    js = ["layout.svelte-e62a3880.js", "chunks/vendor-14e04965.js"];
     css2 = ["assets/vendor-954c70f3.css"];
   }
 });
@@ -5610,8 +5610,8 @@ var entry2, js2, css3;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-832daaaa.js";
-    js2 = ["error.svelte-832daaaa.js", "chunks/vendor-37473da7.js"];
+    entry2 = "error.svelte-f1af15c3.js";
+    js2 = ["error.svelte-f1af15c3.js", "chunks/vendor-14e04965.js"];
     css3 = ["assets/vendor-954c70f3.css"];
   }
 });
@@ -6008,8 +6008,8 @@ var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-9f93b244.js";
-    js3 = ["pages/index.svelte-9f93b244.js", "chunks/vendor-37473da7.js", "chunks/tweets-95f2cf6c.js"];
+    entry3 = "pages/index.svelte-3ee05998.js";
+    js3 = ["pages/index.svelte-3ee05998.js", "chunks/vendor-14e04965.js", "chunks/tweets-1402b14e.js"];
     css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-07474543.css"];
   }
 });
@@ -6134,7 +6134,7 @@ var init_teamName_svelte = __esm({
       if ($$props.class === void 0 && $$bindings.class && classes !== void 0)
         $$bindings.class(classes);
       $$result.css.add(css$2);
-      href = url;
+      href = encodeURI(`https://twitter.com/intent/tweet/?text=${text}&hashtags=${hashtags}&via=${via}&related=${related}&url=${url}`);
       return `${validate_component(ShareButton, "ShareButton").$$render($$result, Object.assign({ class: "ssbc-button--twitter " + classes }, $$restProps, { ariaLabel }, { href }), {}, {
         default: () => `<svg xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 24 24"}"><path d="${"M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"}"></path></svg>`
       })}`;
@@ -6241,8 +6241,8 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-a25eed7c.js";
-    js4 = ["pages/team/_teamName_.svelte-a25eed7c.js", "chunks/vendor-37473da7.js", "chunks/tweets-95f2cf6c.js"];
+    entry4 = "pages/team/_teamName_.svelte-63c4580d.js";
+    js4 = ["pages/team/_teamName_.svelte-63c4580d.js", "chunks/vendor-14e04965.js", "chunks/tweets-1402b14e.js"];
     css8 = ["assets/pages/team/_teamName_.svelte-0d7fdf94.css", "assets/vendor-954c70f3.css", "assets/tweets-07474543.css"];
   }
 });
@@ -7736,7 +7736,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-79ce4f35.js", "js": ["start-79ce4f35.js", "chunks/vendor-37473da7.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-65fa683e.js", "js": ["start-65fa683e.js", "chunks/vendor-14e04965.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
