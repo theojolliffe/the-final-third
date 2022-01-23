@@ -13,5 +13,8 @@
     "svelte": "^3.44.0",
     "@sveltejs/adapter-vercel": "next"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-copy-to-clipboard": "^0.2.5"
+  }
 }

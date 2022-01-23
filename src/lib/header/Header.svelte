@@ -21,7 +21,6 @@
 </div>
 
 
-
 <style>
     .body2 {
         font-family: system-ui;
@@ -135,4 +134,14 @@
 		font-size: 1.4rem;
 		width: 100%;
 	}
+
+    @media only screen and (max-width: 600px) {
+        .headline {
+            display: revert;
+            padding: 4px 8px 20px 4px;
+        }
+        .top-50 {
+            margin-bottom: 20px;
+        }
+    }
 </style>

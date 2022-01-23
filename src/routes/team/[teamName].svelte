@@ -5,6 +5,8 @@
 
     import * as someJSON from '../tweets.json';
 
+    import { Email, HackerNews, Reddit, LinkedIn, Pinterest, Telegram, Tumblr, Vk, WhatsApp, Xing, Facebook, Twitter, Line } from 'svelte-share-buttons-component';
+
     console.log('someJSON', someJSON)
 
     let data = someJSON.default
@@ -26,21 +28,52 @@
     });
 	$: console.log("TWEETS", tweets)
 
+    let expanded;
+    function toggle(id) {
+        if (expanded==id) {
+            expanded = null;
+        } else {
+            expanded = id;
+        }
+	}
+
+    const url = 'https://twitter.com/LeicesterTng/status/1485011327630417928';
+	const title = 'Svelte Share Buttons Component';
+	const desc = 'Svelte based social media share buttons component with no tracking.';
+
 </script>
+
 
 <body class="body2">
 	<Header />
 	<div style="height: 50px;"></div>
-	<h2>
-        Latest {teamName} <br> match report
-    </h2>
+    <div id="head-cont">
+        <h2>
+            Latest {teamName} <br> match report
+        </h2>
+    </div>
+
 	<div style="height: 50px;"></div>
 	<div id="tweet-cont" style="width: 640px; margin:0 auto;">
 		{#each tweets as { id, text }, i}
-			<div>
+			<!-- <div>
 				<a class="tweets" href={"https://twitter.com/_Numbers_Game/status/"+id} target="_blank">{text}</a>
-			</div>
-			<br>
+			</div> -->
+            <div class={(expanded==id)?"selectedtweet":"unselectedtweet"}>
+                <div> 
+                    <span class="tweets" on:click={toggle(id)}>{text}</span>
+                    <br>
+                    {#if expanded==id}
+                        <div class="share-cont">
+                            <Twitter class="share-button" text="{text}" url={"https://twitter.com/_Numbers_Game/status/"+id} />
+                            <Reddit class="share-button" {text} url={"https://twitter.com/_Numbers_Game/status/"+id} />
+                            <WhatsApp class="share-button" text="{text} url={"https://twitter.com/_Numbers_Game/status/"+id}" />
+                            <Facebook class="share-button" quote="{text}" url={"https://twitter.com/_Numbers_Game/status/"+id} />
+                        </div>
+                    {/if}
+                    <br>
+                </div>
+            </div>
 		{/each}
 	</div>
 </body>
@@ -64,11 +97,25 @@
 </div> -->
 
 <style>
-    a.tweets {
-        color: var(--heading-color);
-		line-height: initial;
-		font-size: large;
+    .share-cont {
+        width: max-content;
+        margin: auto;
+        margin-top: 40px;
     }
+    .selectedtweet {
+        border: 1px solid red;
+        /* width: 110%; */
+        /* margin: 0px 0px 0px -5%; */
+        padding: 5%;
+        border-radius: 20px;
+
+        border: 1px solid #00917c;
+        padding: 5%;
+        border-radius: 20px;
+        background: #f0f7f6;
+        margin: 10px 0 30px 0;
+    }
+
     /* a:-webkit-any-link {
         color: var(--accent-color);
         cursor: pointer;
@@ -77,8 +124,9 @@
     a:hover {
         background-color: yellow;
     }
-
-
+    span:hover {
+        background-color: yellow;
+    }
 
 	.body2 {
         font-family: system-ui;
@@ -192,4 +240,34 @@
 		font-size: 1.4rem;
 		width: 100%;
 	}
+
+    @media only screen and (max-width: 650px) {
+        #tweet-cont {
+            width: revert !important;
+        }
+    }
+
+    .tweets {
+        color: var(--heading-color);
+		line-height: initial;
+		font-size: large;
+        color: #434343;
+        line-height: 1.4;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    #head-cont {
+        background: black;
+        color: white;
+        width: 104%;
+        margin: 0 0 50px -2%;
+        height: 220px;
+        padding: 5%;
+    }
+
+    :global(.ssbc-button) {
+        border-radius: 5px;
+    }
+
 </style>
