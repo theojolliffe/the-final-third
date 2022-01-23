@@ -14,10 +14,8 @@
     //     console.log('team', data[name])
     // }
 
-    console.log('teams', teams.find(d => d.name == 'Tottenham'))
     
     let data = someJSON.default
-    console.log("DATA", data)
     data = Object.keys(data).map(e => {
         // let objt = {};
         // objt[e] = data[e];
@@ -26,7 +24,7 @@
     data.sort(function(a, b){
         return b.misc.story_id - a.misc.story_id
     })
-    console.log('someJSON', data)
+    console.log('data', data)
     
     // teams.sort(function(a, b){
     //     return parseInt(data[b['name']].misc.story_id) - parseInt(data[a['name']].misc.story_id)
@@ -71,7 +69,13 @@
                     </div>
                     <div class="row text">
                         <div class='col1'>Result</div>
-                        <div>{misc.result[0]}-{misc.result[1]}</div>
+
+                        {#if misc.home=='home'}
+                            <div><strong>{misc.result[0]}</strong><span style="color: #686868;">-{misc.result[1]}</span></div>
+                        {:else}
+                            <div><span style="color: #686868;">{misc.result[0]}-</span><strong>{misc.result[1]}</strong></div>
+                        {/if}
+
                     </div>
                     <div class="row text last">
                         <div class='col1'>Date</div>

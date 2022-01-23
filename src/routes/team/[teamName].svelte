@@ -7,8 +7,6 @@
 
     import { Email, HackerNews, Reddit, LinkedIn, Pinterest, Telegram, Tumblr, Vk, WhatsApp, Xing, Facebook, Twitter, Line } from 'svelte-share-buttons-component';
 
-    console.log('someJSON', someJSON)
-
     let data = someJSON.default
     data = Object.keys(data).map(e => {
         // let objt = {};
@@ -19,14 +17,13 @@
 
     $: teamName = $page.params.teamName
     $: teamName = teams.find(d => d.id==teamName).name
-    $: console.log("teamName", teamName)
 
     $: tweets = data.find(e => e.misc.team == teamName).data
 
 	$: tweets = tweets.sort(function(a, b){
         return parseInt(a['id']) - parseInt(b['id'])
     });
-	$: console.log("TWEETS", tweets)
+	$: console.log(teamName, data.find(e => e.misc.team == teamName))
 
     let expanded;
     function toggle(id) {
@@ -49,11 +46,11 @@
 	<div style="height: 50px;"></div>
     <div id="head-cont">
         <h2>
-            Latest {teamName} <br> match report
+            Latest <span style="white-space: nowrap;">{teamName}</span> <br> match report
         </h2>
     </div>
 
-	<div style="height: 50px;"></div>
+	<div id="text-top"></div>
 	<div id="tweet-cont" style="width: 640px; margin:0 auto;">
 		{#each tweets as { id, text }, i}
 			<!-- <div>
@@ -66,7 +63,7 @@
                     {#if expanded==id}
                         <div class="share-cont">
                             <Twitter class="share-button" text="{text}" url={"https://twitter.com/_Numbers_Game/status/"+id} />
-                            <Reddit class="share-button" {text} url={"https://twitter.com/_Numbers_Game/status/"+id} />
+                            <Reddit class="share-button" text="{"Read this tweet from the latest " + teamName + " match"}" url={"https://twitter.com/_Numbers_Game/status/"+id} />
                             <WhatsApp class="share-button" text="{text} url={"https://twitter.com/_Numbers_Game/status/"+id}" />
                             <Facebook class="share-button" quote="{text}" url={"https://twitter.com/_Numbers_Game/status/"+id} />
                         </div>
@@ -241,12 +238,6 @@
 		width: 100%;
 	}
 
-    @media only screen and (max-width: 650px) {
-        #tweet-cont {
-            width: revert !important;
-        }
-    }
-
     .tweets {
         color: var(--heading-color);
 		line-height: initial;
@@ -261,9 +252,27 @@
         background: black;
         color: white;
         width: 104%;
-        margin: 0 0 50px -2%;
-        height: 220px;
+        margin: 0 0 50px -16px;
+        /* height: 220px; */
         padding: 5%;
+        padding-bottom: 25%;
+    }
+    #text-top {
+        height: 50px;
+    }
+    @media only screen and (max-width: 650px) {
+        #head-cont {
+            width: 106%;
+        }
+        #text-top {
+            height: 20px;
+        }
+        #tweet-cont {
+            width: revert !important;
+        }
+        .tweets {
+            font-size: medium;
+        }
     }
 
     :global(.ssbc-button) {

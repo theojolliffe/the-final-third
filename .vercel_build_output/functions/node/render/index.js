@@ -5560,8 +5560,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "layout.svelte-611556c0.js";
-    js = ["layout.svelte-611556c0.js", "chunks/vendor-e1430863.js"];
+    entry = "layout.svelte-099222a4.js";
+    js = ["layout.svelte-099222a4.js", "chunks/vendor-51c0b828.js"];
     css2 = ["assets/vendor-954c70f3.css"];
   }
 });
@@ -5610,28 +5610,28 @@ var entry2, js2, css3;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-aab8ab55.js";
-    js2 = ["error.svelte-aab8ab55.js", "chunks/vendor-e1430863.js"];
+    entry2 = "error.svelte-6c2662da.js";
+    js2 = ["error.svelte-6c2662da.js", "chunks/vendor-51c0b828.js"];
     css3 = ["assets/vendor-954c70f3.css"];
   }
 });
 
-// .svelte-kit/output/server/chunks/stores-4cff01f7.js
+// .svelte-kit/output/server/chunks/stores-1d401af5.js
 var css4, Header, getStores, page;
-var init_stores_4cff01f7 = __esm({
-  ".svelte-kit/output/server/chunks/stores-4cff01f7.js"() {
+var init_stores_1d401af5 = __esm({
+  ".svelte-kit/output/server/chunks/stores-1d401af5.js"() {
     init_index_f1f4a4c8();
     css4 = {
-      code: ".headline.svelte-1kuidau{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-1kuidau{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-1kuidau{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-1kuidau{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-1kuidau{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-1kuidau{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-1kuidau{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-1kuidau{background-color:#ffc2fd}.source.svelte-1kuidau{text-decoration:underline}a.svelte-1kuidau{text-decoration:auto;color:black}@media only screen and (max-width: 600px){.headline.svelte-1kuidau{display:revert;padding:4px 8px 20px 4px}.top-50.svelte-1kuidau{margin-bottom:20px}}",
+      code: ".headline.svelte-136elcj{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-136elcj{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-136elcj{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-136elcj{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-136elcj{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-136elcj{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-136elcj{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-136elcj{background-color:#ffc2fd}.source.svelte-136elcj{text-decoration:underline}a.svelte-136elcj{text-decoration:auto;color:black}.top-50.svelte-136elcj{width:180%;margin-right:60px}@media only screen and (max-width: 600px){.headline.svelte-136elcj{display:revert;padding:4px 8px 20px 4px}.top-50.svelte-136elcj{width:100%;margin-bottom:20px}}",
       map: null
     };
     Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css4);
-      return `<div id="${"top"}" class="${"headline svelte-1kuidau"}"><div class="${"top-50 svelte-1kuidau"}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-1kuidau"}"><div class="${"text-semi svelte-1kuidau"}">The Numbers Game
+      return `<div id="${"top"}" class="${"headline svelte-136elcj"}"><div class="${"top-50 svelte-136elcj"}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-136elcj"}"><div class="${"text-semi svelte-136elcj"}">The Numbers Game
             </div></a>
-        <div class="${"div-block-107 svelte-1kuidau"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-1kuidau"}">Twitter</a>
-                <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-1kuidau"}">Email</a></div></div></div>
-    <div class="${"flex"}"><div class="${"text-regular svelte-1kuidau"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-1kuidau"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
+        <div class="${"div-block-107 svelte-136elcj"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-136elcj"}">Twitter</a>
+                <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-136elcj"}">Email</a></div></div></div>
+    <div class="${"flex"}"><div class="${"text-regular svelte-136elcj"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-136elcj"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
             <br></div></div>
 </div>`;
     });
@@ -5695,226 +5695,722 @@ var init_fb_utils = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/tweets-c3575011.js
-var tweets, someJSON;
-var init_tweets_c3575011 = __esm({
-  ".svelte-kit/output/server/chunks/tweets-c3575011.js"() {
+// .svelte-kit/output/server/entries/endpoints/tweets.json.js
+var tweets_json_exports = {};
+__export(tweets_json_exports, {
+  default: () => tweets
+});
+var tweets;
+var init_tweets_json = __esm({
+  ".svelte-kit/output/server/entries/endpoints/tweets.json.js"() {
     tweets = {
-      "1": {
+      "0": {
         data: [
           {
-            text: "Leicester City attempted to play 86% of their passes, while Tottenham attempted 86 passes.",
-            id: "1485011318369312773"
+            text: "Manchester Utd took three shots on target, while West Ham managed one.",
+            id: "1485205579559809027"
           },
           {
-            text: "Leicester City took four shots on target, down from one in their last game against Liverpool.",
-            id: "1485011320093171717"
+            text: "Cristiano Ronaldo created some of the best chances of the game - tallying an xA of 0.1 (the second highest of anyone on the pitch), while Bruno Fernandes created chances worth 0.4 xA (more than any other player on the pitch).",
+            id: "1485205581380136962"
           },
           {
-            text: "Leicester City applied less pressure high up the pitch, pressing 24 times in the final third, compared with 17 times in their last game (against Liverpool).",
-            id: "1485011321989079042"
+            text: "Harry Maguire successfuly completed 64 passes - more than any other player on the pitch.",
+            id: "1485205582860664833"
           },
           {
-            text: "Leicester played 58 successful long balls, considerably less than the 38 they played in their last game (against Liverpool).",
-            id: "1485011323889111042"
+            text: "Harry Maguire played more successful long balls than any other player on the pitch (16), followed by Bruno Fernandes, who completed eight.",
+            id: "1485205584362315778"
           },
           {
-            text: "Leicester City were given an average of 4.8 touches each time the opponent pressed - Tottenham took an average of 4.5 touches per press. This season, Leicester City have averaged 3.9 touches for each opponent press.",
-            id: "1485011325818482696"
+            text: "Cristiano Ronaldo successfuly recieved 12 progressive passes (more than any other player on the pitch), while Harry Maguire won five aerial duels.",
+            id: "1485205585888960512"
           },
           {
-            text: "Leicester City attempted 20 challenges resulting in 14 successful tackles. Tottenham attempted 19 challenges, completing 10 successful tackles.",
-            id: "1485011327630417928"
+            text: "Harry Maguire carried the ball a total of 343 yards towards the opponent's goal - farther than any other player on the pitch.",
+            id: "1485205587495428098"
           },
           {
-            text: "Ademola Lookman got zero assists, more than any other Leicester City player.",
-            id: "1485011329937248263"
+            text: "Harry Maguire made more clearances than any other player on the pitch (four), followed by Cristiano Ronaldo, who made three.",
+            id: "1485205588921495555"
           },
           {
-            text: "James Maddison successfuly recieved 10 progressive passes, while Ademola Lookman completed 11.",
-            id: "1485011331824635905"
-          },
-          {
-            text: "Kiernan Dewsbury Hall carried the ball farther towards the opponent's goal than any other player in a Leicester shirt (a combined 286 yards), while Ademola Lookman carried the ball a combined 159 yards towards the opponent's goal.",
-            id: "1485011333749907457"
-          },
-          {
-            text: "Ademola Lookman pressed the opponent 19 times, while James Maddison pressed 20 times - more than any other player in a Leicester shirt.",
-            id: "1485011336375504901"
+            text: "Harry Maguire won the second most aerial duels of any player on the pitch.",
+            id: "1485205590561509383"
           }
         ],
         misc: {
-          story_id: 1,
-          team: "Leicester City",
-          opponent: "Tottenham",
+          story_id: 0,
+          team: "Manchester Utd",
+          opponent: "West Ham",
           result: [
-            2,
-            3
+            1,
+            0
           ],
-          date: "2022-01-19",
+          date: "2022-01-22",
+          home: "home",
           stories: [
             [
               [
-                "Leicester City",
-                "Passing_Total Perc",
-                86
-              ],
-              [
-                "Tottenham",
-                "Passing_Total Perc",
-                86
-              ]
-            ],
-            [
-              [
-                "Leicester City",
+                "Manchester Utd",
                 "Attack_sot",
-                4
+                3
               ],
               [
-                "Leicester City",
-                "Attack_sot Previous Liverpool",
+                "West Ham",
+                "Attack_sot",
                 1
               ]
             ],
             [
               [
-                "Leicester City",
-                "Attack_Press Final Third",
-                24
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_xa",
+                0.1
               ],
               [
-                "Leicester City",
-                "Attack_Press Final Third Previous Liverpool",
+                "Bruno Fernandes - Manchester Utd",
+                "Attack_xa",
+                0.4
+              ],
+              [
+                "Bruno Fernandes - Manchester Utd",
+                "Attack_xa Rank",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Attack_xa Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Harry Maguire - Manchester Utd",
+                "Passing_Total Succ",
+                64
+              ],
+              [
+                "Harry Maguire - Manchester Utd",
+                "Passing_Total Succ Rank",
+                1
+              ]
+            ],
+            [
+              [
+                "Harry Maguire - Manchester Utd",
+                "Passing_Long Succ",
+                16
+              ],
+              [
+                "Harry Maguire - Manchester Utd",
+                "Passing_Long Succ Rank",
+                1
+              ],
+              [
+                "Bruno Fernandes - Manchester Utd",
+                "Passing_Long Succ",
+                8
+              ],
+              [
+                "Bruno Fernandes - Manchester Utd",
+                "Passing_Long Succ Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Possession_Receive Prog",
+                12
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Possession_Receive Prog Rank",
+                1
+              ],
+              [
+                "Harry Maguire - Manchester Utd",
+                "Defence_Aerial Succ",
+                5
+              ]
+            ],
+            [
+              [
+                "Harry Maguire - Manchester Utd",
+                "Possession_Carries Prg Dist",
+                343
+              ],
+              [
+                "Harry Maguire - Manchester Utd",
+                "Possession_Carries Prg Dist Rank",
+                1
+              ]
+            ],
+            [
+              [
+                "Harry Maguire - Manchester Utd",
+                "Defence_Clearances",
+                4
+              ],
+              [
+                "Harry Maguire - Manchester Utd",
+                "Defence_Clearances Rank",
+                1
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_Clearances",
+                3
+              ],
+              [
+                "Cristiano Ronaldo - Manchester Utd",
+                "Defence_Clearances Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Harry Maguire - Manchester Utd",
+                "Defence_Aerial Succ Rank",
+                2
+              ]
+            ]
+          ]
+        }
+      },
+      "1": {
+        data: [
+          {
+            text: "Southampton completed 45% of the passes they played long, compared with 42% from Wolves.",
+            id: "1485205616067059718"
+          },
+          {
+            text: "Southampton allowed their opponent an average of 7.1 touches each time they pressed, while Manchester City allowed Spurs 2.1 touches per press.",
+            id: "1485205618252263424"
+          },
+          {
+            text: "In their last game, Southampton allowed Wolves 2.3 touches per press, while throughout the season they've pressed once for every 3.5 opponent touches.",
+            id: "1485205620391358468"
+          },
+          {
+            text: "Southampton attempted 15 challenges in the defensive third, considerably more than the three made by Manchester City. In their last game (against Wolves) the Saints attempted two challenges in the defensive third, while throughout the season they've averaged 8.1 per 90 minutes.",
+            id: "1485209397366296582"
+          },
+          {
+            text: "James Ward-Prowse played two key passes - more than any other Southampton player. James Ward-Prowse played two key passes.",
+            id: "1485209399123755008"
+          },
+          {
+            text: "Mohammed Salisu successfuly completed 28 passes (more than any other Southampton player), completing four successful tackles. Salisu attempted six challenges, completing four successful tackles.",
+            id: "1485209400717500416"
+          },
+          {
+            text: "James Ward-Prowse found a teammate with 80% of his attempted passes, the highest pass completion rate of any Southampton player.",
+            id: "1485209402437218306"
+          },
+          {
+            text: "Mohammed Salisu made more successful passes into the final third than any other Southampton player (three), followed by Stuart Armstrong, who completed two passes into the final third.",
+            id: "1485209404706373642"
+          },
+          {
+            text: "Mohammed Salisu made 239 yards worth of progressive passes, more than anyone else in a Southampton shirt, while James Ward-Prowse successfully passed the ball 192 yards towards the opponent's goal.",
+            id: "1485209406493147143"
+          },
+          {
+            text: "Mohammed Salisu played six successful long balls - more than any other Southampton player.",
+            id: "1485209408242077704"
+          },
+          {
+            text: "James Ward-Prowse pressed the opponent 29 times (more than any other player on the pitch), winning possession on seven occassions.",
+            id: "1485209410133766145"
+          },
+          {
+            text: "Mohammed Salisu made three interceptions, while Stuart Armstrong made five.",
+            id: "1485209411790553088"
+          },
+          {
+            text: "Mohammed Salisu made 15 clearances - more than any other player on the pitch.",
+            id: "1485209413430484992"
+          }
+        ],
+        misc: {
+          story_id: 1,
+          team: "Southampton",
+          opponent: "Manchester City",
+          result: [
+            1,
+            1
+          ],
+          date: "2022-01-22",
+          home: "home",
+          stories: [
+            [
+              [
+                "Southampton",
+                "Passing_Long Perc",
+                45
+              ],
+              [
+                "Southampton",
+                "Passing_Long Perc Previous Wolves",
+                42
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Possession_Tch PPress Given Ratio",
+                7.1
+              ],
+              [
+                "Manchester City",
+                "Possession_Tch PPress Given Ratio",
+                2.1
+              ],
+              [
+                "Southampton",
+                "Possession_Tch PPress Given Ratio Previous Wolves",
+                2.3
+              ],
+              [
+                "Southampton",
+                "Possession_Tch PPress Given Ratio Season",
+                3.5
+              ]
+            ],
+            [
+              [
+                "Southampton",
+                "Defence_Tackles Def Third",
+                15
+              ],
+              [
+                "Manchester City",
+                "Defence_Tackles Def Third",
+                3
+              ],
+              [
+                "Southampton",
+                "Defence_Tackles Def Third Previous Wolves",
+                2
+              ],
+              [
+                "Southampton",
+                "Defence_Tackles Def Third Season",
+                8.1
+              ],
+              [
+                "Southampton",
+                "Defence_Aerial Perc",
+                47
+              ],
+              [
+                "Manchester City",
+                "Defence_Aerial Perc",
+                53
+              ],
+              [
+                "Southampton",
+                "Defence_Aerial Perc Season",
+                45
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Attack_KP",
+                2
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Attack_KPTeamrank",
+                1
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Attack_KP",
+                1
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Attack_KPTeamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Total Succ",
+                28
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Total Succ Teamrank",
+                1
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Tackles",
+                6
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Tackles Succ",
+                4
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_Total Perc",
+                80
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_Total Perc Teamrank",
+                1
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Passes Final Third",
+                3
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Passes Final Third Teamrank",
+                1
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Passing_Passes Final Third",
+                2
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Passing_Passes Final Third Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Passes Prg Dist",
+                239
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Passes Prg Dist Teamrank",
+                1
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_Passes Prg Dist",
+                192
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Passing_Passes Prg Dist Teamrank",
+                2
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Aerial Succ",
+                3
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Long Succ",
+                6
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Passing_Long Succ Teamrank",
+                1
+              ]
+            ],
+            [
+              [
+                "James Ward-Prowse - Southampton",
+                "Defence_Press",
+                29
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Defence_Press Rank",
+                1
+              ],
+              [
+                "James Ward-Prowse - Southampton",
+                "Defence_Press Succ",
+                7
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Int",
+                3
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Defence_Int",
+                5
+              ],
+              [
+                "Stuart Armstrong - Southampton",
+                "Defence_Int Rank",
+                1
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Int Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Clearances",
+                15
+              ],
+              [
+                "Mohammed Salisu - Southampton",
+                "Defence_Clearances Rank",
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "2": {
+        data: [
+          {
+            text: "Wolves spent large parts of the game without the ball, completing only 391 passes. In their last game (against Southampton) Wolves completed 248 passes.",
+            id: "1485209439158386689"
+          },
+          {
+            text: "Wolves succesffuly played 30 passes into the final third, considerably less than the 28 from Brentford. In their last game (against Southampton) Wolves completed 17 passes into the final third.",
+            id: "1485209441091919873"
+          }
+        ],
+        misc: {
+          story_id: 2,
+          team: "Wolves",
+          opponent: "Brentford",
+          result: [
+            1,
+            2
+          ],
+          date: "2022-01-22",
+          home: "away",
+          stories: [
+            [
+              [
+                "Wolves",
+                "Passing_Total Succ",
+                391
+              ],
+              [
+                "Wolves",
+                "Passing_Total Succ Previous Southampton",
+                248
+              ]
+            ],
+            [
+              [
+                "Wolves",
+                "Passing_Passes Final Third",
+                30
+              ],
+              [
+                "Brentford",
+                "Passing_Passes Final Third",
+                28
+              ],
+              [
+                "Wolves",
+                "Passing_Passes Final Third Previous Southampton",
                 17
               ]
             ],
             [
               [
-                "Leicester City",
-                "Passing_Long Succ",
-                58
-              ],
-              [
-                "Leicester City",
-                "Passing_Long Succ Previous Liverpool",
-                38
-              ]
-            ],
-            [
-              [
-                "Leicester City",
+                "Wolves",
                 "Possession_Tch PPress Taken Ratio",
-                4.8
+                5.2
               ],
               [
-                "Tottenham",
+                "Brentford",
                 "Possession_Tch PPress Taken Ratio",
-                4.5
+                4.4
               ],
               [
-                "Leicester City",
+                "Wolves",
+                "Possession_Tch PPress Taken Ratio Previous Southampton",
+                3.4
+              ],
+              [
+                "Wolves",
                 "Possession_Tch PPress Taken Ratio Season",
-                3.9
+                4
               ]
             ],
             [
               [
-                "Leicester City",
+                "Wolves",
                 "Defence_Tackles",
+                23
+              ],
+              [
+                "Brentford",
+                "Defence_Tackles",
+                16
+              ],
+              [
+                "Wolves",
+                "Defence_Tackles Season",
                 20
               ],
               [
-                "Tottenham",
-                "Defence_Tackles",
-                19
-              ],
-              [
-                "Leicester City",
+                "Wolves",
                 "Defence_Tackles Succ",
-                14
+                15
               ],
               [
-                "Tottenham",
+                "Brentford",
                 "Defence_Tackles Succ",
                 10
               ]
             ],
             [
               [
-                "Ademola Lookman - Leicester City",
-                "Attack_Assist",
-                0
+                "Wolves",
+                "Defence_Tackles Succ Season",
+                12
               ],
               [
-                "Ademola Lookman - Leicester City",
-                "Attack_Assist Teamrank",
-                1
-              ]
-            ],
-            [
+                "Wolves",
+                "Defence_Tackles Def Third",
+                15
+              ],
               [
-                "Ademola Lookman - Leicester City",
-                "Possession_Receive Prog",
+                "Brentford",
+                "Defence_Tackles Def Third",
+                7
+              ],
+              [
+                "Wolves",
+                "Defence_Tackles Def Third Previous Southampton",
+                12
+              ],
+              [
+                "Wolves",
+                "Defence_Tackles Def Third Season",
                 11
-              ],
-              [
-                "Ademola Lookman - Leicester City",
-                "Possession_Receive Prog Teamrank",
-                1
-              ],
-              [
-                "James Maddison - Leicester City",
-                "Possession_Receive Prog",
-                10
-              ],
-              [
-                "James Maddison - Leicester City",
-                "Possession_Receive Prog Teamrank",
-                2
               ]
             ],
             [
               [
-                "Kiernan Dewsbury Hall - Leicester City",
-                "Possession_Carries Prg Dist",
-                286
-              ],
-              [
-                "Kiernan Dewsbury Hall - Leicester City",
-                "Possession_Carries Prg Dist Teamrank",
-                1
-              ],
-              [
-                "Ademola Lookman - Leicester City",
-                "Possession_Carries Prg Dist",
-                159
-              ],
-              [
-                "Ademola Lookman - Leicester City",
-                "Possession_Carries Prg Dist Teamrank",
-                2
-              ]
-            ],
-            [
-              [
-                "Ademola Lookman - Leicester City",
-                "Defence_Press",
-                19
-              ],
-              [
-                "James Maddison - Leicester City",
-                "Defence_Press",
+                "Wolves",
+                "Defence_Aerial Succ",
                 20
               ],
               [
-                "James Maddison - Leicester City",
-                "Defence_Press Teamrank",
+                "Wolves",
+                "Defence_Aerial Succ Season",
+                15
+              ]
+            ],
+            [
+              [
+                "Joao Moutinho - Wolves",
+                "Attack_xa",
+                0.1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Attack_xa Teamrank",
                 1
               ],
               [
-                "Ademola Lookman - Leicester City",
-                "Defence_Press Teamrank",
+                "Nelson Semedo - Wolves",
+                "Attack_xa",
+                0.1
+              ],
+              [
+                "Nelson Semedo - Wolves",
+                "Attack_xa Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Ruben Neves - Wolves",
+                "Passing_Total Succ",
+                56
+              ],
+              [
+                "Ruben Neves - Wolves",
+                "Passing_Total Succ Teamrank",
+                1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_Total Succ",
+                54
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_Total Succ Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Ruben Neves - Wolves",
+                "Passing_Long Succ",
+                15
+              ],
+              [
+                "Ruben Neves - Wolves",
+                "Passing_Long Succ Rank",
+                1
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_Long Succ",
+                6
+              ],
+              [
+                "Joao Moutinho - Wolves",
+                "Passing_Long Succ Teamrank",
+                2
+              ]
+            ],
+            [
+              [
+                "Ruben Neves - Wolves",
+                "Possession_Carries Prg Dist",
+                135
+              ],
+              [
+                "Ruben Neves - Wolves",
+                "Possession_Carries Prg Dist Teamrank",
+                1
+              ],
+              [
+                "Nelson Semedo - Wolves",
+                "Possession_Carries Prg Dist",
+                110
+              ],
+              [
+                "Nelson Semedo - Wolves",
+                "Possession_Carries Prg Dist Teamrank",
                 2
               ]
             ]
@@ -5922,11 +6418,6 @@ var init_tweets_c3575011 = __esm({
         }
       }
     };
-    someJSON = /* @__PURE__ */ Object.freeze({
-      __proto__: null,
-      [Symbol.toStringTag]: "Module",
-      "default": tweets
-    });
   }
 });
 
@@ -5948,9 +6439,9 @@ var css5, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_4cff01f7();
+    init_stores_1d401af5();
     init_fb_utils();
-    init_tweets_c3575011();
+    init_tweets_json();
     css5 = {
       code: ".body2.svelte-1sa3ipy{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-1sa3ipy{font-family:system-ui;font-size:12vw;margin:auto;line-height:0.85}a.svelte-1sa3ipy{text-decoration:auto;color:black}.row.svelte-1sa3ipy{border-bottom:1px solid #000;font-size:medium;padding-top:4px;padding-bottom:4px}.number.svelte-1sa3ipy{font-size:xx-large;line-height:1}.name.svelte-1sa3ipy{font-weight:800}.text.svelte-1sa3ipy{display:flex;justify-content:flex-start}.col1.svelte-1sa3ipy{overflow:hidden;width:40%}.last.svelte-1sa3ipy{border-bottom:none}.grid-container.svelte-1sa3ipy{display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px;padding:10px}.team-div.svelte-1sa3ipy{background-color:rgba(255, 255, 255, 0.8);text-align:left;padding:20px 0;font-family:system-ui;font-size:1.4rem;width:100%}@media only screen and (max-width: 1180px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto auto auto}}@media only screen and (max-width: 768px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto auto}}@media only screen and (max-width: 600px){.grid-container.svelte-1sa3ipy{grid-template-columns:auto}}",
       map: null
@@ -5958,16 +6449,14 @@ var init_index_svelte = __esm({
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
-      console.log("teams", teams.find((d) => d.name == "Tottenham"));
       let data = tweets;
-      console.log("DATA", data);
       data = Object.keys(data).map((e2) => {
         return data[e2];
       });
       data.sort(function(a, b) {
         return b.misc.story_id - a.misc.story_id;
       });
-      console.log("someJSON", data);
+      console.log("data", data);
       $$result.css.add(css5);
       $$unsubscribe_page();
       return `<body class="${"body2 svelte-1sa3ipy"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
@@ -5982,7 +6471,8 @@ var init_index_svelte = __esm({
                     <div class="${"row text svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Opponent</div>
                         <div>${escape(misc.opponent)}</div></div>
                     <div class="${"row text svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Result</div>
-                        <div>${escape(misc.result[0])}-${escape(misc.result[1])}</div></div>
+
+                        ${misc.home == "home" ? `<div><strong>${escape(misc.result[0])}</strong><span style="${"color: #686868;"}">-${escape(misc.result[1])}</span></div>` : `<div><span style="${"color: #686868;"}">${escape(misc.result[0])}-</span><strong>${escape(misc.result[1])}</strong></div>`}</div>
                     <div class="${"row text last svelte-1sa3ipy"}"><div class="${"col1 svelte-1sa3ipy"}">Date</div>
                         <div>${escape(misc.date)}</div></div>
                 </div></a>
@@ -6008,9 +6498,9 @@ var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-ce0273a0.js";
-    js3 = ["pages/index.svelte-ce0273a0.js", "chunks/vendor-e1430863.js", "chunks/tweets-12dc0d75.js"];
-    css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-07474543.css"];
+    entry3 = "pages/index.svelte-00c11c9a.js";
+    js3 = ["pages/index.svelte-00c11c9a.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
+    css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
   }
 });
 
@@ -6023,9 +6513,9 @@ var css$5, ShareButton, css$4, Facebook, css$3, Reddit, css$2, Twitter, css$1, W
 var init_teamName_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_4cff01f7();
+    init_stores_1d401af5();
     init_fb_utils();
-    init_tweets_c3575011();
+    init_tweets_json();
     css$5 = {
       code: ".ssbc-button__link.svelte-abzkh4,.ssbc-button__icon.svelte-abzkh4{display:inline-block}.ssbc-button__link.svelte-abzkh4{text-decoration:none;color:#fff}.ssbc-button.svelte-abzkh4{transition:25ms ease-out;padding:0.75em}.ssbc-button__icon.svelte-abzkh4 svg{width:1em;height:1em;margin:0;vertical-align:middle}.ssbc-button__icon--fill.svelte-abzkh4{fill:#fff;stroke:none}.ssbc-button__icon--outline.svelte-abzkh4{fill:none;stroke:#fff}",
       map: null
@@ -6164,7 +6654,7 @@ var init_teamName_svelte = __esm({
       })}`;
     });
     css7 = {
-      code: ".share-cont.svelte-17edxr4{width:max-content;margin:auto;margin-top:40px}.selectedtweet.svelte-17edxr4{border:1px solid red;padding:5%;border-radius:20px;border:1px solid #00917c;padding:5%;border-radius:20px;background:#f0f7f6;margin:10px 0 30px 0}span.svelte-17edxr4:hover{background-color:yellow}.body2.svelte-17edxr4{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-17edxr4{font-family:system-ui;font-size:8vw;margin:auto;line-height:0.85}@media only screen and (max-width: 650px){#tweet-cont.svelte-17edxr4{width:revert !important}}.tweets.svelte-17edxr4{color:var(--heading-color);line-height:initial;font-size:large;color:#434343;line-height:1.4;font-weight:300;cursor:pointer}#head-cont.svelte-17edxr4{background:black;color:white;width:104%;margin:0 0 50px -2%;height:220px;padding:5%}.ssbc-button{border-radius:5px}",
+      code: ".share-cont.svelte-1asy2nv{width:max-content;margin:auto;margin-top:40px}.selectedtweet.svelte-1asy2nv{border:1px solid red;padding:5%;border-radius:20px;border:1px solid #00917c;padding:5%;border-radius:20px;background:#f0f7f6;margin:10px 0 30px 0}span.svelte-1asy2nv:hover{background-color:yellow}.body2.svelte-1asy2nv{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-1asy2nv{font-family:system-ui;font-size:8vw;margin:auto;line-height:0.85}.tweets.svelte-1asy2nv{color:var(--heading-color);line-height:initial;font-size:large;color:#434343;line-height:1.4;font-weight:300;cursor:pointer}#head-cont.svelte-1asy2nv{background:black;color:white;width:104%;margin:0 0 50px -16px;padding:5%;padding-bottom:25%}#text-top.svelte-1asy2nv{height:50px}@media only screen and (max-width: 650px){#head-cont.svelte-1asy2nv{width:106%}#text-top.svelte-1asy2nv{height:20px}#tweet-cont.svelte-1asy2nv{width:revert !important}.tweets.svelte-1asy2nv{font-size:medium}}.ssbc-button{border-radius:5px}",
       map: null
     };
     U5BteamNameu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6172,7 +6662,6 @@ var init_teamName_svelte = __esm({
       let tweets$1;
       let $page, $$unsubscribe_page;
       $$unsubscribe_page = subscribe(page, (value) => $page = value);
-      console.log("someJSON", someJSON);
       let data = tweets;
       data = Object.keys(data).map((e2) => {
         return data[e2];
@@ -6181,34 +6670,31 @@ var init_teamName_svelte = __esm({
       $$result.css.add(css7);
       teamName = $page.params.teamName;
       teamName = teams.find((d) => d.id == teamName).name;
-      {
-        console.log("teamName", teamName);
-      }
       tweets$1 = data.find((e2) => e2.misc.team == teamName).data;
       tweets$1 = tweets$1.sort(function(a, b) {
         return parseInt(a["id"]) - parseInt(b["id"]);
       });
       {
-        console.log("TWEETS", tweets$1);
+        console.log(teamName, data.find((e2) => e2.misc.team == teamName));
       }
       $$unsubscribe_page();
-      return `<body class="${"body2 svelte-17edxr4"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
+      return `<body class="${"body2 svelte-1asy2nv"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
 	<div style="${"height: 50px;"}"></div>
-    <div id="${"head-cont"}" class="${"svelte-17edxr4"}"><h2 class="${"svelte-17edxr4"}">Latest ${escape(teamName)} <br> match report
+    <div id="${"head-cont"}" class="${"svelte-1asy2nv"}"><h2 class="${"svelte-1asy2nv"}">Latest <span style="${"white-space: nowrap;"}" class="${"svelte-1asy2nv"}">${escape(teamName)}</span> <br> match report
         </h2></div>
 
-	<div style="${"height: 50px;"}"></div>
-	<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}" class="${"svelte-17edxr4"}">${each(tweets$1, ({ id, text }, i2) => `
-            <div class="${escape(null_to_empty(expanded == id ? "selectedtweet" : "unselectedtweet")) + " svelte-17edxr4"}"><div><span class="${"tweets svelte-17edxr4"}">${escape(text)}</span>
+	<div id="${"text-top"}" class="${"svelte-1asy2nv"}"></div>
+	<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}" class="${"svelte-1asy2nv"}">${each(tweets$1, ({ id, text }, i2) => `
+            <div class="${escape(null_to_empty(expanded == id ? "selectedtweet" : "unselectedtweet")) + " svelte-1asy2nv"}"><div><span class="${"tweets svelte-1asy2nv"}">${escape(text)}</span>
                     <br>
-                    ${expanded == id ? `<div class="${"share-cont svelte-17edxr4"}">${validate_component(Twitter, "Twitter").$$render($$result, {
+                    ${expanded == id ? `<div class="${"share-cont svelte-1asy2nv"}">${validate_component(Twitter, "Twitter").$$render($$result, {
         class: "share-button",
         text,
         url: "https://twitter.com/_Numbers_Game/status/" + id
       }, {}, {})}
                             ${validate_component(Reddit, "Reddit").$$render($$result, {
         class: "share-button",
-        text,
+        text: "Read this tweet from the latest " + teamName + " match",
         url: "https://twitter.com/_Numbers_Game/status/" + id
       }, {}, {})}
                             ${validate_component(WhatsApp, "WhatsApp").$$render($$result, {
@@ -6241,20 +6727,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-1faeba32.js";
-    js4 = ["pages/team/_teamName_.svelte-1faeba32.js", "chunks/vendor-e1430863.js", "chunks/tweets-12dc0d75.js"];
-    css8 = ["assets/pages/team/_teamName_.svelte-0d7fdf94.css", "assets/vendor-954c70f3.css", "assets/tweets-07474543.css"];
-  }
-});
-
-// .svelte-kit/output/server/entries/endpoints/tweets.json.js
-var tweets_json_exports = {};
-__export(tweets_json_exports, {
-  default: () => tweets
-});
-var init_tweets_json = __esm({
-  ".svelte-kit/output/server/entries/endpoints/tweets.json.js"() {
-    init_tweets_c3575011();
+    entry4 = "pages/team/_teamName_.svelte-edfac75d.js";
+    js4 = ["pages/team/_teamName_.svelte-edfac75d.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
+    css8 = ["assets/pages/team/_teamName_.svelte-a79fd70e.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
   }
 });
 
@@ -7736,7 +8211,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-90d55968.js", "js": ["start-90d55968.js", "chunks/vendor-e1430863.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-24893245.js", "js": ["start-24893245.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

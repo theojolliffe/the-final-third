@@ -135,12 +135,18 @@
 		width: 100%;
 	}
 
+    .top-50 {
+        width: 180%;
+        margin-right: 60px;
+    }
+
     @media only screen and (max-width: 600px) {
         .headline {
             display: revert;
             padding: 4px 8px 20px 4px;
         }
         .top-50 {
+            width: 100%;
             margin-bottom: 20px;
         }
     }
