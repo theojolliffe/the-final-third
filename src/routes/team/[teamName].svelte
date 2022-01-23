@@ -251,7 +251,7 @@
     #head-cont {
         background: black;
         color: white;
-        width: 104%;
+        width: 100vw;
         margin: 0 0 50px -16px;
         /* height: 220px; */
         padding: 5%;
@@ -261,9 +261,6 @@
         height: 50px;
     }
     @media only screen and (max-width: 650px) {
-        #head-cont {
-            width: 106%;
-        }
         #text-top {
             height: 20px;
         }
@@ -272,6 +269,9 @@
         }
         .tweets {
             font-size: medium;
+        }
+        h2 {
+            font-size: 10vw;
         }
     }
 

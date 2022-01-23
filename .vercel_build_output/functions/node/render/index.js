@@ -6654,7 +6654,7 @@ var init_teamName_svelte = __esm({
       })}`;
     });
     css7 = {
-      code: ".share-cont.svelte-1asy2nv{width:max-content;margin:auto;margin-top:40px}.selectedtweet.svelte-1asy2nv{border:1px solid red;padding:5%;border-radius:20px;border:1px solid #00917c;padding:5%;border-radius:20px;background:#f0f7f6;margin:10px 0 30px 0}span.svelte-1asy2nv:hover{background-color:yellow}.body2.svelte-1asy2nv{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-1asy2nv{font-family:system-ui;font-size:8vw;margin:auto;line-height:0.85}.tweets.svelte-1asy2nv{color:var(--heading-color);line-height:initial;font-size:large;color:#434343;line-height:1.4;font-weight:300;cursor:pointer}#head-cont.svelte-1asy2nv{background:black;color:white;width:104%;margin:0 0 50px -16px;padding:5%;padding-bottom:25%}#text-top.svelte-1asy2nv{height:50px}@media only screen and (max-width: 650px){#head-cont.svelte-1asy2nv{width:106%}#text-top.svelte-1asy2nv{height:20px}#tweet-cont.svelte-1asy2nv{width:revert !important}.tweets.svelte-1asy2nv{font-size:medium}}.ssbc-button{border-radius:5px}",
+      code: ".share-cont.svelte-1cseawo{width:max-content;margin:auto;margin-top:40px}.selectedtweet.svelte-1cseawo{border:1px solid red;padding:5%;border-radius:20px;border:1px solid #00917c;padding:5%;border-radius:20px;background:#f0f7f6;margin:10px 0 30px 0}span.svelte-1cseawo:hover{background-color:yellow}.body2.svelte-1cseawo{font-family:system-ui;color:#000;font-size:16px;line-height:17px;font-weight:500;letter-spacing:0.06em;margin-top:18px}h2.svelte-1cseawo{font-family:system-ui;font-size:8vw;margin:auto;line-height:0.85}.tweets.svelte-1cseawo{color:var(--heading-color);line-height:initial;font-size:large;color:#434343;line-height:1.4;font-weight:300;cursor:pointer}#head-cont.svelte-1cseawo{background:black;color:white;width:100vw;margin:0 0 50px -16px;padding:5%;padding-bottom:25%}#text-top.svelte-1cseawo{height:50px}@media only screen and (max-width: 650px){#text-top.svelte-1cseawo{height:20px}#tweet-cont.svelte-1cseawo{width:revert !important}.tweets.svelte-1cseawo{font-size:medium}h2.svelte-1cseawo{font-size:10vw}}.ssbc-button{border-radius:5px}",
       map: null
     };
     U5BteamNameu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6678,16 +6678,16 @@ var init_teamName_svelte = __esm({
         console.log(teamName, data.find((e2) => e2.misc.team == teamName));
       }
       $$unsubscribe_page();
-      return `<body class="${"body2 svelte-1asy2nv"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
+      return `<body class="${"body2 svelte-1cseawo"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
 	<div style="${"height: 50px;"}"></div>
-    <div id="${"head-cont"}" class="${"svelte-1asy2nv"}"><h2 class="${"svelte-1asy2nv"}">Latest <span style="${"white-space: nowrap;"}" class="${"svelte-1asy2nv"}">${escape(teamName)}</span> <br> match report
+    <div id="${"head-cont"}" class="${"svelte-1cseawo"}"><h2 class="${"svelte-1cseawo"}">Latest <span style="${"white-space: nowrap;"}" class="${"svelte-1cseawo"}">${escape(teamName)}</span> <br> match report
         </h2></div>
 
-	<div id="${"text-top"}" class="${"svelte-1asy2nv"}"></div>
-	<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}" class="${"svelte-1asy2nv"}">${each(tweets$1, ({ id, text }, i2) => `
-            <div class="${escape(null_to_empty(expanded == id ? "selectedtweet" : "unselectedtweet")) + " svelte-1asy2nv"}"><div><span class="${"tweets svelte-1asy2nv"}">${escape(text)}</span>
+	<div id="${"text-top"}" class="${"svelte-1cseawo"}"></div>
+	<div id="${"tweet-cont"}" style="${"width: 640px; margin:0 auto;"}" class="${"svelte-1cseawo"}">${each(tweets$1, ({ id, text }, i2) => `
+            <div class="${escape(null_to_empty(expanded == id ? "selectedtweet" : "unselectedtweet")) + " svelte-1cseawo"}"><div><span class="${"tweets svelte-1cseawo"}">${escape(text)}</span>
                     <br>
-                    ${expanded == id ? `<div class="${"share-cont svelte-1asy2nv"}">${validate_component(Twitter, "Twitter").$$render($$result, {
+                    ${expanded == id ? `<div class="${"share-cont svelte-1cseawo"}">${validate_component(Twitter, "Twitter").$$render($$result, {
         class: "share-button",
         text,
         url: "https://twitter.com/_Numbers_Game/status/" + id
@@ -6727,9 +6727,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-edfac75d.js";
-    js4 = ["pages/team/_teamName_.svelte-edfac75d.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
-    css8 = ["assets/pages/team/_teamName_.svelte-a79fd70e.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
+    entry4 = "pages/team/_teamName_.svelte-29a8b369.js";
+    js4 = ["pages/team/_teamName_.svelte-29a8b369.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
+    css8 = ["assets/pages/team/_teamName_.svelte-105f72d7.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
   }
 });
 
@@ -8211,7 +8211,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-24893245.js", "js": ["start-24893245.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-ea064e28.js", "js": ["start-ea064e28.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
