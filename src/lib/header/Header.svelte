@@ -60,7 +60,7 @@
     }
     .div-block-107 {
         display: flex;
-        padding-top: 8px;
+        padding-top: 18px;
         flex-wrap: wrap;
         align-items: center;
     }

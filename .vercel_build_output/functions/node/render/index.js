@@ -5616,22 +5616,22 @@ var init__2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/stores-1d401af5.js
+// .svelte-kit/output/server/chunks/stores-9f0227a2.js
 var css4, Header, getStores, page;
-var init_stores_1d401af5 = __esm({
-  ".svelte-kit/output/server/chunks/stores-1d401af5.js"() {
+var init_stores_9f0227a2 = __esm({
+  ".svelte-kit/output/server/chunks/stores-9f0227a2.js"() {
     init_index_f1f4a4c8();
     css4 = {
-      code: ".headline.svelte-136elcj{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-136elcj{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-136elcj{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-136elcj{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-136elcj{display:flex;padding-top:8px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-136elcj{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-136elcj{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-136elcj{background-color:#ffc2fd}.source.svelte-136elcj{text-decoration:underline}a.svelte-136elcj{text-decoration:auto;color:black}.top-50.svelte-136elcj{width:180%;margin-right:60px}@media only screen and (max-width: 600px){.headline.svelte-136elcj{display:revert;padding:4px 8px 20px 4px}.top-50.svelte-136elcj{width:100%;margin-bottom:20px}}",
+      code: ".headline.svelte-1cvjk8s{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-1cvjk8s{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-1cvjk8s{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-1cvjk8s{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-1cvjk8s{display:flex;padding-top:18px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-1cvjk8s{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-1cvjk8s{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-1cvjk8s{background-color:#ffc2fd}.source.svelte-1cvjk8s{text-decoration:underline}a.svelte-1cvjk8s{text-decoration:auto;color:black}.top-50.svelte-1cvjk8s{width:180%;margin-right:60px}@media only screen and (max-width: 600px){.headline.svelte-1cvjk8s{display:revert;padding:4px 8px 20px 4px}.top-50.svelte-1cvjk8s{width:100%;margin-bottom:20px}}",
       map: null
     };
     Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css4);
-      return `<div id="${"top"}" class="${"headline svelte-136elcj"}"><div class="${"top-50 svelte-136elcj"}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-136elcj"}"><div class="${"text-semi svelte-136elcj"}">The Numbers Game
+      return `<div id="${"top"}" class="${"headline svelte-1cvjk8s"}"><div class="${"top-50 svelte-1cvjk8s"}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-1cvjk8s"}"><div class="${"text-semi svelte-1cvjk8s"}">The Numbers Game
             </div></a>
-        <div class="${"div-block-107 svelte-136elcj"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-136elcj"}">Twitter</a>
-                <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-136elcj"}">Email</a></div></div></div>
-    <div class="${"flex"}"><div class="${"text-regular svelte-136elcj"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-136elcj"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
+        <div class="${"div-block-107 svelte-1cvjk8s"}"><div class="${"div-block-109"}"><a href="${"https://twitter.com/_Numbers_Game"}" target="${"_blank"}" class="${"text-regular bold info-link bluehighlight svelte-1cvjk8s"}">Twitter</a>
+                <a href="${"mailto:seeablenews@gmail.com"}" target="${"_blank"}" class="${"text-regular bold info-link pinkhighlight svelte-1cvjk8s"}">Email</a></div></div></div>
+    <div class="${"flex"}"><div class="${"text-regular svelte-1cvjk8s"}">This is an experiment in data journalism, using a machine learning model to generate articles based on football data. I am currently using a Text-to-Text transformer model (called T5) which can be trained to turn data into into natural language. The project is in an early stage of development and will contain errors. Please verify accuracy with <a class="${"source svelte-1cvjk8s"}" href="${"https://fbref.com/en/"}">FBREF</a>, the original data source, before sharing content.
             <br></div></div>
 </div>`;
     });
@@ -5707,172 +5707,235 @@ var init_tweets_json = __esm({
       "0": {
         data: [
           {
-            text: "Manchester Utd took three shots on target, while West Ham managed one.",
-            id: "1485205579559809027"
+            text: "Chelsea saw slightly less of the ball, completing 544 passes to Tottenham's 265. This season Chelsea have averaged 507.0 passes per 90 minutes.",
+            id: "1488593358293450756"
           },
           {
-            text: "Cristiano Ronaldo created some of the best chances of the game - tallying an xA of 0.1 (the second highest of anyone on the pitch), while Bruno Fernandes created chances worth 0.4 xA (more than any other player on the pitch).",
-            id: "1485205581380136962"
+            text: "Chelsea took seven shots on target, up from three in their last game against Brighton. This season the Blues have averaged 5.0 per 90 minutes.",
+            id: "1488593377113296896"
           },
           {
-            text: "Harry Maguire successfuly completed 64 passes - more than any other player on the pitch.",
-            id: "1485205582860664833"
+            text: "Chelsea applied less pressure high up the pitch, pressing 38 times in the final third, compared with 28 times in their last game (against Brighton).",
+            id: "1488593396092620801"
           },
           {
-            text: "Harry Maguire played more successful long balls than any other player on the pitch (16), followed by Bruno Fernandes, who completed eight.",
-            id: "1485205584362315778"
+            text: "Chelsea succesffuly played an impressive 37 passes into the final third, considerably less than the 16 from Tottenham. In their last game (against Brighton) the Blues completed 35 passes into the final third.",
+            id: "1488593415218647041"
           },
           {
-            text: "Cristiano Ronaldo successfuly recieved 12 progressive passes (more than any other player on the pitch), while Harry Maguire won five aerial duels.",
-            id: "1485205585888960512"
+            text: "Chelsea were given an average of 5.3 touches each time the opponent pressed - less than the average amount of touches they've been given this season (5.0 touches per press).",
+            id: "1488593433879105543"
           },
           {
-            text: "Harry Maguire carried the ball a total of 343 yards towards the opponent's goal - farther than any other player on the pitch.",
-            id: "1485205587495428098"
+            text: "Chelsea made 11 successful tackles, considerably more than the seven from Tottenham. In their last game (against Brighton) Chelsea made six successful tackles.",
+            id: "1488593452627550215"
           },
           {
-            text: "Harry Maguire made more clearances than any other player on the pitch (four), followed by Cristiano Ronaldo, who made three.",
-            id: "1485205588921495555"
+            text: "Hakim Ziyech, our man of the match, created some of the best chances of the game - tallying an xA of 0.2.",
+            id: "1488593471220891648"
           },
           {
-            text: "Harry Maguire won the second most aerial duels of any player on the pitch.",
-            id: "1485205590561509383"
+            text: "Hakim Ziyech took four shots on target - more than any other player on the pitch.",
+            id: "1488593489948549126"
+          },
+          {
+            text: "Hakim Ziyech carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 240 yards), while Callum Hudson-Odoi carried the ball a combined 189 yards towards the opponent's goal.",
+            id: "1488593508869021702"
+          },
+          {
+            text: "Callum Hudson-Odoi carried the ball into the final third eight times - more than any other Chelsea player.",
+            id: "1488593531035783171"
+          },
+          {
+            text: "Callum Hudson-Odoi completed two successful dribbles, while Hakim Ziyech completed two.",
+            id: "1488593550447161350"
           }
         ],
         misc: {
           story_id: 0,
-          team: "Manchester Utd",
-          opponent: "West Ham",
+          team: "Chelsea",
+          opponent: "Tottenham",
           result: [
-            1,
+            2,
             0
           ],
-          date: "2022-01-22",
+          date: "2022-01-23",
           home: "home",
           stories: [
             [
               [
-                "Manchester Utd",
+                "Chelsea",
+                "Passing_Total Succ",
+                544
+              ],
+              [
+                "Tottenham",
+                "Passing_Total Succ",
+                265
+              ],
+              [
+                "Chelsea",
+                "Passing_Total Succ Season",
+                507
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Attack_sot",
+                7
+              ],
+              [
+                "Tottenham",
                 "Attack_sot",
                 3
               ],
               [
-                "West Ham",
-                "Attack_sot",
-                1
-              ]
-            ],
-            [
-              [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Attack_xa",
-                0.1
+                "Chelsea",
+                "Attack_sot Previous Brighton",
+                3
               ],
               [
-                "Bruno Fernandes - Manchester Utd",
-                "Attack_xa",
-                0.4
-              ],
-              [
-                "Bruno Fernandes - Manchester Utd",
-                "Attack_xa Rank",
-                1
-              ],
-              [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Attack_xa Teamrank",
-                2
-              ]
-            ],
-            [
-              [
-                "Harry Maguire - Manchester Utd",
-                "Passing_Total Succ",
-                64
-              ],
-              [
-                "Harry Maguire - Manchester Utd",
-                "Passing_Total Succ Rank",
-                1
-              ]
-            ],
-            [
-              [
-                "Harry Maguire - Manchester Utd",
-                "Passing_Long Succ",
-                16
-              ],
-              [
-                "Harry Maguire - Manchester Utd",
-                "Passing_Long Succ Rank",
-                1
-              ],
-              [
-                "Bruno Fernandes - Manchester Utd",
-                "Passing_Long Succ",
-                8
-              ],
-              [
-                "Bruno Fernandes - Manchester Utd",
-                "Passing_Long Succ Teamrank",
-                2
-              ]
-            ],
-            [
-              [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Possession_Receive Prog",
-                12
-              ],
-              [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Possession_Receive Prog Rank",
-                1
-              ],
-              [
-                "Harry Maguire - Manchester Utd",
-                "Defence_Aerial Succ",
+                "Chelsea",
+                "Attack_sot Season",
                 5
               ]
             ],
             [
               [
-                "Harry Maguire - Manchester Utd",
-                "Possession_Carries Prg Dist",
-                343
+                "Chelsea",
+                "Attack_Press Final Third",
+                38
               ],
               [
-                "Harry Maguire - Manchester Utd",
-                "Possession_Carries Prg Dist Rank",
+                "Chelsea",
+                "Attack_Press Final Third Previous Brighton",
+                28
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Passing_Passes Final Third",
+                37
+              ],
+              [
+                "Tottenham",
+                "Passing_Passes Final Third",
+                16
+              ],
+              [
+                "Chelsea",
+                "Passing_Passes Final Third Previous Brighton",
+                35
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Possession_Tch PPress Taken Ratio",
+                5.3
+              ],
+              [
+                "Chelsea",
+                "Possession_Tch PPress Taken Ratio Season",
+                5
+              ]
+            ],
+            [
+              [
+                "Chelsea",
+                "Defence_Tackles Succ",
+                11
+              ],
+              [
+                "Tottenham",
+                "Defence_Tackles Succ",
+                7
+              ],
+              [
+                "Chelsea",
+                "Defence_Tackles Succ Previous Brighton",
+                6
+              ]
+            ],
+            [
+              [
+                "Hakim Ziyech - Chelsea",
+                "Attack_xa",
+                0.2
+              ],
+              [
+                "Hakim Ziyech - Chelsea",
+                "MOTM",
+                "true"
+              ]
+            ],
+            [
+              [
+                "Hakim Ziyech - Chelsea",
+                "Attack_sot",
+                4
+              ],
+              [
+                "Hakim Ziyech - Chelsea",
+                "Attack_sot Rank",
                 1
               ]
             ],
             [
               [
-                "Harry Maguire - Manchester Utd",
-                "Defence_Clearances",
-                4
+                "Hakim Ziyech - Chelsea",
+                "Possession_Carries Prg Dist",
+                240
               ],
               [
-                "Harry Maguire - Manchester Utd",
-                "Defence_Clearances Rank",
+                "Hakim Ziyech - Chelsea",
+                "Possession_Carries Prg Dist Rank",
                 1
               ],
               [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Defence_Clearances",
-                3
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Carries Prg Dist",
+                189
               ],
               [
-                "Cristiano Ronaldo - Manchester Utd",
-                "Defence_Clearances Teamrank",
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Carries Prg Dist Rank",
                 2
               ]
             ],
             [
               [
-                "Harry Maguire - Manchester Utd",
-                "Defence_Aerial Succ Rank",
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Carries Final Third",
+                2
+              ],
+              [
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Carries Final Third Teamrank",
+                1
+              ]
+            ],
+            [
+              [
+                "Hakim Ziyech - Chelsea",
+                "Possession_Drb Succ",
+                2
+              ],
+              [
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Drb Succ",
+                2
+              ],
+              [
+                "Callum Hudson-Odoi - Chelsea",
+                "Possession_Drb Succ Teamrank",
+                1
+              ],
+              [
+                "Hakim Ziyech - Chelsea",
+                "Possession_Drb Succ Teamrank",
                 2
               ]
             ]
@@ -5882,305 +5945,150 @@ var init_tweets_json = __esm({
       "1": {
         data: [
           {
-            text: "Southampton completed 45% of the passes they played long, compared with 42% from Wolves.",
-            id: "1485205616067059718"
+            text: "Burnley created less than Arsenal, finding chances worth 0.4 expected goals to Arsenal's 1.2.",
+            id: "1488664532348293125"
           },
           {
-            text: "Southampton allowed their opponent an average of 7.1 touches each time they pressed, while Manchester City allowed Spurs 2.1 touches per press.",
-            id: "1485205618252263424"
+            text: "Arsenal saw slightly less of the ball, completing 591 passes to Burnley's 153. In their last game (against Manchester City) the Gunners successfully passed 192 passes.",
+            id: "1488664551222652929"
           },
           {
-            text: "In their last game, Southampton allowed Wolves 2.3 touches per press, while throughout the season they've pressed once for every 3.5 opponent touches.",
-            id: "1485205620391358468"
+            text: "Arsenal took five shots on target, up from two in their last game against Manchester City.",
+            id: "1488664572110245892"
           },
           {
-            text: "Southampton attempted 15 challenges in the defensive third, considerably more than the three made by Manchester City. In their last game (against Wolves) the Saints attempted two challenges in the defensive third, while throughout the season they've averaged 8.1 per 90 minutes.",
-            id: "1485209397366296582"
+            text: "Burnley succesffuly played 13 passes into the final third, compared with 33 from Arsenal.",
+            id: "1488664590716219395"
           },
           {
-            text: "James Ward-Prowse played two key passes - more than any other Southampton player. James Ward-Prowse played two key passes.",
-            id: "1485209399123755008"
+            text: "Arsenal were given a lot of time on the ball, taking an average of 12.0 touches each time the opponent pressed - Burnley took an average of 2.9 touches per press.",
+            id: "1488664609225641986"
           },
           {
-            text: "Mohammed Salisu successfuly completed 28 passes (more than any other Southampton player), completing four successful tackles. Salisu attempted six challenges, completing four successful tackles.",
-            id: "1485209400717500416"
+            text: "In their last game, Arsenal were given 5.7 touches per Manchester City press, while throughout the season they've averaged 5.0 touches for each opponent press.",
+            id: "1488668403078467589"
           },
           {
-            text: "James Ward-Prowse found a teammate with 80% of his attempted passes, the highest pass completion rate of any Southampton player.",
-            id: "1485209402437218306"
+            text: "Arsenal won an impressive 21 aerial duels, considerably more than the 10 they won in their last game (10 against Manchester City).",
+            id: "1488668421743169536"
           },
           {
-            text: "Mohammed Salisu made more successful passes into the final third than any other Southampton player (three), followed by Stuart Armstrong, who completed two passes into the final third.",
-            id: "1485209404706373642"
-          },
-          {
-            text: "Mohammed Salisu made 239 yards worth of progressive passes, more than anyone else in a Southampton shirt, while James Ward-Prowse successfully passed the ball 192 yards towards the opponent's goal.",
-            id: "1485209406493147143"
-          },
-          {
-            text: "Mohammed Salisu played six successful long balls - more than any other Southampton player.",
-            id: "1485209408242077704"
-          },
-          {
-            text: "James Ward-Prowse pressed the opponent 29 times (more than any other player on the pitch), winning possession on seven occassions.",
-            id: "1485209410133766145"
-          },
-          {
-            text: "Mohammed Salisu made three interceptions, while Stuart Armstrong made five.",
-            id: "1485209411790553088"
-          },
-          {
-            text: "Mohammed Salisu made 15 clearances - more than any other player on the pitch.",
-            id: "1485209413430484992"
+            text: "Gabriel Dos Santos carried the ball a total of 435 yards towards the opponent's goal - farther than any other player on the pitch.",
+            id: "1488668440164544515"
           }
         ],
         misc: {
           story_id: 1,
-          team: "Southampton",
-          opponent: "Manchester City",
+          team: "Arsenal",
+          opponent: "Burnley",
           result: [
-            1,
-            1
+            0,
+            0
           ],
-          date: "2022-01-22",
+          date: "2022-01-23",
           home: "home",
           stories: [
             [
               [
-                "Southampton",
-                "Passing_Long Perc",
-                45
+                "Arsenal",
+                "Attack_xg",
+                1.2
               ],
               [
-                "Southampton",
-                "Passing_Long Perc Previous Wolves",
-                42
+                "Burnley",
+                "Attack_xg",
+                0.4
               ]
             ],
             [
               [
-                "Southampton",
-                "Possession_Tch PPress Given Ratio",
-                7.1
-              ],
-              [
-                "Manchester City",
-                "Possession_Tch PPress Given Ratio",
-                2.1
-              ],
-              [
-                "Southampton",
-                "Possession_Tch PPress Given Ratio Previous Wolves",
-                2.3
-              ],
-              [
-                "Southampton",
-                "Possession_Tch PPress Given Ratio Season",
-                3.5
-              ]
-            ],
-            [
-              [
-                "Southampton",
-                "Defence_Tackles Def Third",
-                15
-              ],
-              [
-                "Manchester City",
-                "Defence_Tackles Def Third",
-                3
-              ],
-              [
-                "Southampton",
-                "Defence_Tackles Def Third Previous Wolves",
-                2
-              ],
-              [
-                "Southampton",
-                "Defence_Tackles Def Third Season",
-                8.1
-              ],
-              [
-                "Southampton",
-                "Defence_Aerial Perc",
-                47
-              ],
-              [
-                "Manchester City",
-                "Defence_Aerial Perc",
-                53
-              ],
-              [
-                "Southampton",
-                "Defence_Aerial Perc Season",
-                45
-              ]
-            ],
-            [
-              [
-                "James Ward-Prowse - Southampton",
-                "Attack_KP",
-                2
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Attack_KPTeamrank",
-                1
-              ],
-              [
-                "Stuart Armstrong - Southampton",
-                "Attack_KP",
-                1
-              ],
-              [
-                "Stuart Armstrong - Southampton",
-                "Attack_KPTeamrank",
-                2
-              ]
-            ],
-            [
-              [
-                "Mohammed Salisu - Southampton",
+                "Arsenal",
                 "Passing_Total Succ",
-                28
+                591
               ],
               [
-                "Mohammed Salisu - Southampton",
-                "Passing_Total Succ Teamrank",
-                1
+                "Burnley",
+                "Passing_Total Succ",
+                153
               ],
               [
-                "Mohammed Salisu - Southampton",
-                "Defence_Tackles",
-                6
-              ],
-              [
-                "Mohammed Salisu - Southampton",
-                "Defence_Tackles Succ",
-                4
-              ]
-            ],
-            [
-              [
-                "James Ward-Prowse - Southampton",
-                "Passing_Total Perc",
-                80
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Passing_Total Perc Teamrank",
-                1
-              ]
-            ],
-            [
-              [
-                "Mohammed Salisu - Southampton",
-                "Passing_Passes Final Third",
-                3
-              ],
-              [
-                "Mohammed Salisu - Southampton",
-                "Passing_Passes Final Third Teamrank",
-                1
-              ],
-              [
-                "Stuart Armstrong - Southampton",
-                "Passing_Passes Final Third",
-                2
-              ],
-              [
-                "Stuart Armstrong - Southampton",
-                "Passing_Passes Final Third Teamrank",
-                2
-              ]
-            ],
-            [
-              [
-                "Mohammed Salisu - Southampton",
-                "Passing_Passes Prg Dist",
-                239
-              ],
-              [
-                "Mohammed Salisu - Southampton",
-                "Passing_Passes Prg Dist Teamrank",
-                1
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Passing_Passes Prg Dist",
+                "Arsenal",
+                "Passing_Total Succ Previous Manchester City",
                 192
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Passing_Passes Prg Dist Teamrank",
-                2
-              ],
-              [
-                "Mohammed Salisu - Southampton",
-                "Defence_Aerial Succ",
-                3
               ]
             ],
             [
               [
-                "Mohammed Salisu - Southampton",
-                "Passing_Long Succ",
-                6
-              ],
-              [
-                "Mohammed Salisu - Southampton",
-                "Passing_Long Succ Teamrank",
-                1
-              ]
-            ],
-            [
-              [
-                "James Ward-Prowse - Southampton",
-                "Defence_Press",
-                29
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Defence_Press Rank",
-                1
-              ],
-              [
-                "James Ward-Prowse - Southampton",
-                "Defence_Press Succ",
-                7
-              ]
-            ],
-            [
-              [
-                "Mohammed Salisu - Southampton",
-                "Defence_Int",
-                3
-              ],
-              [
-                "Stuart Armstrong - Southampton",
-                "Defence_Int",
+                "Arsenal",
+                "Attack_sot",
                 5
               ],
               [
-                "Stuart Armstrong - Southampton",
-                "Defence_Int Rank",
+                "Burnley",
+                "Attack_sot",
                 1
               ],
               [
-                "Mohammed Salisu - Southampton",
-                "Defence_Int Teamrank",
+                "Arsenal",
+                "Attack_sot Previous Manchester City",
                 2
               ]
             ],
             [
               [
-                "Mohammed Salisu - Southampton",
-                "Defence_Clearances",
-                15
+                "Arsenal",
+                "Passing_Passes Final Third",
+                33
               ],
               [
-                "Mohammed Salisu - Southampton",
-                "Defence_Clearances Rank",
+                "Burnley",
+                "Passing_Passes Final Third",
+                13
+              ]
+            ],
+            [
+              [
+                "Arsenal",
+                "Possession_Tch PPress Taken Ratio",
+                12
+              ],
+              [
+                "Burnley",
+                "Possession_Tch PPress Taken Ratio",
+                2.9
+              ],
+              [
+                "Arsenal",
+                "Possession_Tch PPress Taken Ratio Previous Manchester City",
+                5.7
+              ],
+              [
+                "Arsenal",
+                "Possession_Tch PPress Taken Ratio Season",
+                5
+              ]
+            ],
+            [
+              [
+                "Arsenal",
+                "Defence_Aerial Succ",
+                21
+              ],
+              [
+                "Arsenal",
+                "Defence_Aerial Succ Previous Manchester City",
+                10
+              ]
+            ],
+            [
+              [
+                "Gabriel Dos Santos - Arsenal",
+                "Possession_Carries Prg Dist",
+                435
+              ],
+              [
+                "Gabriel Dos Santos - Arsenal",
+                "Possession_Carries Prg Dist Rank",
                 1
               ]
             ]
@@ -6190,228 +6098,185 @@ var init_tweets_json = __esm({
       "2": {
         data: [
           {
-            text: "Wolves spent large parts of the game without the ball, completing only 391 passes. In their last game (against Southampton) Wolves completed 248 passes.",
-            id: "1485209439158386689"
+            text: "Liverpool applied more pressure high up the pitch, pressing 58 times in the final third while Crystal Palace pressed 34 times in the final third.",
+            id: "1489024937344049155"
           },
           {
-            text: "Wolves succesffuly played 30 passes into the final third, considerably less than the 28 from Brentford. In their last game (against Southampton) Wolves completed 17 passes into the final third.",
-            id: "1485209441091919873"
+            text: "Liverpool were aggressive out of possession, making four tackles in the final third to Crystal Palace's two. In their last game (against Brentford) the Reds attempted one tackles in the final third.",
+            id: "1489024955933147141"
+          },
+          {
+            text: "Liverpool succesffuly played an impressive 41 passes into the final third, compared with 15 from Crystal Palace.",
+            id: "1489024974484643848"
+          },
+          {
+            text: "Liverpool completed 79 long balls, while Crystal Palace managed 54.",
+            id: "1489024992855703558"
+          },
+          {
+            text: "Liverpool were given an average of 4.7 touches each time the opponent pressed - Crystal Palace took an average of 3.0 touches per press.",
+            id: "1489025012061417472"
+          },
+          {
+            text: "Liverpool attempted 13 challenges in this game, considerably more than the eight they made during their last game (against Brentford).",
+            id: "1489025030554017793"
+          },
+          {
+            text: "Andrew Robertson, our man of the match, created some of the best chances of the game - tallying an xA of 0.5 (more than anyone else in a Liverpool shirt).",
+            id: "1489025049046700035"
+          },
+          {
+            text: "Joel Matip successfuly completed 74 passes - more than any other player on the pitch.",
+            id: "1489025067602399235"
+          },
+          {
+            text: "Joel Matip played 17 successful long balls - more than any other Liverpool player.",
+            id: "1489025086204092419"
+          },
+          {
+            text: "Joel Matip carried the ball farther towards the opponent's goal than any other player on the pitch (a combined 232 yards), more than any other player on the pitch.",
+            id: "1489025104805834758"
           }
         ],
         misc: {
           story_id: 2,
-          team: "Wolves",
-          opponent: "Brentford",
+          team: "Liverpool",
+          opponent: "Crystal Palace",
           result: [
             1,
-            2
+            3
           ],
-          date: "2022-01-22",
+          date: "2022-01-23",
           home: "away",
           stories: [
             [
               [
-                "Wolves",
-                "Passing_Total Succ",
-                391
+                "Liverpool",
+                "Attack_Press Final Third",
+                58
               ],
               [
-                "Wolves",
-                "Passing_Total Succ Previous Southampton",
-                248
+                "Crystal Palace",
+                "Attack_Press Final Third",
+                34
               ]
             ],
             [
               [
-                "Wolves",
-                "Passing_Passes Final Third",
-                30
-              ],
-              [
-                "Brentford",
-                "Passing_Passes Final Third",
-                28
-              ],
-              [
-                "Wolves",
-                "Passing_Passes Final Third Previous Southampton",
-                17
-              ]
-            ],
-            [
-              [
-                "Wolves",
-                "Possession_Tch PPress Taken Ratio",
-                5.2
-              ],
-              [
-                "Brentford",
-                "Possession_Tch PPress Taken Ratio",
-                4.4
-              ],
-              [
-                "Wolves",
-                "Possession_Tch PPress Taken Ratio Previous Southampton",
-                3.4
-              ],
-              [
-                "Wolves",
-                "Possession_Tch PPress Taken Ratio Season",
+                "Liverpool",
+                "Attack_Tackles Final Third",
                 4
-              ]
-            ],
-            [
-              [
-                "Wolves",
-                "Defence_Tackles",
-                23
               ],
               [
-                "Brentford",
-                "Defence_Tackles",
-                16
-              ],
-              [
-                "Wolves",
-                "Defence_Tackles Season",
-                20
-              ],
-              [
-                "Wolves",
-                "Defence_Tackles Succ",
-                15
-              ],
-              [
-                "Brentford",
-                "Defence_Tackles Succ",
-                10
-              ]
-            ],
-            [
-              [
-                "Wolves",
-                "Defence_Tackles Succ Season",
-                12
-              ],
-              [
-                "Wolves",
-                "Defence_Tackles Def Third",
-                15
-              ],
-              [
-                "Brentford",
-                "Defence_Tackles Def Third",
-                7
-              ],
-              [
-                "Wolves",
-                "Defence_Tackles Def Third Previous Southampton",
-                12
-              ],
-              [
-                "Wolves",
-                "Defence_Tackles Def Third Season",
-                11
-              ]
-            ],
-            [
-              [
-                "Wolves",
-                "Defence_Aerial Succ",
-                20
-              ],
-              [
-                "Wolves",
-                "Defence_Aerial Succ Season",
-                15
-              ]
-            ],
-            [
-              [
-                "Joao Moutinho - Wolves",
-                "Attack_xa",
-                0.1
-              ],
-              [
-                "Joao Moutinho - Wolves",
-                "Attack_xa Teamrank",
-                1
-              ],
-              [
-                "Nelson Semedo - Wolves",
-                "Attack_xa",
-                0.1
-              ],
-              [
-                "Nelson Semedo - Wolves",
-                "Attack_xa Teamrank",
+                "Crystal Palace",
+                "Attack_Tackles Final Third",
                 2
+              ],
+              [
+                "Liverpool",
+                "Attack_Tackles Final Third Previous Brentford",
+                1
               ]
             ],
             [
               [
-                "Ruben Neves - Wolves",
-                "Passing_Total Succ",
-                56
+                "Liverpool",
+                "Passing_Passes Final Third",
+                41
               ],
               [
-                "Ruben Neves - Wolves",
-                "Passing_Total Succ Teamrank",
-                1
+                "Crystal Palace",
+                "Passing_Passes Final Third",
+                15
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Passing_Long Succ",
+                79
               ],
               [
-                "Joao Moutinho - Wolves",
-                "Passing_Total Succ",
+                "Crystal Palace",
+                "Passing_Long Succ",
                 54
-              ],
-              [
-                "Joao Moutinho - Wolves",
-                "Passing_Total Succ Teamrank",
-                2
               ]
             ],
             [
               [
-                "Ruben Neves - Wolves",
-                "Passing_Long Succ",
-                15
+                "Liverpool",
+                "Possession_Tch PPress Taken Ratio",
+                4.7
               ],
               [
-                "Ruben Neves - Wolves",
-                "Passing_Long Succ Rank",
+                "Crystal Palace",
+                "Possession_Tch PPress Taken Ratio",
+                3
+              ]
+            ],
+            [
+              [
+                "Liverpool",
+                "Defence_Tackles",
+                13
+              ],
+              [
+                "Liverpool",
+                "Defence_Tackles Previous Brentford",
+                8
+              ]
+            ],
+            [
+              [
+                "Andrew Robertson - Liverpool",
+                "Attack_xa",
+                0.5
+              ],
+              [
+                "Andrew Robertson - Liverpool",
+                "MOTM",
+                "true"
+              ],
+              [
+                "Andrew Robertson - Liverpool",
+                "Attack_xa Teamrank",
                 1
+              ]
+            ],
+            [
+              [
+                "Joel Matip - Liverpool",
+                "Passing_Total Succ",
+                74
               ],
               [
-                "Joao Moutinho - Wolves",
+                "Joel Matip - Liverpool",
+                "Passing_Total Succ Rank",
+                1
+              ]
+            ],
+            [
+              [
+                "Joel Matip - Liverpool",
                 "Passing_Long Succ",
-                6
+                17
               ],
               [
-                "Joao Moutinho - Wolves",
+                "Joel Matip - Liverpool",
                 "Passing_Long Succ Teamrank",
-                2
+                1
               ]
             ],
             [
               [
-                "Ruben Neves - Wolves",
+                "Joel Matip - Liverpool",
                 "Possession_Carries Prg Dist",
-                135
+                232
               ],
               [
-                "Ruben Neves - Wolves",
-                "Possession_Carries Prg Dist Teamrank",
+                "Joel Matip - Liverpool",
+                "Possession_Carries Prg Dist Rank",
                 1
-              ],
-              [
-                "Nelson Semedo - Wolves",
-                "Possession_Carries Prg Dist",
-                110
-              ],
-              [
-                "Nelson Semedo - Wolves",
-                "Possession_Carries Prg Dist Teamrank",
-                2
               ]
             ]
           ]
@@ -6439,7 +6304,7 @@ var css5, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_1d401af5();
+    init_stores_9f0227a2();
     init_fb_utils();
     init_tweets_json();
     css5 = {
@@ -6498,9 +6363,9 @@ var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-00c11c9a.js";
-    js3 = ["pages/index.svelte-00c11c9a.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
-    css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
+    entry3 = "pages/index.svelte-bca06b43.js";
+    js3 = ["pages/index.svelte-bca06b43.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
+    css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-39c5afbc.css"];
   }
 });
 
@@ -6513,7 +6378,7 @@ var css$5, ShareButton, css$4, Facebook, css$3, Reddit, css$2, Twitter, css$1, W
 var init_teamName_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_1d401af5();
+    init_stores_9f0227a2();
     init_fb_utils();
     init_tweets_json();
     css$5 = {
@@ -6727,9 +6592,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-29a8b369.js";
-    js4 = ["pages/team/_teamName_.svelte-29a8b369.js", "chunks/vendor-51c0b828.js", "chunks/tweets-bd113b17.js"];
-    css8 = ["assets/pages/team/_teamName_.svelte-105f72d7.css", "assets/vendor-954c70f3.css", "assets/tweets-061f0f55.css"];
+    entry4 = "pages/team/_teamName_.svelte-230aea15.js";
+    js4 = ["pages/team/_teamName_.svelte-230aea15.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
+    css8 = ["assets/pages/team/_teamName_.svelte-105f72d7.css", "assets/vendor-954c70f3.css", "assets/tweets-39c5afbc.css"];
   }
 });
 
@@ -8211,7 +8076,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-ea064e28.js", "js": ["start-ea064e28.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-1a73075a.js", "js": ["start-1a73075a.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
