@@ -5560,8 +5560,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "layout.svelte-099222a4.js";
-    js = ["layout.svelte-099222a4.js", "chunks/vendor-51c0b828.js"];
+    entry = "layout.svelte-5be62ff7.js";
+    js = ["layout.svelte-5be62ff7.js", "chunks/vendor-802afe63.js"];
     css2 = ["assets/vendor-954c70f3.css"];
   }
 });
@@ -5610,16 +5610,16 @@ var entry2, js2, css3;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-6c2662da.js";
-    js2 = ["error.svelte-6c2662da.js", "chunks/vendor-51c0b828.js"];
+    entry2 = "error.svelte-5c019436.js";
+    js2 = ["error.svelte-5c019436.js", "chunks/vendor-802afe63.js"];
     css3 = ["assets/vendor-954c70f3.css"];
   }
 });
 
-// .svelte-kit/output/server/chunks/stores-9f0227a2.js
+// .svelte-kit/output/server/chunks/stores-f936460c.js
 var css4, Header, getStores, page;
-var init_stores_9f0227a2 = __esm({
-  ".svelte-kit/output/server/chunks/stores-9f0227a2.js"() {
+var init_stores_f936460c = __esm({
+  ".svelte-kit/output/server/chunks/stores-f936460c.js"() {
     init_index_f1f4a4c8();
     css4 = {
       code: ".headline.svelte-1cvjk8s{position:relative;z-index:999;display:flex;width:98%;padding:4px 8px 20px 16px}.top-50.svelte-1cvjk8s{display:flex;max-width:500px;padding-right:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-flex:0;width:1600px}.text-semi.svelte-1cvjk8s{font-size:48px;line-height:1;font-weight:400}.text-regular.svelte-1cvjk8s{font-size:14px;line-height:1.15;font-weight:400}.div-block-107.svelte-1cvjk8s{display:flex;padding-top:18px;flex-wrap:wrap;align-items:center}.text-regular.bold.info-link.svelte-1cvjk8s{margin-right:4px;margin-left:0px;padding:2px 6px 3px;border:1px solid #000;border-radius:24px;color:#000;font-weight:400;text-decoration:none;cursor:pointer}.text-regular.bold.info-link.bluehighlight.svelte-1cvjk8s{background-color:#c0eeff}.text-regular.bold.info-link.pinkhighlight.svelte-1cvjk8s{background-color:#ffc2fd}.source.svelte-1cvjk8s{text-decoration:underline}a.svelte-1cvjk8s{text-decoration:auto;color:black}.top-50.svelte-1cvjk8s{width:180%;margin-right:60px}@media only screen and (max-width: 600px){.headline.svelte-1cvjk8s{display:revert;padding:4px 8px 20px 4px}.top-50.svelte-1cvjk8s{width:100%;margin-bottom:20px}}",
@@ -6304,7 +6304,7 @@ var css5, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_9f0227a2();
+    init_stores_f936460c();
     init_fb_utils();
     init_tweets_json();
     css5 = {
@@ -6363,8 +6363,8 @@ var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-f056375c.js";
-    js3 = ["pages/index.svelte-f056375c.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
+    entry3 = "pages/index.svelte-4bbd328e.js";
+    js3 = ["pages/index.svelte-4bbd328e.js", "chunks/vendor-802afe63.js", "chunks/tweets-78eb812b.js"];
     css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-39c5afbc.css"];
   }
 });
@@ -6378,7 +6378,7 @@ var css$5, ShareButton, css$4, Facebook, css$3, Reddit, css$2, Twitter, css$1, W
 var init_teamName_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/team/_teamName_.svelte.js"() {
     init_index_f1f4a4c8();
-    init_stores_9f0227a2();
+    init_stores_f936460c();
     init_fb_utils();
     init_tweets_json();
     css$5 = {
@@ -6592,8 +6592,8 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_teamName_svelte();
-    entry4 = "pages/team/_teamName_.svelte-230aea15.js";
-    js4 = ["pages/team/_teamName_.svelte-230aea15.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
+    entry4 = "pages/team/_teamName_.svelte-25c4333d.js";
+    js4 = ["pages/team/_teamName_.svelte-25c4333d.js", "chunks/vendor-802afe63.js", "chunks/tweets-78eb812b.js"];
     css8 = ["assets/pages/team/_teamName_.svelte-105f72d7.css", "assets/vendor-954c70f3.css", "assets/tweets-39c5afbc.css"];
   }
 });
@@ -8076,7 +8076,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-e0470056.js", "js": ["start-e0470056.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-00eb1048.js", "js": ["start-00eb1048.js", "chunks/vendor-802afe63.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
