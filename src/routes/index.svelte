@@ -14,7 +14,6 @@
     //     console.log('team', data[name])
     // }
 
-    
     let data = someJSON.default
     data = Object.keys(data).map(e => {
         // let objt = {};

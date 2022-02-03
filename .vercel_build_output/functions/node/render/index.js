@@ -6363,8 +6363,8 @@ var entry3, js3, css6;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-bca06b43.js";
-    js3 = ["pages/index.svelte-bca06b43.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
+    entry3 = "pages/index.svelte-f056375c.js";
+    js3 = ["pages/index.svelte-f056375c.js", "chunks/vendor-51c0b828.js", "chunks/tweets-3efd9d66.js"];
     css6 = ["assets/pages/index.svelte-4de5c469.css", "assets/vendor-954c70f3.css", "assets/tweets-39c5afbc.css"];
   }
 });
@@ -8076,7 +8076,7 @@ var manifest = {
   assets: new Set(["favicon.png"]),
   _: {
     mime: { ".png": "image/png" },
-    entry: { "file": "start-1a73075a.js", "js": ["start-1a73075a.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
+    entry: { "file": "start-e0470056.js", "js": ["start-e0470056.js", "chunks/vendor-51c0b828.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-954c70f3.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
